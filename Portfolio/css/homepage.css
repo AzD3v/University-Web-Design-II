@@ -1,0 +1,19 @@
+/* HOMEPAGE */
+
+/* Geral */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Bitter', serif;
+}
+
+/* background da homepage */
+#homepage {
+	background: url("../img/backgrounds/homepage/bg-1.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	height: 100vh;
+}
