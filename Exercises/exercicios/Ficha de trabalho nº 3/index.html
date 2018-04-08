@@ -1,0 +1,129 @@
+<html>
+	<head></head>
+	<body id="body" style="display: inline-grid;"></body>
+	<script>
+
+		// Exercício 1)
+		// Alínea a)
+		let body = document.getElementById("body");
+		let labels = ["Nome", "Sobrenome", "Idade"];
+
+		for(label of labels) {
+
+				// Criar label
+				let labelElem = document.createElement("label");
+				labelElem.setAttribute("for", label);
+
+				// Adicionar label ao body
+				body.appendChild(labelElem);
+
+				// Colocar o nome na label
+				labelElem.innerHTML = label;
+
+				// Criar as caixas de texto
+				let inputElem = document.createElement("input");
+				inputElem.setAttribute("id", label);
+				body.appendChild(inputElem);
+
+		}
+
+		// Criar botão "Guardar"
+		let buttonElem = document.createElement("button");
+		buttonElem.innerHTML = "Guardar";
+		body.appendChild(buttonElem);
+
+		// Exercício 1)
+		// Alínea b)
+
+		// Criar uma tabela
+		let tableElem = document.createElement("table");
+		let trElem = document.createElement("tr");
+
+		// Criar o header para a tabela
+		let header = ["Nome", "Sobrenome", "Idade"];
+
+		for(let h of header) {
+
+				let th = document.createElement("th");
+				th.innerHTML = h;
+				trElem.appendChild(th);
+
+		}
+
+		tableElem.appendChild(trElem);
+		body.appendChild(tableElem);
+
+		// Exercício 1)
+		// Alínea c)
+
+		// Criar o array "pessoas"
+		let pessoas = [
+
+				 {nome: "Paulo", sobrenome: "Cunha", Idade: "20"},
+				 {nome: "Henrique", sobrenome: "Costa", Idade: "21"},
+				 {nome: "John", sobrenome: "Doe", Idade: "25"}
+
+		];
+
+		// Exercício 1)
+		// Alínea d)
+
+		// Preencher a tabela com os valores do array "pessoas"
+		// Iterar sobre o array "pessoas"
+		for(let pessoa of pessoas) {
+
+				// Criar uma linha (tr) por cada pessoa
+				let tr = document.createElement("tr");
+				tableElem.appendChild(tr);
+
+				// Criar uma coluna (td) por cada chave
+				for(let chave in pessoa) {
+
+						let td = document.createElement("td");
+						tableElem.appendChild(td);
+
+						// Escrever conteúdo no elemento <td>
+						td.innerHTML = pessoa[chave];
+
+				}
+
+	 }
+
+	 // Exercício 2
+	 // Criar a função "guardar()"
+	 function guardar() {
+
+			let pessoa = {};
+
+			// Ler os valores das caixas <input>
+			pessoa.name = document.getElementById("Nome").value;
+			pessoa.sobrenome = document.getElementById("Sobrenome").value;
+			pessoa.idade = document.getElementById("Idade").value;
+
+			// Criar uma nova linha para a tabela
+			let tr = document.createElement("tr");
+
+			for(let chave in pessoa) {
+
+					let td = document.createElement("td");
+					tr.appendChild(td);
+					tableElem.appendChild(tr);
+					td.innerHTML = pessoa[chave];
+
+			}
+
+			// Exercício 3)
+			// Limpar as caixas de texto após clique no botão "Guardar"
+			for(let label of labels) {
+        document.getElementById(label).value = ' ';
+    }
+
+	 }
+
+	 // Este método recebe o nome do evento e a função
+	 // Nome do evento = "click"
+	 // Função = "guardar()"
+	 buttonElem.addEventListener("click", guardar);
+
+	</script>
+</html>

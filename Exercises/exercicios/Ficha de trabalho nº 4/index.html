@@ -1,0 +1,126 @@
+<html>
+<head>
+
+	<!-- Exercício 1 -->
+	<!-- Including jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body id="body" style="display: inline-grid;">
+
+<script>
+
+	// Exercício 2
+	// Alínea a)
+
+	// 1º forma de efetuar o carregamento da página primeiro
+	// $(function(){});
+
+	// 2º forma de efetuar o carregamento da página primeiro
+	$(document).ready(function() {
+
+			let body = $('body');
+			let labels = ["Nome", "Sobrenome", "Idade"];
+
+					// Array // Função "Callback"
+					$.each(labels, function(index, label) {
+
+							// Criar as labels
+							let labelElem = $('<label></label>').attr('for', label).text(label);
+							body.append(labelElem);
+
+							// Criar os inputs
+							let inputElem = $('<input>').attr('id', label);
+							body.append(inputElem);
+
+					});
+
+					// Criar o botão com o texto "Guardar"
+					let buttonElem = $('<button></button>').attr('id', 'btn_guardar').text('Guardar');
+					body.append(buttonElem);
+
+					// Exercício 2
+					// Alínea b)
+
+					// Criar a tabela e os seus elementos
+					let tableElem = $('<table></table>');
+					let trElem = $('<tr></tr>');
+
+					// Criar o header com array utilizado anteriormente
+					$.each(labels, function(indice, label) {
+
+							let thElem = $('<th></th>').text(label);
+							trElem.append(thElem);
+
+					});
+
+					tableElem.append(trElem);
+					body.append(tableElem);
+
+					// body <-- tableElem <-- tr <-- th
+
+					// Exercício 2
+					// Alínea c)
+
+					// Criar o array "pessoas" composto pelo header da tabela
+					let pessoas = [
+
+							{Nome: "Paulo", Sobrenome: "Cunha", Idade: "20"},
+							{nome: "Henrique", Sobrenome: "Costa", Idade: "21"},
+							{nome: "John", Sobrenome: "Doe", Idade: "25"}
+
+					];
+
+					// Exercício 2
+					// Alínea d)
+					$.each(pessoas, function(index, pessoa) {
+
+							let trElem = $('<tr></tr>');
+							tableElem.append(trElem);
+
+							$.each(pessoa, function(chave, valor) {
+
+									let tdElem = $('<td></td>').text(valor);
+									trElem.append(tdElem);
+
+							});
+
+					});
+
+					// Exercício 3
+					// Criar a função guardar
+					function guardar() {
+
+							let trElem = $('<tr></tr>');
+							$.each(labels, function(indice, label){
+
+									/*
+									'#' + 'Nome';
+									'#' + 'Sobrenome';
+									'#' + 'Idade';
+									*/
+
+									let inputElem = $('#' + label);
+									let tdElem = $('<td></td>').text( inputElem.val() );
+									trElem.append(tdElem);
+									inputElem.val('');
+
+							});
+							tableElem.append(trElem);
+
+					}
+
+							buttonElem.click(guardar);
+
+							// buttonElem.click(function(){
+							//
+							//
+							// });
+
+			});
+
+</script>
+
+</body>
+</html>
