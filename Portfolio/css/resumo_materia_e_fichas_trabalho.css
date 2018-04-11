@@ -1,0 +1,38 @@
+/* RESUMO DA MATÉRIA DADA */
+
+/* Secção dos temas abordados */
+section.section-blue a:link {
+	color: #fff;
+	transition: 1s ease;
+}
+
+section.section-blue a:hover {
+	color: #b0c4ff;
+	text-decoration: none;
+}
+
+.links_temas {
+	color: #fff;
+}
+
+/* Secção das fichas de trabalho realizadas */
+section.section-light a:link {
+	color: #192A56;
+	transition: 1s ease;
+}
+
+section.section-light a:hover {
+	color: #355fc9;
+	text-decoration: none;
+}
+
+/* Fundo do tema Programação Ágil */
+.tema-image-1 {
+	background: url("../img/backgrounds/homepage/bg-4.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+

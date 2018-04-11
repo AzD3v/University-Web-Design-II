@@ -1,0 +1,231 @@
+/* GERAL */
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-size: 16px;
+	font-family: 'Bitter', serif;
+	margin: 0;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: white;
+}
+
+/* HOMEPAGE */
+
+/* Título da homepage */
+.portfolio-title, .tema-title, .ficha-title {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	opacity: 1;
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+/* Backgrounds da homepage */
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8, .pimg9 {
+	position: relative;
+	opacity: 0.8;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.background-image-1 {
+	background: url("../img/backgrounds/bg-1.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-2 {
+	background: url("../img/backgrounds/bg-2.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 400px;
+}
+
+.background-image-3 {
+	background: url("../img/backgrounds/bg-3.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 400px;
+}
+
+.background-image-4 {
+	background: url("../img/backgrounds/bg-4.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-5 {
+	background: url("../img/backgrounds/bg-5.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-6 {
+	background: url("../img/backgrounds/bg-6.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-7 {
+	background: url("../img/backgrounds/bg-7.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-8 {
+	background: url("../img/backgrounds/bg-8.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-9 {
+	background: url("../img/backgrounds/bg-9.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-10 {
+	background: url("../img/backgrounds/bg-10.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-11 {
+	background: url("../img/backgrounds/bg-11.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-12 {
+	background: url("../img/backgrounds/bg-12.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-13 {
+	background: url("../img/backgrounds/bg-13.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 100%;
+}
+
+.background-image-14 {
+	background: url("../img/backgrounds/bg-14.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	min-height: 400px;
+}
+
+
+/* Secções da homepage */
+.section {
+	text-align: justify;
+	padding: 50px 80px;
+	font-size: 20px;
+}
+
+.section-light {
+	background-color: #f4f4f4;
+	color: #192a56;
+}
+
+.section-blue {
+	background-color: #487eb0;
+	color: #fff;
+}
+
+/* Título das secções */
+.title {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+/* Background dos títulos da homepage */
+.border {
+	padding: 20px;
+	background-color: #192a56;
+	opacity: 0.8;
+}
+
+/* Palavras/slogans da homepage */
+.background-text {
+	position: absolute;
+	margin-top: 150px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	color: #666;
+	font-size: 25px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.background-text .border {
+	background-color: #192a56;
+	opacity: 0.8;
+	color: #fff;
+	padding: 30px;
+}
+
+/* MEDIA QUERIES */
+
+/* Responsividade dos backgrounds */
+@media (max-width: 568px) {
+	.background-image-1, .background-image-2, .background-image-3 {
+		background-attachment: scroll;
+	}
+}
+
+/* Responsividade do background dos títulos da homepage */
+@media (max-width: 736px) {
+	span.border {
+		padding: 0;
+	}
