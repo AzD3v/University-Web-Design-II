@@ -27,12 +27,3 @@ section.section-light a:hover {
 }
 
 /* Fundo do tema Programação Ágil */
-.tema-image-1 {
-	background: url("../img/backgrounds/homepage/bg-4.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	min-height: 100%;
-}
-
