@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+	<!-- MetaTags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Folhas de estilo -->
+	<link rel="stylesheet" href="../css/layout.css" type="text/css">
+	<link rel="stylesheet" href="../css/resumo_materia_e_fichas_trabalho.css" type="text/css">
+
+	<!-- Bitter font family -->
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Ionic icons CDN -->
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<!-- Título da página -->
+	<title>Portfólio Web Design II | AJAX</title>
+</head>
+<body>
+
+	<!-- TEMA jQuery -->
+
+	<!-- Background do tema jQuery -->
+	<div class="background-image-10">
+			<div class="tema-title">
+				<span class="border">
+						AJAX
+				</span>
+			</div>
+  </div>
+
+	<!-- Secção jQuery -->
+	<section class="section section-light">
+		<h2 class="title">Comunicação do cliente com o servidor</h2>
+		<br>
+		<p>Resumidamente, existe numa ligação um <strong>cliente</strong> que faz pedidos
+		a um servidor que, por sua vez, lhe responde. Neste cenário é possível considerar o
+		browser como sendo o <strong>cliente</strong>, ao passo que um <strong>Serviço Web</strong>
+		remoto pode ser considerado o <strong>servidor</strong>.</p>
+		<p>Imagem ilustratativa do processo de <strong>pedido</strong> e <strong>resposta</strong>
+		entre o browser e o servidor:</p>
+		<img src="../img/geral/pedidoresposta.png" alt="Exemplificação do processo de pedido e resposta entre o browser e o servidor">
+		<br><br>
+		<p>Existem, de resto, protocolos específicos para a comunicação web, sendo um dos mais adotados o <strong>HTTP</strong>.
+		Existem diversos tipos de pedidos <em>HTTP</em>, entre os quais:</p>
+		<ul>
+			<li><strong>GET:</strong> Obtém informação;</li>
+			<li><strong>PUT:</strong> Usado para atualizar informação;</li>
+			<li><strong>POST:</strong> Submete a informação;</li>
+			<li><strong>DELETE:</strong> Remove a informação.</li>
+		</ul>
+
+		<p><strong>De que se trata o URI</strong>?</p>
+		<p>Abreviação para <strong>U</strong>niform <strong>R</strong>esource <strong>I</strong>dentifier,
+		o objetivo do <strong>URI</strong> é identificar o recurso remoto ao qual se está a tentar aceder.</p>
+		<p><strong>Exemplo de um identificador URI</strong>:
+			http://musicbrainz.org/ws/1/artist/?query=artist:Imagine%20Dragons%fmt=json
+		</p>
+		<p><strong>Sintaxe geral de um identificador URI</strong>:
+		scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]
+	</p>
+
+	<ul>
+		<li>Por uma questão de normalização, o identificador tem que ser codificado de forma a que o servidor
+		o consiga perceber. Como por exemplo, a substituição dos espaços por outra representação: %20;</li>
+		<li>A função <strong>encondeURI()</strong> facilita o processo acima descrito.</li>
+ </ul>
+
+	<p>Exemplo do pedido e resposta entre cliente e servidor, desta vez utilizando o protocolo <strong>HTTP</strong>, com
+	um pedido <strong>"GET"</strong>:</p>
+	<img src="../img/geral/httpgetresposta.png" alt="Exemplificação do processo de pedido e resposta entre o browser e o servidor">
+	<br><br>
+	<h2 class="title">Associação do jQuery com a técnica AJAX</h2>
+	<br>
+	<p>Para além das "infinitas" vantagens em utilizar a extensão de JavaScript denominada de <a href="tema_jquery.html">jQuery</a>,
+	também existe uma ligação entre a técnica AJAX (que descreverei em seguida) e a popular biblioteca.</p>
+	<p><strong>Primeiramente, o que é AJAX?</strong></p>
+	<p><strong>AJAX</strong> trata-se de uma abreviatura para "<strong>A</strong>synchronous <strong>J</strong>avaScript <strong>A</strong>nd <strong>X</strong>ML"
+	e essencialmente trata-se de uma técnica utilizada para conseguir carregar informação no browser sem ser necessário recarregar a página
+	em que o utilizador se encontra.</p>
+	<p>Os métodos de <strong>AJAX</strong> do jQuery permitem a troca de dados através de pedidos <strong>HTTP</strong>,
+	entre os quais, <strong>GET</strong> e <strong>POST</strong></p>
+	<br>
+	<h2 class="title">Sintaxe para a utilização de AJAX através da biblioteca jQuery</h2>
+	<br>
+	<ul>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Pedido AJAX através de jQuery</th>
+				<th>Explicação do pedido</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$.get(URL, <em>callback</em>)</td>
+					<td>Trata-se de um pedido para obter informação através de jQuery</td>
+				</tr>
+				<tr>
+					<td>$.post(URL, <em>data</em>, <em>callback</em>)</td>
+					<td>Trata-se de um pedido para submeter informação através de jQuery</td>
+				</tr>
+			</tbody>
+		</table>
+	</ul>
+
+
+
+
+
+
+
+</section>
+
+</body>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Ficheiros JavaScript -->
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>
