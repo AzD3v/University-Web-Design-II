@@ -25,9 +25,9 @@
 </head>
 <body>
 
-	<!-- TEMA LINGUAGEM DE PROGRAMAÇÃO JAVASCRIPT -->
+	<!-- TEMA jQuery -->
 
-	<!-- Background do tema Linguagem de Programação JavaScript -->
+	<!-- Background do tema jQuery -->
 	<div class="background-image-9">
 			<div class="tema-title">
 				<span class="border">
@@ -36,7 +36,7 @@
 			</div>
   </div>
 
-	<!-- Secção Linguagem de Programação JavaScript -->
+	<!-- Secção jQuery -->
 	<section class="section section-light">
 		<h2 class="title">Introdução ao jQuery</h2>
 		<br>
@@ -166,7 +166,7 @@
 
 		<h2 class="title">Eventos jQuery</h2>
 		<br>
-		<p>Como já foi referido, até mesmo na área em que apenas me referi ao <a href="tema_javascript.html"><em><strong>Vanilla JavaScript</strong></em></a>,
+		<p>Como já foi referido, até mesmo na área em que apenas me referi ao <a href="tema_javascript.html" class="inside_link"><em><strong>Vanilla JavaScript</strong></em></a>,
 		um evento é algo que acontece num determinado instante escolhido pelo programador. Como exemplos
 		de eventos temos:</p>
 		<ul>
@@ -178,11 +178,188 @@
 
 		<p>É um facto que a maior parte dos elementos do DOM possuem um método equivalente em jQuery,
 		como por exemplo:</p>
-		<p>Método de clique em <em><strong>Vanilla JavaScript:</strong></em></p>
+		<p>Método de clique em <a href="tema_javascript.html" class="inside_link"><em><strong>Vanilla JavaScript:</strong></em></a></p>
 		<img src="../img/geral/cliquevanilla.png" alt="Exemplo de um método em Vanilla JavaScript">
 		<br><br>
 		<p>Versão do mesmo evento em <em><strong>jQuery</strong></em>:</strong></em></p>
 		<img src="../img/geral/cliquejquery.png" alt="Exemplo de um método em jQuery">
+		<br><br>
+		<h2 class="title">Eventos jQuery</h2>
+		<br>
+		<p>Na associação da biblioteca jQuery com HTML há que referir:</p>
+		<p><strong>Leitura ou escrita de conteúdos</strong>:</p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Método</th>
+				<th>O que faz o método</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>.text()</td>
+					<td>Lê ou escreve texto no conteúdo do elemento escolhido</td>
+				</tr>
+				<tr>
+					<td>.html()</td>
+					<td>Lê ou escreve o conteúdo dos elementos selecionados incluíndo o <em>markup</em> HTML</td>
+				</tr>
+				<tr>
+					<td>.val()</td>
+					<td>Lê ou escreve valores em campos de formulários (como por exemplo caixas de texto ou botões de seleção)</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<p><strong>Leitura ou escrita de atributos</strong>:</p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Método referido</th>
+				<th>Opções do método</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>.attr("href")</td>
+					<td>Operação de leitura de atributos</td>
+				</tr>
+				<tr>
+					<td>.attr("href", "www.google.pt")</td>
+					<td>Operação de escrita de atributos</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<p><strong>Adição de conteúdo HTML:</strong></p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Método</th>
+				<th>O que faz o método</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>append()</td>
+					<td>Adiciona conteúdo no final do elemento selecionado</td>
+				</tr>
+				<tr>
+					<td>prepend()</td>
+					<td>Adiciona conteúdo no início do elemento selecionado</td>
+				</tr>
+				<tr>
+					<td>after()</td>
+					<td>Adiciona conteúdo após o elemento selecionado</td>
+				</tr>
+				<tr>
+					<td>before()</td>
+					<td>Adiciona conteúdo antes do elemento selecionado</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<p><strong>Remoção de conteúdo HTML:</strong></p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Método</th>
+				<th>O que faz o método</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>remove()</td>
+					<td>Remove o elemento escolhido</td>
+				</tr>
+				<tr>
+					<td>empty()</td>
+					<td>Remove todos os elementos "filhos" do elemento selecionado</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<p><strong>Manipulação de classes:</strong></p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Método</th>
+				<th>O que faz o método</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>addClass()</td>
+					<td>Adiciona uma ou mais classes aos elementos selecionados</td>
+				</tr>
+				<tr>
+					<td>removeClass()</td>
+					<td>Remove uma ou mais classes dos elementos selecionados</td>
+				</tr>
+				<tr>
+					<td>toogleClass()</td>
+					<td>Alterna entre a adição e remoção de classes aos elementos selecionados</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<p><strong>Manipulação de CSS:</strong></p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Método</th>
+				<th>O que faz o método</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>css()</td>
+					<td>Adiciona, altera ou obtém um atributo de estilo CSS (exemplos abaixo)</td>
+				</tr>
+				<tr>
+					<td>.css('background-color')</td>
+					<td>Obtém o valor da propriedade 'background-color'</td>
+				</tr>
+				<tr>
+					<td>.css('background-color', 'blue')</td>
+					<td>Coloca a propriedade 'background-color' com o valor 'blue'</td>
+				</tr>
+				<tr>
+					<td>.css({"nomaDaPropriedade":"valor",...})</td>
+					<td>Colocação de múltiplos valores em múltiplas propriedades</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<p><strong>Manipulação de dimensões:</strong></p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Método</th>
+				<th>O que faz o método</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>width()</td>
+					<td>Controla a largura de um elemento</td>
+				</tr>
+				<tr>
+					<td>height()</td>
+					<td>Controla a altura de um elemento</td>
+				</tr>
+				<tr>
+					<td>innerWidth()</td>
+					<td>Controla a largura interior de um elemento, incluído o <em>padding</em>, mas não a <em>border</em></td>
+				</tr>
+				<tr>
+					<td>innerHeight()</td>
+					<td>Controla a altura interior de um elemento, incluíndo o <em>padding</em>, mas não a <em>border</em></td>
+				</tr>
+				<tr>
+					<td>outerWidth()</td>
+					<td>Controla a largura exterior de um elemento, incluíndo o <em>padding</em>, a <em>border</em> e opcionalmente, a <em>margin</em></td>
+				</tr>
+				<tr>
+					<td>outerHeight()</td>
+					<td>Controla a altura exterior de um elemento, incluíndo o <em>padding</em>, a <em>border</em> e opcionalmente, a <em>margin</em></td>
+				</tr>
+			</tbody>
+		</table>
+		<p><strong>Demonstração do modelo de manipulação da biblioteca jQuery quanto às dimensões:</strong></p>
+		<img src="../img/geral/jquerydimensions.png" alt="Manipulação de dimensões da biblioteca jQuery">
 
 	</section>
 

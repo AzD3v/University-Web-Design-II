@@ -6,9 +6,6 @@ section.section-blue a:link {
 	transition: 1s ease;
 }
 
-.section a {
-	color: #2e61e4;
-}
 
 section.section-blue a:hover {
 	color: #b0c4ff;
@@ -17,6 +14,10 @@ section.section-blue a:hover {
 
 .links_temas {
 	color: #fff;
+}
+
+.inside_link {
+	color: rgb(0, 126, 166);
 }
 
 /* Secção das fichas de trabalho realizadas */
