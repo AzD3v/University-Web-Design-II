@@ -497,6 +497,7 @@
 		<br>
 
 		<h2 class="title">Estruturas de controlo da linguagem JavaScript</h2>
+		<br>
 		<p>Estruturas de controlo são utilizadas para controlar o <em>flow</em> do código,
 		sendo as primeiras a que farei referência o <strong>if</strong> e o <strong>else</strong>.</p>
 		<ul>
@@ -518,22 +519,22 @@
 		<img src="../img/geral/switch.png" alt="Exemplo da estrutura de controlo 'switch'">
 		<br><br>
 		<ul>
-			<li>As estrutura <em><strong>while</strong></em> é executada enquanto uma determinada condição
+			<li>A estrutura <em><strong>while</strong></em> é executada enquanto uma determinada condição
 			for verdade, enquanto que uma estrutura <em><strong>do while</strong></em> garante
 			que o <em>loop</em> irá ser executado pelo menos por uma vez. As palavra reservada <em><strong>break</strong></em>
 			aborta a execução do while, enquanto que a palavra <em><strong>continue</strong></em> avança para a iteração
 			seguinte do <em><strong>while</strong></em>.</li>
 		</ul>
 
-		<p><strong>Exemplo de uma estrutura <em><strong>while</strong></em></strong>:</p>
+		<p>Exemplo de uma estrutura <em><strong>while</strong></em>:</p>
 		<img src="../img/geral/while.png" alt="Exemplo da estrutura de controlo 'while'">
 		<br><br>
 
-		<p><strong>Exemplo de uma estrutura <em><strong>do while</strong></em></strong>:</p>
+		<p>Exemplo de uma estrutura <em><strong>do while</strong></em>:</p>
 		<img src="../img/geral/dowhile.png" alt="Exemplo da estrutura de controlo 'do while'">
 		<br><br>
 
-		<p><strong>Exemplo do uso das palavras reservadas <em><strong>break</strong></em> e <em><strong>continue</strong></em>:</p>
+		<p>Exemplo do uso das palavras reservadas <em><strong>break</strong></em> e <em><strong>continue</strong></em>:</p>
 		<img src="../img/geral/breakcontinue.png" alt="Exemplo do uso das palavras 'break' e 'continue'">
 		<br><br>
 
@@ -547,10 +548,11 @@
 		<p>Exemplo de uso de um ciclo <em><strong>for</strong></em>:</p>
 		<img src="../img/geral/for.png" alt="Exemplo do uso de um ciclo 'for'">
 
+		<br><br>
 		<ul>
-			Dentro do "universo <em><strong>for</strong></em>" existem também os iteradores
+			<li>Dentro do "universo <em><strong>for</strong></em>" existem também os iteradores
 			de arrays e objetos <em><strong>for... of</strong></em> e <em><strong>for... in</strong></em>
-			respetivamente. São utilizados para obter os valores tanto de um array como de um objeto.
+			respetivamente. São utilizados para obter os valores tanto de um array como de um objeto.</li>
 		</ul>
 
 		<p>Exemplo do uso de um ciclo <em><strong>for... of</strong></em>:</p>
@@ -559,7 +561,90 @@
 		<p>Exemplo do uso de um ciclo <em><strong>for... in</strong></em>:</p>
 		<img src="../img/geral/forin.png" alt="Exemplo do uso de um ciclo 'for... in'">
 
+		<br><br>
+		<h2 class="title">JavaScript - Funções</h2>
+		<br>
+		<p>Em cada linguagem de programação, as funções possuem como objetivo obedecer
+		ao princípio denominado de <em>DRY</em> (<em>Don't Repeat Yourself</em>).
+		Funções são utilizadas para reutilizar código sem ter que escrever o mesmo
+		novamente a podem tornar o código muito mais legível e "limpo". Poderão
+		também ser passados argumentos que serão utilizadas no corpo de cada função
+		e há que ter a noção de que uma função poderá ou não retornar um valor.
+		Existe a possibilidade de passar um número de parâmetros/argumentos arbitrário
+		utilizando o operador <em><strong>... rest</strong></em> que traduzirá uma
+		lista de argumentos presente num array. Funções poderão ser chamadas de diversas
+		formas, de forma comum, isto é, com o nome da função e parêntesis curvos:
+		"soma()" ou poderão ser chamadas dentro de um Event Listener (mais sobre este
+		 na secção que falará de interação do JavaScript com o HTML DOM), sendo que neste
+	 	caso a função poderá ser chamada de <em>callback</em> ou de anónima.</p>
 
+		<p>Exemplo de uma função que possui parâmetros:</p>
+		<img src="../img/geral/funcao_parametros.png" alt="Exemplo de uma função com parâmetros">
+		<br><br>
+		<p>Exemplo de uma função que não possui parâmetros:</p>
+		<img src="../img/geral/funcao_sem_parametros.png" alt="Exemplo de uma função sem parâmetros">
+		<br><br>
+
+		<p>As funções também poderão ter uma sintaxe mais moderna e diferente da anteriormente apresentada,
+		sendo estas chamadas de <em><strong>arrow functions</strong></em>. Um exemplo deste tipo de função encontra-se
+		abaixo:</p>
+		<img src="../img/geral/arrow_function.png" alt="Exemplo de uma arrow function">
+		<br><br>
+
+		<h2 class="title">JavaScript - Depuração</h2>
+		<br>
+		<p>Através da palavra reservada <em><strong>debugger</strong></em>, é possível
+		parar a execução de um programa e fazer a depuração (procurar por <em>bugs</em>)
+		a partir da linha de código escolhida.</p>
+		<img src="../img/geral/debugger.png" alt="Exemplo da palavra reservada debugger">
+		<br><br>
+
+		<h2 class="title">A integração do JavaScript em HTML</h2>
+		<br>
+		<p>Para integrar a linguagem JavaScript em HTML, é necessário utilizar
+		as <em>tags</em> seguintes:</p>
+		<img src="../img/geral/script.png" alt="Exemplo do uso das tags <script></script>">
+		<br><br>
+		<p>Porém, com objetivo delineado de conseguir uma melhor organização e legibilidade
+		do código, é aconselhado incluir o código JavaScript utilizando documentos externos.
+		É possível fazê-lo da seguinte forma:</p>
+		<img src="../img/geral/doc_externo.png" alt="Exemplo do uso do JavaScript a partir de um documento externo">
+		<br><br>
+
+		<h2 class="title">De que se trata o formato JSON?</h2>
+		<p>Essencialmente, o formato JSON significa <strong>J</strong>ava<strong>S</strong>cript
+		<strong>O</strong>bject <strong>N</strong>otation. Acerca do formato JSON:</p>
+		<ul>
+			<li>Trata-se de um formato leve de troca de informação;</li>
+			<li>Poderá ser utilizado por qualquer linguagem de programação;</li>
+			<li>É auto-descritivo e de fácil compreensão.</li>
+		</ul>
+		<p><strong>Nota importante:</strong></p>
+		<ul>
+			<li>O formato JSON é sintaticamente idêntico à notação de objetos em JavaScript.
+			Devido a este motivo, é possível converter objetos JSON em objetos JavaScript
+			e vice-versa.</li>
+		</ul>
+		<p>Exemplo da sintaxe de um objeto JSON:</p>
+		<img src="../img/geral/json.png" alt="Exemplo da sintaxe de um objeto JSON">
+		<br><br>
+		<p>A conversão entre objetos JSON e JavaScript é conseguida através dos métodos:</p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Método utilizado</th>
+				<th>Resultado do método</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>let obj = JSON.parse('{"nmrDeAluno":20170017}')</td>
+					<td>console.log(obj.nmrDeAluno) // Imprime "20170017"</td>
+				</tr>
+				<tr>
+					<td>let jsonString = JSON.stringify(obj)</td>
+					<td>console.log(jsonString) // Imprime "{"nmrDeAluno":20170017}"</td>
+				</tr>
+			</tbody>
+		</table>
 
 
 
