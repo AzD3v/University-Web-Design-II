@@ -40,10 +40,149 @@
 	<section class="section section-light">
 		<h2 class="title">Introdução ao jQuery</h2>
 		<br>
-		<p>O que é jQuery?</p>
+		<p><strong>O que é jQuery?</strong></p>
+		<p>Essencialmente, jQuery é uma biblioteca da linguagem de programação
+		JavaScript que tem por objetivo simplificar a produção de código da linguagem.
+		Esse facto é bem patente no seu slogan: "Write less, do more".</p>
+		<p>Para escrever código em jQuery convém ter primeiro uma boa compreensão tanto
+		da própria linguagem JavaScript em si (<em>Vanilla</em> JavaScript), bem como dos
+		blocos que compõem a web, HTML & CSS.</p>
+		<p>Quanto às vantagens em utilizar esta biblioteca, há que referir:</p>
+			<ul>
+				<li>A manipulação de HTML, CSS e da DOM é muito mais facilitada (como já seria de esperar);</li>
+				<li>jQuery obviamente também suporta eventos de HTML, bem como efeitos e animações;</li>
+				<li>Também possui capacicidade em utilizar AJAX (técnica utilizada param
+				carregar informação no browser sem ser necessário recarregar a página);</li>
+				<li>Entre outros.</li>
+			</ul>
 
+		<p><strong>Como adicionar os "poderes" da jQuery a um dado projeto?</strong></p>
+		<p>O suporte a jQuery poderá ser adicionado fazendo o download da biblioteca ou carregando-a
+		remotamente através de uma CDN (<em><strong>C</strong>ontent <strong>D</strong>elivery <strong>N</strong>etwork</em>),
+		sendo esta uma técnica em que é possível aceder aos recursos pretendidos remotamente.</p>
 
+		<p><strong>Exemplo da inclusão de jQuery localmente:</strong></p>
+		<img src="../img/geral/jquerylocal.png" alt="Exemplo da inclusão de jQuery localmente">
+		<br><br>
 
+		<p><strong>Exemplo da inclusão de jQuery remotamente:</strong></p>
+		<img src="../img/geral/jqueryremoto.png" alt="Exemplo da inclusão de jQuery remotamente">
+		<br><br>
+
+		<h2 class="title">Sintaxe do jQuery</h2>
+		<br>
+		<p>jQuery é uma biblioteca desenhada especificamente para selecionar elementos
+		HTML e executar ações sobre esses precisos elementos.</p>
+
+		<p><strong>Exemplo do uso de jQuery:</strong></p>
+		<p>$(seletor).ação()</p>
+		<ul>
+			<li>O símbolo do dólar, <strong>$</strong>, define o acesso à biblioteca;</li>
+			<li>O '<strong>seletor</strong>' inquire os elementos HTML;</li>
+			<li>Por fim, a '<strong>ação</strong>' é executada sobre o(s) elemento(s) HTML.</li>
+		</ul>
+
+		<p><strong>Exemplos concretos do uso de jQuery para manipulação de elementos HTML:</strong></p>
+
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Exemplos</th>
+				<th>Explicação</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$("#elementoAEsconder").hide()</td>
+					<td>Esconde o elemento com o id "elementoAEsconder"</td>
+				</tr>
+				<tr>
+					<td>$(".elementoAEsconder").hide()</td>
+					<td>Esconde o elemento com a class "elementoAEsconder"</td>
+				</tr>
+				<tr>
+					<td>$("p").hide()</td>
+					<td>Esconde todos os parágrafos do documento em questão</td>
+				</tr>
+				<tr>
+					<td>$(this).hide()</td>
+					<td>Esconde o elemento ao qual se está a referir no momento</td>
+				</tr>
+				<tr>
+					<td>$('< p >< / p >')</td>
+					<td>Cria um elemento de parágrafo</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h2 class="title">Carregamento do jQuery</h2>
+		<br>
+		<p>É uma boa prática informar o browser que este deverá carregar todo o documento
+		antes que qualquer código jQuery seja executado. Desta forma serão evitados problemas
+		como por exemplo ações sobre elementos que ainda não haviam sido carregados.</p>
+		<ul>
+			<li><strong>Exemplo 1:</strong> Obter o tamanho de uma imagem não carregada;</li>
+			<li><strong>Exemplo 2:</strong> Esconder um elemento que ainda não estava carregado.</li>
+		</ul>
+
+		<p>De modo a fazer com que o código jQuery "corra" após o documento se encontrar
+		totalmente carregado, usa-se o evento '<em><strong>ready</strong></em>' da DOM:</p>
+		<p><strong>As duas formas mais utilizadas de iniciar o uso de jQuery no código (versão longa e versão curta):</strong></p>
+		<img src="../img/geral/carregarjquery1.png" alt="Versão longa da boa prática ao carregar jQuery">
+		<br><br>
+		<img src="../img/geral/carregarjquery2.png" alt="Versão curta da boa prática ao carregar jQuery">
+		<br><br><br>
+
+		<h2 class="title">Seletores jQuery</h2>
+		<p>O seletor jQuery (<strong>$</strong>) permite a pesquisa, seleção e manipulação
+		de elementos HTML. É baseado nos atuais seletores de CSS, mas também possui seletores
+		próprios.</p>
+
+		<p><strong>Exemplos do uso do seletor de jQuery:</strong></p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<th>Uso do seletor jQuery</th>
+				<th>Significado</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>$('< p >< / p >')</td>
+					<td>Cria um elemento de parágrafo</td>
+				</tr>
+				<tr>
+					<td>$('p')</td>
+					<td>Seleciona todos os elementos de parágrafo de um dado documento</td>
+				</tr>
+				<tr>
+					<td>$('#idASerSelecionado')</td>
+					<td>Seleciona o elemento HTML que possui o id representado</td>
+				</tr>
+				<tr>
+					<td>$('.classeASerSelecionada')</td>
+					<td>Seleciona todos os elementos HTML com a classe representada</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<h2 class="title">Eventos jQuery</h2>
+		<br>
+		<p>Como já foi referido, até mesmo na área em que apenas me referi ao <a href="tema_javascript.html"><em><strong>Vanilla JavaScript</strong></em></a>,
+		um evento é algo que acontece num determinado instante escolhido pelo programador. Como exemplos
+		de eventos temos:</p>
+		<ul>
+			<li>Mover o rato sobre um determinado elemento;</li>
+			<li>Selecionar um botão;</li>
+			<li>O clique num elemento;</li>
+			<li>Entre outros.</li>
+		</ul>
+
+		<p>É um facto que a maior parte dos elementos do DOM possuem um método equivalente em jQuery,
+		como por exemplo:</p>
+		<p>Método de clique em <em><strong>Vanilla JavaScript:</strong></em></p>
+		<img src="../img/geral/cliquevanilla.png" alt="Exemplo de um método em Vanilla JavaScript">
+		<br><br>
+		<p>Versão do mesmo evento em <em><strong>jQuery</strong></em>:</strong></em></p>
+		<img src="../img/geral/cliquejquery.png" alt="Exemplo de um método em jQuery">
 
 	</section>
 
