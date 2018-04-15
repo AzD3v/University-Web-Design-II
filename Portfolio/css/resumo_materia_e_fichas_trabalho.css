@@ -6,6 +6,12 @@ section.section-blue a:link {
 	transition: 1s ease;
 }
 
+<<<<<<< HEAD
+=======
+.section a {
+	color: #2e61e4;
+}
+>>>>>>> e294a0cb2f2a8b69d420d09a5ae18cf198f76342
 
 section.section-blue a:hover {
 	color: #b0c4ff;
