@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+	<!-- MetaTags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Folhas de estilo -->
+	<link rel="stylesheet" href="../css/layout.css" type="text/css">
+	<link rel="stylesheet" href="../css/resumo_materia_e_fichas_trabalho.css" type="text/css">
+
+	<!-- Bitter font family -->
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Ionic icons CDN -->
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<!-- Título da página -->
+	<title>Portfólio Web Design II | HTML - DOM</title>
+</head>
+<body>
+
+	<!-- TEMA LINGUAGEM DE PROGRAMAÇÃO JAVASCRIPT -->
+
+	<!-- Background do tema Linguagem de Programação JavaScript -->
+	<div class="background-image-8">
+			<div class="tema-title">
+				<span class="border">
+						HTML - DOM
+				</span>
+			</div>
+  </div>
+
+	<!-- Secção Linguagem de Programação JavaScript -->
+	<section class="section section-light">
+		<h2 class="title">Introdução ao HTML - DOM</h2>
+		<br>
+		<p>
+			<strong>De que se trata o DOM?</strong>
+			<p>Sucintamente, DOM significa <strong>D</strong>ocument <strong>O</strong>bject
+			<strong>M</strong>odel. A DOM é criada quando, no browser, um página é carregada
+			e é a partir desta interface que a linguagem de programação JavaScript acede
+			ao conteúdo HTML da página referida.</p>
+			<p><strong>Exemplo de uma "árvore" de objetos HTML - DOM</strong>:</p>
+			<img src="../img/geral/dom.jpg" alt="Exemplo de uma "árvore" de objetos HTML - DOM">
+			<br><br>
+
+			<p>A partir da interface DOM e JavaScript é possível serem obtidos, bem como
+			alterados, criados e removidos, elementos HTML, CSS e também é possível
+			reagir a <strong>eventos</strong> (palavra muito importante no que toca à
+			interação da linguagem JavaScript com o HTML).</p>
+			<p>Na DOM, todos os elementos HTML são definidos como <strong>objetos</strong>
+			que contêm <strong>propriedades</strong> e <strong>métodos</strong> respetivos.</p>
+			<ul>
+				<li>As <strong>propriedades</strong> são parâmetros em que se consegue obter
+				ou alterar o valor (como por exemplo o conteúdo de um elemento HTML);</li>
+				<li>Os <strong>métodos</strong> são ações permitidas sobre o objeto em questão
+				(como por exemplo remover o conteúdo de um elemento HTML).</li>
+			</ul>
+			<p><strong>Exemplo da interação do JavaScript com um elemento HTML (neste caso
+			será escrito "Portfólio de Web Design II" dentro das tags <em>h1</em>)</strong>:</p>
+			<img src="../img/geral/jshtml.png" alt="Exemplo da interação do JavaScript com um elemento HTML">
+			<br><br>
+
+			<ul>
+				<li>Como já foi referido, existem os <strong>eventos</strong> e a sua importância é bem
+				patente no que toca à interação da linguagem com o HTML, pois por vezes tem-se por objetivo
+				criar dinamismo, fazendo com que uma parte do código escrito seja executada aquando de um
+				acontecimento (como por exemplo quando um utilizador clica num botão, ou quando se coloca
+				o rato por cima de uma determinada área).</li>
+			</ul>
+
+			<p><strong>Exemplo de um evento (neste caso trata-se do evento "onClick()"), que chamará
+			uma função predefinida aquando do clique no botão demonstrado:</strong></p>
+			<img src="../img/geral/onclick.png" alt="Exemplo de um evento (neste caso trata-se do evento 'onClick()')">
+			<br><br>
+			<ul>
+				<li>Também é possível interagir com os elementos através de <strong>eventos</strong>
+				utilizando <strong>EventListeners</strong> e passando como argumentos para estes um
+				<strong>EventHandler</strong>. É, de resto, possível conjugar vários <strong>event handlers</strong>
+				num mesmo <strong>event listener</strong>.</li>
+			</ul>
+
+			<p><strong>Exemplo da utilização de um EventHandler(), com dois event handlers diferentes:</strong></p>
+			<img src="../img/geral/eventlistener.png" alt="Exemplo da utilização de um EventHandler(), com dois event handlers diferentes)">
+
+	</section>
+
+</body>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Ficheiros JavaScript -->
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

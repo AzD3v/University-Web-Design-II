@@ -56,7 +56,7 @@ body, html {
 }
 
 .background-image-3 {
-	background: url("../img/backgrounds/bg-3.jpg") no-repeat center center fixed;
+	background: url("../img/backgrounds/bg-6.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -83,7 +83,7 @@ body, html {
 }
 
 .background-image-6 {
-	background: url("../img/backgrounds/bg-6.jpg") no-repeat center center fixed;
+	background: url("../img/backgrounds/bg-9.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -110,7 +110,7 @@ body, html {
 }
 
 .background-image-9 {
-	background: url("../img/backgrounds/bg-9.jpg") no-repeat center center fixed;
+	background: url("../img/backgrounds/bg-10.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
