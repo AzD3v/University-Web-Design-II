@@ -1,26 +1,12 @@
 /* RESUMO DA MATÉRIA DADA */
+section.section-blue a:link {color: #fff;transition: 1s ease;}
 
-/* Secção dos temas abordados */
-section.section-blue a:link {
-	color: #fff;
-	transition: 1s ease;
-}
+section.section-blue a:hover {color: #b0c4ff;text-decoration: none;}
 
-section.section-blue a:hover {
-	color: #b0c4ff;
-	text-decoration: none;
-}
+.links_temas {color: #fff;}
 
-.links_temas {
-	color: #fff;
-}
+section.section-light a:link {color: #192A56;transition: 1s ease;}
 
-section.section-light a:link {
-	color: #192A56;
-	transition: 1s ease;
-}
+section.section-light a:hover {color: #355fc9;text-decoration: none;}
 
-section.section-light a:hover {
-	color: #355fc9;
-	text-decoration: none;
-}
+/* ANÁLISE ÀS FICHAS DE TRABALHO REALIZADAS */

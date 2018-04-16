@@ -1,41 +1,74 @@
 /* GERAL */
-* {
-	box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
-body, html {
-	height: 100%;
-	font-size: 16px;
-	font-family: 'Bitter', serif;
-	margin: 0;
-	font-weight: 400;
-	line-height: 1.8em;
-	color: white;
-}
+body, html {height: 100%; font-size: 16px; font-family: 'Bitter', serif; margin: 0; font-weight: 400; line-height: 1.8em; color: white;}
 
 /* HOMEPAGE */
 
-/* Título da homepage */
-.portfolio-title, .tema-title, .ficha-title {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	text-align: center;
-	color: #fff;
-	opacity: 1;
-	font-weight: bold;
-	font-size: 30px;
-	letter-spacing: 10px;
-	text-transform: uppercase;
+/* Navbar */
+
+.ion-navicon-round {font-size: 45px; color: #F4F4F4;}
+
+.navbar {
+	overflow: hidden;
+	height: 75px;
 }
 
-/* Backgrounds da homepage */
-.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8, .pimg9 {
-	position: relative;
-	opacity: 0.8;
-	background-size: cover;
-	background-attachment: fixed;
+.navbar a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 15px 16px;
+	text-decoration: none;
+	font-size: 25px;
 }
+
+.navbar a:hover {
+	color: #000;
+}
+
+.side-nav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.side-nav a {
+	padding: 10px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #ccc;
+	display: block;
+	transition: 0.3s;
+}
+
+.side-nav a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.side-nav .btn-close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+/* Título da homepage */
+.portfolio-title, .tema-title, .ficha-title {position: absolute; top: 50%; width: 100%; text-align: center; color: #fff; opacity: 1; font-weight: bold; font-size: 30px; letter-spacing: 10px; text-transform: uppercase;}
+
+/* Backgrounds da homepage */
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8, .pimg9 {position: relative; opacity: 0.8; background-size: cover; background-attachment: fixed;}
 
 .background-image-1 {
 	background: url("../img/backgrounds/bg-1.jpg") no-repeat center center fixed;
@@ -165,35 +198,17 @@ body, html {
 
 
 /* Secções da homepage */
-.section {
-	text-align: justify;
-	padding: 50px 80px;
-	font-size: 20px;
-}
+.section {text-align: justify; padding: 50px 80px; font-size: 20px;}
 
-.section-light {
-	background-color: #f4f4f4;
-	color: #192a56;
-}
+.section-light {background-color: #f4f4f4; color: #192a56;}
 
-.section-blue {
-	background-color: #487eb0;
-	color: #fff;
-}
+.section-blue {background-color: #487eb0; color: #fff;}
 
 /* Título das secções */
-.title {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 15px;
-}
+.title {display: flex; justify-content: center; margin-bottom: 15px;}
 
 /* Background dos títulos da homepage */
-.border {
-	padding: 20px;
-	background-color: #192a56;
-	opacity: 0.8;
-}
+.border {padding: 20px; background-color: #192a56; opacity: 0.8;}
 
 /* Palavras/slogans da homepage */
 .background-text {
@@ -214,6 +229,16 @@ body, html {
 	color: #fff;
 	padding: 30px;
 }
+
+/* Icons */
+
+.ion-code {color: #ff331f;}
+.ion-social-github {color: #111;}
+.ion-monitor {color: #bababa;}
+.ion-social-javascript {color: #F7DF1E;}
+.ion-social-html5 {color: rgb(241, 101, 41);}
+.ion-social-usd {color: #a4daff;}
+.ion-ios-world-outline {color: #54ff05;}
 
 /* MEDIA QUERIES */
 

@@ -27,8 +27,26 @@
 
 	<!-- HOMEPAGE DO PORTFÓLIO -->
 
+
+
 	<!-- Primeiro background da homepage -->
 	<div class="background-image-1">
+
+			<!-- Navbar -->
+			<nav class="navbar">
+				<span class="open-slide">
+					<a href="#" onclick="openSideMenu()">
+					<i class="ion-navicon-round"></i></a>
+				</span>
+			</nav>
+
+			<div id="side-menu" class="side-nav">
+				<a href="#" class="btn-close" onClick="closeSideMenu()">&times;</a>
+				<a href="#sobreMim" onclick="closeSideMenu()"><i class="ion-person"></i>  Sobre mim</a>
+				<a href="#temasAbordados" onclick="closeSideMenu()"><i class="ion-code-working"></i>  Temas abordados</a>
+				<a href="#fichasTrabalho" onclick="closeSideMenu()"><i class="ion-checkmark-round"></i>  Fichas de trabalho</a>
+			</div>
+
 			<div class="portfolio-title">
 				<span class="border">
 						Portfólio de Web Design II
@@ -38,7 +56,7 @@
 
 	<!-- Secção "Sobre mim" -->
 	<section class="section section-light">
-		<h2 class="section-title text-center">Sobre mim</h2>
+		<h2 class="section-title text-center" id="sobreMim">Sobre mim</h2>
 		<br>
 		<p>
 			Chamo-me Paulo Cunha, possuo 20 anos de idade. Sendo aluno do
@@ -61,7 +79,7 @@
   </div>
 
 	<!-- Segunda secção da homepage -->
-	<section class="section section-blue">
+	<section class="section section-blue" id="temasAbordados">
 		<h2 class="section-title text-center">Resumo da matéria dada</h2>
 		<br>
 		<p>
@@ -81,7 +99,7 @@
 		<br>
 		<a href="temas_abordados/tema_javascript.html" class="links_temas"><i class="ion-social-javascript"></i> JavaScript</a>
 		<br>
-		<a href="temas_abordados/tema_html_dom.html" class="links_temas"><i class="ion-social-html5-outline"></i> HTML DOM</a>
+		<a href="temas_abordados/tema_html_dom.html" class="links_temas"><i class="ion-social-html5"></i> HTML DOM</a>
 		<br>
 		<a href="temas_abordados/tema_jquery.html" class="links_temas"><i class="ion-social-usd"></i> jQuery</a>
 		<br>
@@ -99,7 +117,7 @@
 
 	<!-- Terceira secção da homepage -->
 	<section class="section section-light">
-		<h2 class="section-title text-center">Análise às fichas de trabalho realizadas</h2>
+		<h2 class="section-title text-center" id="fichasTrabalho">Análise às fichas de trabalho realizadas</h2>
 		<br>
 		<p>
 			Faço também referências às várias fichas de trabalho concluídas até
