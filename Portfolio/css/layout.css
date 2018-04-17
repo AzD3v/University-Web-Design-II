@@ -239,6 +239,10 @@ body, html {height: 100%; font-size: 16px; font-family: 'Bitter', serif; margin:
 .ion-social-html5 {color: rgb(241, 101, 41);}
 .ion-social-usd {color: #a4daff;}
 .ion-ios-world-outline {color: #54ff05;}
+.ion-document-text {color: #00447c;}
+.ion-document {color: #03043c;}
+
+
 
 /* MEDIA QUERIES */
 

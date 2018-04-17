@@ -1,4 +1,4 @@
-/* RESUMO DA MATÉRIA DADA */
+/* RESUMO DA MATÉRIA DADA E ANÁLISE ÀS FICHAS DE TRABALHO */
 section.section-blue a:link {color: #fff;transition: 1s ease;}
 
 section.section-blue a:hover {color: #b0c4ff;text-decoration: none;}
@@ -9,4 +9,6 @@ section.section-light a:link {color: #192A56;transition: 1s ease;}
 
 section.section-light a:hover {color: #355fc9;text-decoration: none;}
 
-/* ANÁLISE ÀS FICHAS DE TRABALHO REALIZADAS */
+section.section-light.section_ficha a {color: #004fff;}
+
+section.section-light.section_ficha a:hover {color: #003d7d;}
