@@ -12,3 +12,9 @@ section.section-light a:hover {color: #355fc9;text-decoration: none;}
 section.section-light.section_ficha a {color: #004fff;}
 
 section.section-light.section_ficha a:hover {color: #003d7d;}
+
+.img_resolucao {margin-top: 10px;}
+
+.img_questao {margin-top: -15px;}
+
+section.section-light.section_ficha hr {border-top: 3px double #192A56;}

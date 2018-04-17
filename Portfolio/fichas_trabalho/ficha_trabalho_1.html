@@ -41,7 +41,7 @@
 		<h2 class="title">Resolução e análise à ficha de trabalho nº 1</h2>
 		<br>
 
-		<p>Documento pdf associado: <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/45987/mod_resource/content/1/Ficha%201.pdf">Ficha de trabalho nº 1</a></p>
+		<p><strong>Documento pdf associado:</strong> <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/45987/mod_resource/content/1/Ficha%201.pdf">Ficha de trabalho nº 1</a></p>
 
 		<p>A primeira ficha de trabalho realizada na cadeira de Web Design II teve por objetivo
 		colocar em prática a tema falado em aula anteriormente, a <a target="_blank" href="../temas_abordados/linha_comandos.html">
@@ -51,6 +51,179 @@
 		para a utilização dos mesmos.
 	</p>
 
+	<hr>
+	
+	<p><strong>Exercício 1:</strong> Abra a opção no terminal. Indique a pasta em que se encontra.</p>
+	<p><strong>Resolução:</strong></p>
+	<ul>
+		<li>Utilizei o comando "pwd" no terminal, de modo a obter a pasta em que me encontrava,
+		obtendo como resultado o meu diretório "/home" ("/home/paulo").</li>
+		<img src="../img/geral/ficha1-1.png" class="img_resolucao" alt="Resolução do exercício 1 da ficha de trabalho nº 1">
+	</ul>
+
+	<hr>
+
+	<p><strong>Exercício 2:</strong> Navegue para a pasta home do utilizador e crie a seguinte árvore de diretórios:</p>
+	<img src="../img/geral/arvore.png" class="img_questao" alt="Imagem presente no exercício 2 da ficha de trabalho nº 1">
+	<p><strong>Resolução:</strong></p>
+	<p>Comandos que utilizei, por ordem:</p>
+	<ul>
+		<li>$ mkdir wd2</li>
+		<li>$ cd wd2</li>
+		<li>$ mkdir exercicios</li>
+		<li>$ mkdir projetos/pi/</li>
+		<li>$ mkdir slides</li>
+	</ul>
+
+	<li>Criei a árvore de diretórios pedida usando os comandos acima mencionados e,
+	com isso, concluí o exercício proposto.
+	</li>
+
+	<hr>
+
+	<p><strong>Exercício 3:</strong> Altere o nome do diretório 'exercicios' para <strong>fichas</strong>
+	e copie este documente para esse diretório. De seguida crie um novo diretório em <strong>projetos/</strong>
+	com o nome <strong>cli</strong>.</p>
+	<p><strong>Resolução:</strong></p>
+	<p>Comandos que utilizei, por ordem:</p>
+	<ul>
+		<li>$ mv exercicios fichas</li>
+		<li>$ cd ~</li>
+		<li>$ cd /Downloads</li>
+		<li>$ cp Ficha \1.pdf ~/wd2/fichas</li>
+		<li>$ cd ~</li>
+		<li>$ cd wd2</li>
+		<li>$ cd projetos</li>
+		<li>$ mkdir cli</li>
+	</ul>
+
+	<li>Usando o comando "mv" mudei o nome do diretório "exercicios" para "fichas";</li>
+	<li>De seguida procedi a mudar o diretório atual para o diretório "/Downloads",
+		que continha a ficha de trabalho após a ter descarregado;</li>
+	<li>Usei o comando "cp"  de modo a copiar a dita ficha e coloquei-a no diretório
+		das fichas, como se consta no comando utilizado;</li>
+	<li>Por fim, mudei para o diretório "projetos" e lá criei um novo diretório denominado
+	de "cli", tal como constava no enunciado.</li>
+
+	<hr>
+
+	<p><strong>Exercício 4: Crie os seguintes diretórios e ficheiros:</strong></p>
+
+	<ul>
+		<li>a. ~/wd2/arquivo</li>
+		<li>b. ~/wd2/projetos/pi/css/styles.css</li>
+		<li>c. ~/wd2/projetos/pi/js/main.js</li>
+		<li>d. ~/wd2/projetos/pi/img/</li>
+		<li>e. ~/wd2/projetos/pi/index.html</li>
+	</ul>
+
+	<p><strong>Resolução:</strong></p>
+	<p>Comandos que utilizei, por ordem:</p>
+	<ul>
+		<li>$ mkdir arquivo</li>
+		<li>$ mkdir /projetos/pi/css</li>
+		<li>$ touch /projetos/pi/css/styles.css</li>
+		<li>$ mkdir /projetos/pi/js</li>
+		<li>$ touch /projetos/pi/js/main.js</li>
+		<li>$ mkdir /projetos/pi/img/</li>
+		<li>$ touch /projetos/pi/index.html</li>
+	</ul>
+
+	<li>Com os comandos acima descritos procedi à resolução do exercício 4, criando
+	os diretórios e ficheiros pedidos;</li>
+	<li>Destaque para a introdução do comando "touch" neste exercício. Sendo que
+	este trata-se do equivalente ao comando "mkdir", mas não para criar diretórios
+	e sim ficheiros;</li>
+	<li>Nota também para o facto de ter resolvido o exercício sem ter que alternar o meu
+	diretório (raíz da pasta wd2), como se pode notar pelos caminhos utilizados nos comandos.
+	Uma forma muito mais versátil e flexível de controlar a criação de conteúdo a partir
+	da linha de comandos. De resto, já havia feito algo muito parecido na resolução do exercício
+	2.</li>
+
+	<hr>
+
+	<p><strong>Exercício 5:</strong> Qual é a árvore de diretórios e ficheiros atual para o ~/wd2/?</p>
+
+	<p><strong>Resolução:</strong></p>
+	<p>Após instalação do pacote "tree" através do comando "sudo apt-get install tree",
+	procedi à utilização do seguinte comando:</p>
+	<ul>
+		<li>$ tree</li>
+	</ul>
+	<li>O comando utilizado demonstrou a árvore de diretórios e ficheiros atual, concluíndo
+	assim o exercício 5:</li>
+	<img src="../img/geral/tree.png" class="img_resolucao" alt="Árvore de diretórios e ficheiros atual aquando da conclusão do exercício 5">
+
+	<hr>
+
+	<p><strong>Exercício 6</strong>: Copie os múltiplos diretórios e ficheiros do projeto <strong>pi/</strong> para <strong>cli/</strong></p>
+
+	<p><strong>Resolução:</strong></p>
+	<p>Comando que utilizei:</p>
+	<ul>
+		<li>$ cp -r cli/*pi/</li>
+	</ul>
+
+	<li>Destaque na resolução deste exercício para duas notas: a utilização da opção
+	<strong>-r</strong>, que significa <em>recursively</em> e permite copiar ficheiros
+	de um diretório inteiro para outro, em conjugação com o denominado <em><strong>wildcard</strong></em>
+	<strong>*</strong>, que significa simplesmente "tudo".</li>
+	<li>A simbiose entre os dois comandos acima descritos permitiu construir o comando que tornou possível
+	a resolução do exercício 6 ao copiar todos os ficheiros e diretórios da origem (<strong>/pi</strong>)
+	para o destino (<strong>/cli</strong>).</li>
+
+	<hr>
+
+	<p><strong>Exercício 7</strong>: Inicialize um repositório local em <strong>/cli</strong></p>
+
+	<p><strong>Resolução:</strong></p>
+	<p>Comando que utilizei:</p>
+	<ul>
+		<li>$ git init cli/</li>
+	</ul>
+
+	<li>Utilizando o comando "git init", em junção com diretório onde era pretendido
+	que se iniciasse o repositório, o exercício 7 ficou solucionado.</li>
+
+	<hr>
+
+	<p><strong>Exercício 8</strong>: Configure o repositório localmente. Deve conter o seu nome e email.</p>
+
+	<p><strong>Resolução:</strong></p>
+	<p>Comandos que utilizei, por ordem:</p>
+	<ul>
+		<li>$ git config user.name "Paulo Cunha"</li>
+		<li>$ git config user.email "paulo_cunha1997@outlook.pt"</li>
+	</ul>
+
+	<li>Procedi desta forma, com estes dois comandos, à configuração do repositório git localmente,
+	utilizando como argumentos o nome que pretendia como username e o meu email.</li>
+
+	<hr>
+
+	<p><strong>Exercício 9</strong>: Faça o versionamento inicial.</p>
+
+	<p>Comandos que utilizei, por ordem:</p>
+	<ul>
+		<li>$ git add *</li>
+		<li>$ git  commit -m "Commit inicial"</li>
+	</ul>
+
+	<li>Utilizando estes dois comandos associados ao git e o seu versionamento,
+	concluí o exercício 10 com sucesso;</li>
+	<li>Primeiro utilizei "git add *" de modo a adicionar todos os ficheiros do diretório
+	wd2 e colocá-los no modo "tracked" do git;</li>
+	<li>Em seguida procedi ao "commit" inicial com uma mensagem ilustrativa do processo,
+	concluíndo assim o versionamento e a ficha de trabalho nº 1.</li>
+
+	<hr>
+
+	<p><strong>Conclusões finais:</strong> Com a resolução desta fiz de trabalho consegui
+	ao mesmo tempo apreender conteúdos muito importantes no que toca ao manuseamento e controlo
+	da <em>flow</em> de um projeto através da linha de comandos, tal como o versionamento inicial
+	do mesmo através do git. Foram vários os comandos e pequenos "<em><strong>wildcards</strong></em>"
+	que me ajudaram a tirar o melhor proveito desta ficha de trabalho associada à interface da linha
+	de comandos.</p>
 
 	</section>
 
