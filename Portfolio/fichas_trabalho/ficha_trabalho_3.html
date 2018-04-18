@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 	<!-- Título da página -->
-	<title>Portfólio Web Design II | Ficha de trabalho nº 1 - Introdução ao JavaScript</title>
+	<title>Portfólio Web Design II | Ficha de trabalho nº 3 - HTML - DOM</title>
 </head>
 
 <body>
@@ -31,101 +31,99 @@
 
 	<!-- Background do tema ficha de trabalho nº 3 -->
 	<div class="background-image-13">
+
+		<!-- Seta de retorno à homepage -->
+		<a title="Regressar à página principal" href="../index.html" ><i class="ion-arrow-return-left"></i></a>
+
 		<div class="tema-title">
 			<span class="border">
-						Ficha de trabalho nº 3 - JavaScript
+						Ficha de trabalho nº 3 - HTML - DOM
 				</span>
 		</div>
 	</div>
 
-	<!-- Secção "Ficha de trabalho nº 2" -->
+	<!-- Secção "Ficha de trabalho nº 3" -->
 	<section class="section section-light section_ficha">
-		<h2 class="title">Resolução e análise à ficha de trabalho nº 2</h2>
+		<h2 class="title">Resolução e análise à ficha de trabalho nº 3</h2>
 		<br>
 
-		<p>Documento pdf associado: <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/47329/mod_resource/content/1/Ficha%202.pdf">Ficha de trabalho nº 2</a></p>
+		<p>Documento pdf associado: <a target="_blank" href="C:\Users\Paulo Cunha.PAULO\Desktop\Web-Design-II">Ficha de trabalho nº 3</a></p>
 
-		<p>A segunda ficha de trabalho que foi realizada em aula teve como objetivo
-			primordial introduzir tanto a mim como aos meus colegas a <a href="../temas_abordados/tema_javascript.html">
-			linguagem de programação JavaScript</a>. Conhecendo, antes de frequentar esta cadeira,
-			apenas alguns pontos da sintaxe da mesma e nada sabendo, à partida, acerca
-			da sua interação com o DOM (<strong>D</strong>ocument <strong>O</strong>bject
-			<strong>M</strong>odel) e o HTML, foi com grande gosto que tive a
-			oportunidade de proceder à resolução dos exercícios/algoritmos presentes nesta ficha de trabalho.
+		<p>A terceira ficha de trabalho realizada teve por objetivo a criação de elementos HTML com
+		recurso à linguagem de programação introduzida na cadeira, JavaScript. Todos os exercícios que
+		compõem esta ficha em particular associam-se mutuamente. Foi sem dúvida uma ficha de trabalho
+		que permitiu apreender conhecimentos acerca da associação da linguagem com o DOM, de modo a produzir
+		conteúdo apenas seguindo um <em>script</em> e sem utilizar criar elementos HTML de forma "direta".
 		</p>
+
 		<p><strong>Destaques a salientar:</strong></p>
 		<ul>
-			<li>Na resolução da ficha, foi patente que poderiam ser utilizados os vários
-			métodos disponíveis pelos objetos de cada tipo (tal como ".length", ".split(''), entre outros"),
-			o que visava facilitar a busca da solução relativa aos problemas apresentados;</li>
-			<br>
-			<li>Há que salientar ainda que o procedimento introdutório à linguagem teve
-				como princípio a escrita de código JavaScript na sua versão
-				<a target="_blank" href="../temas_abordados/tema_javascript.html" class="links_fichas">
-				<em>Vanilla</em></a>, isto é, na sua face mais pura, sem auxílio externo.
-				Só mais tarde nos foi apresentada a extensão/biblioteca mais popular da linguagem,
-				<a target="_blank" href="../temas_abordados/tema_jquery.html">jQuery</a>, sendo seguida uma cronologia de ensino lógica;</li>
-				<br>
-				<li>De resto, tal como nesta e nas seguintes fichas de trabalho, utilizei o git para criar
-				<em>branches</em> à medida que resolvia cada uma das alíneas, acabando no fim por
-				fazer <em>merge</em> de todas a branches no "ramo principal", o <em>master</em>.</li>
-	  </ul>
-
-		<hr>
-
-		<p><strong>Exercício 1:</strong> Escreva um programa em JavaScript que:</p>
-
-		<ul>
-			<li>a. Compare dois números e que apresente o maior.</li>
-			<ul>
-				<li>Ex: 123, 321</li>
-				<li>Resultado: 321</li>
-			</ul>
+			<li>No início do enunciado foi dado um exemplo de um documento/layout a partir
+			do qual seriam realizados os exercícios pedidos;</li>
+			<li>As alíneas culminavam numa tabela e nela deveriam ser escritos dados
+			em caixas respetivas, correspondendo estes a labels próprios;</li>
+			<li>Por fim, e tal como na <a target="_blank" href="ficha_trabalho_2.html">ficha de trabalho nº 2</a>, procedi ao versionamento
+			através do GIT.</li>
 		</ul>
-		<p><strong>Resolução:</strong></p>
-		<p>Utilizando as estruturas de controlo e os comparadores da linguagem JavaScript,
-		procedi à resolução do exercício 1 da seguinte forma:</p>
-		<img src="../img/geral/ficha2-1.png" alt="Resolução da alínea a) do exercício 2 da ficha de trabalho nº 2">
-		<br><br>
-		<li>Passando a explicar a resolução: Foram criadas duas variáveis (do tipo <em>number</em>)
-			com recurso à palavra reservada "<strong>let</strong>", uma que continha o número 123 e outra
-		o número 321;</li>
-		<li>Em seguida, foram comparadas as duas variáveis e presumido que se a variável
-		"a" fosse maior que a "b", seria essa a imprimida para o ecrã, caso contrário ("else"),
-		seria a "b" a maior;</li>
-		<li>Verificou-se, finalmente, a partir da consola do browser, que a variável que
-		possuía o número mais alto tratava-se da "b".</li>
 
 		<hr>
 
+		<p><strong>Documento original sugerido no início da ficha de trabalho:</strong></p>
+		<img src="../img/geral/doc_inicial.png" alt="Documento original sugerido no início da ficha de trabalho">
+		<br><br>
+		<p><strong>Exercício 1:</strong> Escreva programaticamente, com suporte de JavaScript,
+		um documento HTML que:</p>
 		<ul>
-			<li>b. Compare três número e apresente-os por ordem descrescente.</li>
-			<ul>
-				<li>Ex: 20, -5, 15</li>
-				<li>Resultado: 20, 15, -5</li>
-			</ul>
+			<li>a. Contenha três <strong>labels</strong> e respetivas caixas de texto para
+			inserção de <strong>nome</strong>, <strong>sobrenome</strong> e <strong>idade</strong>,
+			com um botão final com o texto "Guardar":</li>
 		</ul>
 
 		<p><strong>Resolução:</strong></p>
-		<p>Sabendo de antemão que o segundo exercício era mais exigente que o primeiro no que
-		às estruturas de controlo diz respeito, procedi à seguinte resolução, a qual divido por partes
-		na respetiva explicação:</p>
-		<img src="../img/geral/ficha2-b1.png" alt="Resolução da alínea b) do exercício 2 da ficha de trabalho nº 2">
-		<br><br>
-		<li>São criadas quatro variáveis: as três primeiras continham 3 números
-		que não se encontravam ordenados, a última variável iria conter o resultado final;</li>
-		<li>Numa primeira fase e, tal como no restante algoritmo, são utilizadas duas estruturas de controlo "if"
-		que irão definir a posição de cada uma das variáveis no final do mesmo. Estas fazem-no colocando como hipótese
-		a posição de cada uma das variáveis, o que torna o processo algo demoroso, mas muito bom para aprender
-		estes princípios básicos da programação;</li>
-
-		<img src="../img/geral/ficha2-b2.png" alt="Resolução da alínea b) do exercício 2 da ficha de trabalho nº 2">
-		<img src="../img/geral/ficha2-b3.png" alt="Resolução da alínea b) do exercício 2 da ficha de trabalho nº 2">
-		<br><br>
-		<li>Utilizando a palavra "else if" são colocadas as outras hipóteses de resolução do algoritmo e,
-		finalmente, o resultado é imprimido para a consola.</li>
 
 		<hr>
+
+			<ul>
+				<li>b. Contenha uma tabela com o seguinte header:</li>
+				<ul>
+					<li>i. "nome", "sobrenome", "idade".</li>
+				</ul>
+			</ul>
+
+		<p><strong>Resolução:</strong></p>
+
+		<hr>
+
+
+			<ul>
+			<li>c. Crie um array "<strong>pessoas</strong>" composto por objetos pares
+			chave-valor do header da tabela:</li>
+			</ul>
+
+	 <p><strong>Resolução:</strong></p>
+
+	 <hr>
+
+		<ul>
+			<li>d. Preencha a tabela com os valores do array "<strong>pessoas</strong>":</li>
+		</ul>
+
+		<p><strong>Resolução:</strong></p>
+
+		<hr>
+
+		<p><strong>Exercício 2:</strong> Altere o documento HTML do exercício 1 para que
+		a inserção de dados na tabela ocorra aquando do clique no botão "Guardar":</p>
+
+		<p><strong>Resolução:</strong></p>
+
+		<hr>
+
+		<p><strong>Exercício 3:</strong> Altere o programa para limpar as caixas de texto
+		após o clique no botão:</p>
+
+		<p><strong>Resolução:</strong></p>
+
 
 	</section>
 
