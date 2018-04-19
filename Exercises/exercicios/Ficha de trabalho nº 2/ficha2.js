@@ -133,6 +133,7 @@ if(arr.length != 0) {
 
 console.log("A string maior é: '"maior"'");
 
+// Alínea e)
 // ii)
 let arr = ["ab", "a", "abcd", "abc"];
 let maior = arr[0];
@@ -169,6 +170,9 @@ for(let i = arr.length; i > 0; i--) {
 
 }
 
+console.log(resultado);
+
+// Alínea f)
 // 2º modo de resolução
 let string = "abcdefg";
 let resultado = string.split('');
@@ -176,7 +180,37 @@ let resultado = string.reverse();
 let resultado = string.join('');
 console.log(resultado);
 
+// Alínea f)
 // 3º modo de resolução
 let string = "abcdefg";
 let resultado = string.split('').reverse().join('');
 console.log(resultado);
+
+// Alínea g)
+let resultado = "";
+
+for(let i = 1; i <= 5; i++) {
+
+		for(let j = 1; j <= i; j++) {
+
+			resultado = resultado + "*";
+
+		}
+
+		resultado = resultado + "\n";
+
+}
+
+console.log(resultado);
+
+let char = "";
+
+for(let i = 0; i < 5; i++){
+
+			char = char + "*";
+
+			console.log(char);
+
+}
+
+
