@@ -30,7 +30,7 @@
 	<!-- Ficha de trabalho nº 4 -->
 
 	<!-- Background do tema ficha de trabalho nº 4 -->
-	<div class="background-image-14">
+	<div class="background-image-15">
 
 		<!-- Seta de retorno à homepage -->
 		<a title="Regressar à página principal" href="../index.html" ><i class="ion-arrow-return-left"></i></a>
@@ -48,8 +48,13 @@
 		<br>
 
 		<p>Documento pdf associado: <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/49367/mod_resource/content/1/Ficha%204.pdf">Ficha de trabalho nº 4</a></p>
-
 		<p>
+			A quarta ficha de trabalho realizada teve como principal aliciante o facto de introduzir
+			a extensão/biblioteca de JavaScript <a target="_blank" href="../temas_abordados/tema_jquery.html">jQuery</a>.
+			Tratou-se de uma ficha de trabalho idêntica à sua anterior, excepto no facto de
+			agora o conteúdo programado ser criado utilizado a filosofia jQuery "write less, do more". Foi uma
+			ficha de trabalho que sem sombra de dúvida me ajudou a ver a magia desta biblioteca em ação e demonstrou-me
+			particularmente o quão mais fácil é escrever código JavaScript utilizando-a.
 		</p>
 
 		<p><strong>Destaques a salientar:</strong></p>
@@ -58,16 +63,32 @@
 			do qual seriam realizados os exercícios pedidos;</li>
 			<li>As alíneas culminavam numa tabela e nela deveriam ser escritos dados
 			em caixas respetivas, correspondendo estes a labels próprios;</li>
-			<li>Por fim, e tal como na <a target="_blank" href="ficha_trabalho_2.html">ficha de trabalho nº 2</a>, procedi ao versionamento
-			através do GIT.</li>
+			<li>Por fim, e tal como na <a target="_blank" href="ficha_trabalho_2.html">ficha de trabalho nº 2</a> e <a target="_blank" href="ficha_trabalho_3.html">ficha de trabalho nº 3</a>, procedi ao versionamento
+			através do GIT;</li>
+			<li>Poderia ser consultada a documentação jQuery presente online.</li>
 		</ul>
 
 		<hr>
 
 		<p><strong>Documento original sugerido no início da ficha de trabalho:</strong></p>
-		<img src="../img/geral/doc_inicial.PNG" alt="Documento original sugerido no início da ficha de trabalho">
+		<img src="../img/geral/exemplo_doc_jquery.png" alt="Documento original sugerido no início da ficha de trabalho">
 		<br><br>
-		<p><strong>Exercício 1:</strong> Escreva programaticamente, com suporte de JavaScript,
+
+		<hr>
+
+		<p><strong>Exercício 1:</strong> Inclua a biblioteca jQuery no documento.</p>
+		<p><strong>Resolução:</strong></p>
+		<img src="../img/geral/incluirjquery.png" alt="Inclusão de jQuery no documento">
+		<br><br>
+
+		<ul>
+			<li>Utilizar o CDN que a API da Google fornece, incluí a biblioteca jQuery no ficheiro
+			HTML, procedendo assim à resolução do exercício 1.</li>
+		</ul>
+
+		<hr>
+
+		<p><strong>Exercício 2:</strong> Escreva programaticamente, com suporte de jQuery,
 		um documento HTML que:</p>
 		<ul>
 			<li>a. Contenha três <strong>labels</strong> e respetivas caixas de texto para
@@ -77,58 +98,89 @@
 
 		<p><strong>Resolução:</strong></p>
 
-		<p>A imagem onde é possível notar-se a resolução fala por si própria, muito
-		graças aos comentários.</p>
+		<p>Primeiramente, fui introduzido a uma boa prática que se deve ter sempre em conta aquando do carregamento
+		da biblioteca jQuery e das variadas formas em que é possível fazer este processo, falarei disso e da resolução
+		do exercício propriamente dita em seguida, tendo em conta que o objetivo, tal como no resto da ficha de trabalho,
+		é exatamente o mesmo da ficha anterior (facto já referido na introdução):</p>
 
-		<img src="../img/geral/ficha3-1a.png" alt="Resolução do exercício 1 da ficha de trabalho nº3">
+		<img src="../img/geral/ficha4-exercicio2.png" alt="Resolução do exercício 2 da ficha de trabalho nº4">
 		<br><br>
 
 		<ul>
-			<li>Primeiramente foi criada uma variável denominada de "body", que iria conter
-			o elemento "body" como argumento através do método "getElementById", chamado fazendo
-			referência ao documento HTML através da palavra "document";</li>
-			<br>
-			<li>De seguida foi criada uma variável/array chamada "labels", que iria conter os
-			labels que irião compor o header da tabela final ("Nome", "Sobrenome" e "Idade");</li>
-			<br>
-			<li>Foi utilizado em seguida um ciclo "for... of..." que viria a percorrer cada label
-			presente no array declarado acima e criar uma variável denominada "labelElem" para
-			cada um destes;</li>
-			<br>
-			<li>Para cada uma das novas variáveis/labels é atribuído o valor "label" com "for" como nome
-			do atributo;</li>
-			<br>
-			<li>O elemento labelElem é adicionado ao body em seguida, através da função
-			"appendChild()";</li>
-			<br>
-			<li>Finalmente, o nome da label foi colocado na label concretamente, com o auxílio
-			da propriedade "innerHTML";</li>
-			<br>
-			<li>De modo a terminar a primeira fase do que foi pedido na alínea a), foram criadas
-			três caixas de texto, para cada uma das labels:</li>
+			<li>Como já referi, fui introduzido às boas práticas de carregamento de jQuery, sendo apresentado
+			à forma menos comum e abreviada de fazê-lo (a que não se encontra <em>commented out</em>) e também
+			à forma mais comum de praticar a boa prática. Essencialmente, é uma convenção começar a codificar utilizando
+			a biblioteca carregando a página antes que qualquer código jQuery seja utilizado:</li>
 			<br>
 			<ul>
-				<li>Foi criado o elemento inputElem, utilizando para isso a função "createElement", recebendo
-				esta o elemento "input" como argumento e sendo associada ao documento HTML através da palavra "document",
-				tal como na criação dos elementos label;</li>
+				<li>Ambas as formas/sintaxes de utilização da "boa prática" referida garantem que a página seja carregada
+				antes de qualquer interação com a mesma, de modo a impedir "conflitos" ou problemas que advêm da tentativa
+				de interação com elementos que já não se encontram presentes, por exemplo;</li>
 				<br>
-
-				<li>Novamente, tal como com o processo de concepção do labelElem, mas desta vez diferenciado
-				pelo facto do objetivo delineado ser diferente, foi atribuído com o nome de atributo "id"
-				o elemento label ao inputElem;</li>
+				<li>Como se pode notar pela forma mais popular de uso desta boa prática (a segunda que apresento no exercício),
+				nota-se pelas palavras-chave "document" e "ready" que é garantido que a página já se encontra carregada;</li>
 				<br>
-
-				<li>Finalmente, o inputElem foi adicionado ao body do documento através da função "appendChild()".</li>
+				<li>A partir daí nota-se a definição de uma função e dentro do <em>scope</em> dessa função todo o código jQuery
+				será posteriormente escrito.</li>
 			</ul>
 			<br>
-			<li>Prosseguindo e finalizando a alínea a), foi criado o botão de "Guardar", seguindo a mesma
-			lógica utilizada durante todo o exercício, primeiro criando o elemento "button" através do método
-			"createElement()" e guardando o mesmo numa variável denominada de buttonElem;</li>
+
+			<li>É, então, criada uma variável chamada body que irá corresponder ao uso do seletor jQuery ($)
+			sobre o elemento body;</li>
+
 			<br>
-			<li>Dentro do botão foi escrito "Guardar" através da função innerHTML;</li>
+			<li>É também criado um array, tal como na ficha de trabalho anterior, denominado de "labels", que irá conter
+			as <em>strings</em> "Nome", "Sobrenome" e "Idade";</li>
 			<br>
-			<li>Por fim, foi adicionado ao body o elemento "button" através do método "appendChild()".</li>
+
+			<li>É utilizada a versão "for... of..." do jQuery, que se denomina pela sintaxe "$.(each)", iterador
+			no qual é utilizado o array em questão (labels) e a função <em>callback</em> (esta recebendo
+			como parâmetros "index" e "label");</li>
+			<br>
+
+			<li>Em seguida são criadas as labels:</li>
+			<br>
+			<ul>
+				<li>Primeiramente é criada uma variável denominada de "labelElem" e a ela é atribuído um elemento
+				"label", criado com o auxílio do seletor jQuery e que recebe como atributo, identificado por "attr()":
+				<br><br>
+				<ul>
+					<li>O próprio atributo ('for');</li>
+					<br>
+					<li>O valor (label).</li>
+				</ul>
+				<br>
+				<li>Finalmente, é acrescentado o conteúdo do label à variável através do elemento ".text()";</li>
+				<br>
+				<li>Sendo posteriormente acrescentado ao body o "labelElem" através do método jQuery "append()".</li>
+			</li>
 		</ul>
+		<br>
+	</ul>
+
+		<ul>
+			<li>Após a criação das labels, são criados os inputs, seguindo praticamente o mesmo processo de criação das labels:</li>
+			<br>
+			<ul>
+				<li>É criada a variável "inputElem" que recebe como valor o "input" criado que por sua vez receberá como atributo "id"
+				cada label em questão (valor);</li>
+				<br>
+				<li>Em seguinda, ocorre a junção do "inputElem" ao body através do método "append()".</li>
+			</ul>
+		</ul>
+
+			<br>
+			</ul>
+			<br>
+			<li>Finalmente,é criado o "buttonElem" seguindo o mesmo paradigma de criação de elementos jQuery:
+			<br><br>
+			<ul>
+				<li>Ao elemento "buttonElem" é atribuído o botão criado com o seletor e também recebe como atributo
+				o "id" e como valor do atributo "btn_guardar". Por fim, como texto, o botão irá conter a <em>string</em>
+				"Guardar", que recebe através do método ".text()";</li>
+				<br>
+				<li>Ocorre por fim o método append(), que irá juntar o elemento do botão ao body do documento.</li>
+			</ul>
 
 		<hr>
 
@@ -141,40 +193,43 @@
 
 		<p><strong>Resolução:</strong></p>
 
-		<p>Procedi de seguida à criação da tabela pedida e colocação dos headers tal como
-		escrito no enunciado. Sabendo de antemão que teria que repetir a lógica anterior, mas agora
-		para a criação de um elemento "table", segui em frente com o exercício.</p>
+		<p>Novamente a facilidade de escrever código JavaScript com recurso ao jQuery veio ao de cima
+		na criação da tabela.</p>
 
-		<img src="../img/geral/tableficha3.png" alt="Criação de uma tabela (exercício 3 da ficha de trabalho nº 3)">
+		<img src="../img/geral/jquery2b.png" alt="Criação de uma tabela (exercício 2b) da ficha de trabalho nº 4)">
 		<br><br>
 
 		<ul>
-			<li>Comecei por criar o elemento "tableElem", repetindo o mesmo processo da
-			alínea a), ou seja, através do acesso ao documento com o método "createElement()",
-			consegui lograr o objetivo de criar o elemento principal da tabela;
+			<li>Foi, inicialmente, criada a tabela e os seus respetivos elementos:
+				<br><br>
+				<ul>
+					<li>Guardando na variável "tableElem" o elemento "table" criando com o auxílio do seletor;</li>
+					<br>
+					<li>Atribuíndo à variável "trElem" o "tr" (table row) criado também com o auxílio do seletor jQuery.</li>
+				</ul>
 		</li>
 		<br>
-		<li>De seguida, foi necessário criar um elemento "table row" (tr), seguindo o mesmo processo
-		do passo anterior, com o auxílio do método "createElement()", desta vez criando uma variável
-		definida como "trElem";</li>
+		<li>Foi, em seguida, criado o header com o array usado anteriormente:
+			<br>
+			<ul>
+				<br>
+				<li>Utilizando o iterador de arrays jQuery "$(each)" que afetava tanto o array "labels",
+				como também uma função que continha o "índice" e o elemento "label" como seus argumentos.</li>
+				<br>
+				<li>Dentro do iterador foi criado um elemento denominado de "thElem", criado com auxílio do seletor
+				e que possui como texto a <em>string</em> contida em cada <em>label</em>.</li>
+			</ul>
+			<br>
+		</li>
+
+		<li>No final da resolução da alínea foi utilizado o método jQuery "append()" tanto para proceder à
+		junção do "trElem" ao "tableElem" como para a junção do "tableElem" ao "body".</li>
+
 		<br>
-		<li>O header para a tabela foi criado usando um array com as <em>strings</em>
-		"Nome", "Sobrenome" e "Idade". Sendo esse array iterado através de um "for... of...",
-		utilizando a variável "h" para definir cada elemento do header;</li>
-		<br>
-		<li>Dentro do iterador de arrays "for... of..." foi criado um elemento "table header" (tr),
-		através do método mais utilizado durante o exercício, createElement();</li>
-		<br>
-		<li>Foi escrita dentro dos elementos "th" cada uma das <em>strings</em> presentes no array "header".
-		Feito logrado com o método "innerHTML";</li>
-		<br>
-		<li>Por fim, o passo final do bloco de instruções presente no "for... of...", foi adicionado ao elemento
-		trElem cada um dos elementos "th", usando para tal a função "appendChild()";</li>
-		<br>
-		<li>Fora da área de ação do iterador de arrays foram adicionados ao elemento tableElem e ao body os
-		elementos "trElem" e "tableElem", respetivamente. Novamente, foi utilizado o método "appendChild()"
-		para o processo.</li>
-		</ul>
+
+		<p><strong>Nota: </strong> Foi destacado que seria necessário compreender a lógica
+		das tabelas HTML para proceder à realização deste tipo de exercício, daí o pequeno
+		comentário que se encontra abaixo do exercício resolvido.</p>
 
 		<hr>
 
@@ -185,11 +240,11 @@
 
 	 <p><strong>Resolução:</strong></p>
 
-	 <p>Novamente uma novidade presente nesta ficha de trabalho, desta feita o conceito
-	 de um array composto por objetos pares chave-valor, que deveriam basear-se no header
- 	 da tabela.</p>
+	 <p>Destaque para o facto da resolução deste exercício ser idêntica à da ficha anterior,
+	 o que torna-se óbvio devido ao facto da definição de um objeto ser comum tanto em JavaScript
+ 	 como utilizando a biblioteca jQuery.</p>
 
-	 <img src="../img/geral/ficha3-1c.png" alt="Resolução da alínea c) do exercício 1 da ficha de trabalho nº 3">
+	 <img src="../img/geral/ficha4array.png" alt="Resolução da alínea c) do exercício 1 da ficha de trabalho nº 3">
 	<br><br>
 
 	 <ul>
@@ -206,133 +261,98 @@
 		<ul>
 			<li>d. Preencha a tabela com os valores do array "<strong>pessoas</strong>":</li>
 		</ul>
+	</ul>
+		<br>
 
 		<p><strong>Resolução:</strong></p>
-		<p>De seguida foi pedido para preencher a tabela entretanto criando com os valores que se
-		encontravam dentro do array "pessoas". Houve necessidade de regressar aos conceitos utilizados
-		anteriormente nesta ficha de trabalho, com vários métodos entretanto já utilizados.</p>
-		<img src="../img/geral/ficha3-1d.png" alt="Resolução do exercício 1d) da ficha de trabalho nº3">
-		<br><br>
-
+		<p>A ficha de trabalho chegou então à fase em que seria necessário preencher a tabela com os valores
+		que se encontravam dentro do array "pessoas", utilizando jQuery.</p>
+		<img src="../img/geral/2djquery.png" alt="Resolução do exercício 2d) da ficha de trabalho nº4">
+		<br>
 		<ul>
-			<li>Utilizando inicialmente o iterador de arrays, definiu-se que para cada "pessoa"
-			do array "pessoas" seria:</li>
+			<li>Utilizando inicialmente o iterador de arrays (na sua versão jQuery), passando-o como argumentos
+			o array "pessoas" e uma função que recebia como parâmetros o "index" e o objeto "pessoa". Foi definido que:
+			<br>
 			<br>
 			<ul>
-				<li>Criado um elemento table row (tr) para cada uma das pessoas, utilizando o método createElement,
-				fazendo referência ao documento da página e atribuindo esse valor a uma variável denominada de "tr";</li>
-				<li>Atribuído ao elemento tableElem os valores atribuídos a cada uma das linhas (tr).</li>
+				<li>Em cada iteração seria criado um elemento denominado de "trElem" e este receberia como valor um "tr" (table row), criado com
+				o seletor jQuery;</li>
 				<br>
-				<li>Utilizado um novo conceito, o de iterar sobre um objeto ("for... in..."), iterando sobre
-				cada elemento presente no objeto "pessoa" e dando-lhe o nome de "chave", criando de resto uma coluna
-				por cada "chave";</li>
+
+				<li>Esse elemento "trElem" seria "juntado" ao "body" através do método "append()";</li>
 				<br>
-				<li>Criado um novo elemento denominado de td (table data), que viria a ser posteriormente
-				adicionado ao elemento da tabela através da função appendChild();</li>
+				<li>Ainda dentro do <em>scope</em> do iterador jQuery seria utilizado outro iterador que receberia
+				desta feita o objeto "pessoa" e uma função que recebia como argumentos a "chave" e o "valor" associados ao objeto;</li>
 				<br>
-				<li>Por fim, e para finalizar o bloco de instruções do iterador "for... of..." presente mais acima,
-				foi escrito conteúdo no elemento "td", sendo este a chave presente no objeto pessoa, isto é,
-				cada um dos dados introduzidos.</li>
+
+				<li>Dentro desse segundo iterador jQuery seria criado um "td" (table data) que iria ser colocado numa variável "tdElem"
+				e receberia como texto respetivo a string que correspondesse à variável "valor";</li>
+				<br>
+
+				<li>Por fim, o "tdElem" criado seria adicionado ao "trElem".</li>
+
 			</ul>
-		</ul>
+
+		</li>
+
+	</ul>
 
 		<hr>
 
-		<p><strong>Exercício 2:</strong> Altere o documento HTML do exercício 1 para que
+		<p><strong>Exercício 3:</strong> Altere o documento HTML do exercício 1 para que
 		a inserção de dados na tabela ocorra aquando do clique no botão "Guardar":</p>
 
 		<p><strong>Resolução:</strong></p>
 
-		<p>Para proceder ao objetivo de alterar o documento HTML de modo a ocorrer uma inserção de dados
-		na tabela criada anteriormente, foi necessário criar uma função denominada de "guardar" (mais um novo
-		conceito "treinado" aquando da resolução desta ficha de trabalho). Explicarei todos os detalhes
-		da dita função em seguida:</p>
+		<p>Tal como na ficha de trabalho nº 3, foi criada uma função que guardaria posteriormente
+		os dados preenchidos na tabela aquando do clique, desta feita utilizando jQuery.</p>
 
-		<img src="../img/geral/funcaoguardar.png" alt="Função guardar criada no exercício 2 da ficha de trabalho nº 3">
-		<img src="../img/geral/clickguardar.png" alt="Função guardar criada no exercício 2 da ficha de trabalho nº 3">
+		<img src="../img/geral/guardarjquery.png" alt="Função guardar criada no exercício 3 da ficha de trabalho nº 4">
 
-		<br><br>
+		<br>
 
 		<ul>
 			<li>Primeiramente foi utilizada a sintaxe que permite definir uma função e escrever código
-			no corpo da mesma. Sendo esta criada com as palavras "function guardar() {}", sendo que o que
-			se encontrava dentro das "chavetas" o corpo da função que viria a ser chamada aquando do clique no botão
-			"Guardar";</li>
+			no corpo da mesma. Sendo esta criada com as palavras "function guardar() {}", sendo esta parte
+			do exercício igual à da ficha de trabalho da introdução ao <em>Vanilla</em> JavaScript.</li>
 			<br>
-			<li>Foi criado um objeto "pessoa", encontrando-se este inicialmente vazio;</li>
+			<li>Foi criado também um objeto "pessoa", encontrando-se este inicialmente vazio;</li>
 			<br>
-			<li>De seguida, através do método "getElementById()" foi dado uma propriedade
-			"nome", "sobrenome" e "idade" ao objeto pessoa, lendo no processo os valores presentes
-			nas caixas de input:</li>
+			<li>Seguidamente, foi criada uma variável denominada de "inputElem", à qual viria a ser
+			atribuído o valor conseguido através do seletor jQuery: um símbolo de cardinal ("#") mais o
+			valor presente em "label";</li>
 			<br>
-			<ul>
-				<li>Começando por adicionar as propriedades utilizando o "." (ponto) como ponte de ligação
-				do objeto à propriedade;</li>
-				<br>
-				<li>Em seguimento, foi utilizado o já referido método "getElementById()" para ler os valores
-				de "id" presentes nas caixas de texto ("Nome", "Sobrenome" e "Idade");</li>
-				<br>
-				<li>Finalmente, no final de cada uma das três linhas de código, foi lido o seu valor através
-				da <em>keyword</em> "value".</li>
-			</ul>
+			<li>Foi também criado um elemento "td" (table data), o que viria a ser concretizado
+			através do método ".val()", utilizado na variável "inputElem";</li>
 			<br>
-			<li>Foi criada uma nova linha para a tabela utilizando o método "createElement()" com "tr" como argumento,
-			fazendo referência, como já várias vezes durante a resolução da ficha, ao documento e guardando o valor
-			numa variável, tr neste caso em particular;</li>
+
+			<li>Por fim, o elemento "tdElem" foi adicionado ao "trElem", utilizando o método jQuery
+			"append()";</li>
 			<br>
-			<li>Foi também utilizado um iterador "for... in..." de modo a obter cada chave do objeto "pessoa"
-			e sendo realizados vários processos no corpo do iterador (pouparei nos detalhes pois todas as linhas
-			de código que se seguem já foram utilizadas de uma maneira ou de outra):</li>
-			<ul>
-				<li>Em primeiro lugar, a criação de um elemento "td", que ficou guardado na variável "td";</li>
-				<br>
-				<li>Em segundo lugar, a junção do elemento "td" já referido ao elemento "tr";</li>
-				<br>
-				<li>Em terceiro lugar, a adição do elemento "tr" ao elemento "tableElem", provocando uma espécie de
-				"efeito em cadeia";</li>
-				<br>
-				<li>Em quarto e último lugar, a escrita em cada elemento "td" do valor obtido através de cada "chave"
-				presente no objeto "pessoa".</li>
-			</ul>
+
+			<li>Após a iterador em questão, é de notar que o "trElem" foi por sua vez adicionado
+			ao elemento da tabela;</li>
 			<br>
-			<li>Por fim, foi introduzido o conceito do método "addEventListener()", que recebe
-			como argumentos o nome do evento em questão e a função (que neste caso tratou-se de uma
-			<em>callback</em>);</li>
-			<br>
-			<li>O evento tratava-se do clique do botão e portanto denominava-se de "click", a função foi,
-			como já referido, chamada de "guardar";</li>
-			<br>
-			<li>Foi, de resto, adicionado ao elemento do botão ("buttonElem") este método não antes usado,
-			de modo a obter o efeito pretendido.</li>
-		</ul>
+			<li>De resto, e de modo a finalizar o exercício, a função "guardar()" foi chamada
+			aquando do clique no botão, utilizando um "addEventListener" na sua versão jQuery,
+			chamando a função após o evento de "click" no "buttonElem".</li>
 
 		<hr>
 
-		<p><strong>Exercício 3:</strong> Altere o programa para limpar as caixas de texto
+		<p><strong>Exercício 4:</strong> Altere o programa para limpar as caixas de texto
 		após o clique no botão:</p>
 
 		<p><strong>Resolução:</strong></p>
-		<p>Como espécie de "extra" na ficha de trabalho em questão, foi pedido que fosse
-		modificado o programa de modo a que, após o clique no botão "Guardar", as caixas
-		de texto fossem limpas caso contivessem algum conteúdo escrito.</p>
-		<img src="../img/geral/limparcaixas.png" alt="Exercício 3 da ficha de trabalho nº 3">
+		<p>Novamente, tal como na ficha de trabalho anterior, foi pedido que a função
+		"guardar()" fosse extendida com um extra, pelo que as caixas de texto seriam
+		esvaziadas após um clique no botão.</p>
+		<img src="../img/geral/jquerylimpar.png" alt="Exercício 4 da ficha de trabalho nº 4">
 		<br><br>
-		<ul>
-			<li>Sendo simples de explicar, as novas linhas de código definiam que:</li>
-			<br>
-			<ul>
-				<li>Utilizando um "for... of...", para cada uma das labels que faziam parte do array "labels":</li>
-				<br>
-				<ul>
-					<li>Haveria um acesso ao valor, através da junção do método getElementById() e ".value", fazendo referência ao documento;</li>
-					<br>
-					<li>As caixas de texto seriam limpas aquando do clique no botão guardar.</li>
-				</ul>
-		</ul>
-	</ul>
-		<br>
-		<p><strong>Nota de destaque:</strong> Estas novas linhas de código encontravam-se no <em>scope</em> da função
-		"guardar()".</p>
+
+			<li>Utilizando o método "val()", tornou-se possível aceder ao valor contido
+			no "inputElem" e definir o mesmo como uma string.</li>
+
+
 
 	</section>
 
