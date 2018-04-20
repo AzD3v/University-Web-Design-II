@@ -85,20 +85,27 @@
 		do utilizador. Existem diversos comandos que permitem o versionamento local do GIT:
 		<ul>
 		<li>Configuração do repositório ao nível local, ou ao nível global, com o comando inicial
-		<em>git config</em> e como as imagens em seguida demonstram-no:</li>
-		<!-- TODO: Screenshots da configuração local e global do GIT -->
+		<em>git config</em> e como as imagens em seguida demonstram-no (sendo de destacar a inclusão
+		da opção "--global" para uma configuração global do git):</li>
+		<img src="../img/geral/gitconfignamelocal.png" alt="Configuração local do username GIT">
+		<img src="../img/geral/gitconfigemail.png" alt="Configuração local do email GIT">
+		<img src="../img/geral/gitconfigglobalusername.png" alt="Configuração global do email GIT">
+		<img src="../img/geral/gitconfigglobalemail.png" alt="Configuração global do username GIT">
+
+
 		<br><br>
 		<li>Também é possível iniciar um novo repositório local através do comando <em>git init</em>,
 		demonstrado a seguir, sendo que este comando cria um ficheiro .git dentro do diretório do
 		projeto em questão, apresentando este ficheiro a estrutura necessária à gestão:</li>
-		<!-- TODO: Screenshot do git init -->
+		<img src="../img/geral/gitinit.png" alt="Utilização do comando git init">
+
 		<br><br>
 		<li>Através do comando <em>git status</em> é possível saber o estado atual dos ficheiros
 		inerentes ao versionamento, como demonstrado pelos exemplos, sendo dadas indicações
 		do que o utilizador deverá fazer (adicionar ficheiros para o estado de <em>staged</em> ou
 		proceder ao acrescento de ficheiros):</li>
-		<br><br>
-		<!-- TODO: Screenshot do git status -->
+		<img src="../img/geral/gitstatus.png" alt="Utilização do comando git status">
+
 		<br><br>
 		<li>Um ficheiro poderá encontrar-se em dois tipos diferentes de estado: <em>tracked</em> e <em>untracked</em>.
 		<em>Untracked</em> significa que um dado ficheiro não se encontra a ser controlado pelo SCV,
@@ -106,12 +113,13 @@
 		poderá dividir-se em três diferentes categorias: <em>modified</em>, <em>unmodified</em> e <em>staged</em>,
 		apresentados em seguida:</li>
 		<br>
-		<img src="../img/geral/estados_ficheiro_git.png" alt="Os diferentes estados de um ficheiro aos 'olhos' do GIT">
+		<img src="../img/geral/estados_ficheiro_git.PNG" alt="Os diferentes estados de um ficheiro aos 'olhos' do GIT">
 		<br><br>
 		<li>A partir do momento em que um ficheiro é <em>added</em> através do comando <em>git add</em>,
-		esse ficheiro passa para o estado de <em>staged</em>, apresentado pelo seguinte diagrama:</li>
+		esse ficheiro passa para o estado de <em>staged</em>, apresentado pelo diagrama que se encontra abaixO:</li>
 		<br>
-		<img src="../img/geral/git_add.png" alt="Exemplo de utilização do comando 'git add'">
+		<img src="../img/geral/git_add.PNG" alt="Exemplo de utilização do comando 'git add'">
+
 		<br><br>
 		<li>O processo seguinte ao adicionar de um ficheiro, denomina-se <em>git commit</em> e é essencialmente
 		o momento em uma espécie de <em>screenshot</em> é tirado ao ficheiro, isto é, ao exato momento em que
@@ -121,32 +129,38 @@
 		no modo <em>tracked</em>. Este procedimento trata-se do <em>"workflow"</em> do versionamento de ficheiros,
 		geralmente falando. As seguintes imagens ilustram os acontecimentos referidos:</li>
 		<br>
-		<img src="../img/geral/git_commit.png" alt="Processo de 'git commit'">
+		<img src="../img/geral/git_commit.PNG" alt="Processo de 'git commit'">
 		<br><br>
-		<img src="../img/geral/git_workflow.png" alt="'Workflow' do versionamento do GIT">
+		<img src="../img/geral/git_workflow.PNG" alt="'Workflow' do versionamento do GIT">
 		<br><br>
-		<img src="../img/geral/git_staged.png" alt="Regresso do ficheiro ao modo 'staged'">
+		<img src="../img/geral/git_staged.PNG" alt="Regresso do ficheiro ao modo 'staged'">
 		<br><br>
 		<li>O ficheiro também poderá, de resto, ser removido. Deixando de estar no estado <em>tracked</em>
 		para o estado <em>untracked</em>.</li>
 		<br>
-		<img src="../img/geral/git_rmv.png" alt="Regresso do ficheiro ao modo 'untracked'">
+		<img src="../img/geral/git_rmv.PNG" alt="Regresso do ficheiro ao modo 'untracked'">
 		<br><br>
 		<li>Todo este processo de versionamento de um ficheiro (ou conjunto de ficheiros e diretórios)
 		poderá ser conseguido através dos comandos <em>git add</em> e <em>git commit-m "mensagem"</em>,
 		exemplificados abaixo:</li>
-		<!-- TODO: Screenshots do git add e git commit-m  -->
+		<br>
+		<img src="../img/geral/gitadd.png" alt="Exemplo de utilização do comando 'git add'">
+		<br>
+		<img src="../img/geral/commit.png" alt="Exemplo de utilização do comando 'git commit">
+
 		</ul>
 	</p>
-			<br><br>
+
 		<p>Funcionamento remoto do GIT: Quanto à parte <em>"remota"</em> do GIT, é de referir
 		a possibilidade de copiar um repositório, bem como criar ou alterar o conteúdo do mesmo.
 		Também existem as opções de versionar e submeter o código. Os comandos que envolvem
 		a fase <em>"online"</em> do GIT tratam-se do <em>git clone "url.git"</em> e <em>git push</em>,
 		apresentados em seguida:
-		<!-- TODO: Screenshots do git clone url e git push -->
+		<br><br>
+		<img src="../img/geral/gitclone.png" alt="Exemplo de utilização do comando 'git clone">
+		<img src="../img/geral/gitpush.png" alt="Exemplo de utilização do comando 'git push">
+		<br><br>
 		</p>
-		<br>
 		<h2 class="title">A possibilidade de criar <em>"Branches" no GIT</em></h2>
 		<br>
 		<p>O GIT permite a possibilidade de criar <em>"branches"</em> aquando do versionamento
@@ -158,7 +172,16 @@
 		Os comandos utilizados para o <em>"management"</em> dos <em>branches</em> são: <em>git branch "nome do branch"
 		(permite criar um novo <em>branch</em> no projeto)</em>, <em>git checkout "branch"</em> (mudança entre branches ou para o
 		<em>master</em>), <em>git branch</em> (permite listar todos os <em>branches</em>) e <em>git merge</em> (o acto de juntar
-		um <em>branch</em> a outro ou ao <em>master</em>), todos demonstrados em seguida:
+		um <em>branch</em> a outro ou ao <em>master</em>, sendo que este último possui a opção "--no-ff" que impede
+		o acto de <em>fast forward</em>). Todos estes processos são demonstrados em seguida:
+		<br><br>
+		<img src="../img/geral/gitbranchteste.png" alt="Exemplo da criação de um branch">
+		<br>
+		<img src="../img/geral/gitcheckout.png" alt="Exemplo da utilização do git checkout">
+		<br>
+		<img src="../img/geral/gitbranch.png" alt="Exemplo da listagem dos branches">
+		<img src="" alt="">
+
 		</p>
 
 	</section>
