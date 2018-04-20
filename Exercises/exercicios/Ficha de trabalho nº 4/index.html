@@ -2,7 +2,7 @@
 <head>
 
 	<!-- Exercício 1 -->
-	<!-- Including jQuery -->
+	<!-- Incluir jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
@@ -104,9 +104,13 @@
 									let inputElem = $('#' + label);
 									let tdElem = $('<td></td>').text( inputElem.val() );
 									trElem.append(tdElem);
+
+									// Exercício 4
+									// Limpar a caixa de texto
 									inputElem.val('');
 
 							});
+
 							tableElem.append(trElem);
 
 					}
