@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+	<!-- MetaTags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Folhas de estilo -->
+	<link rel="stylesheet" href="../css/layout.css" type="text/css">
+	<link rel="stylesheet" href="../css/resumo_materia_e_fichas_trabalho.css" type="text/css">
+
+	<!-- Bitter font family -->
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+	<!-- Bootstrap CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Ionic icons CDN -->
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<!-- Título da página -->
+	<title>Portfólio Web Design II | Ficha de trabalho nº 4 - jQuery</title>
+</head>
+
+<body>
+
+	<!-- Ficha de trabalho nº 4 -->
+
+	<!-- Background do tema ficha de trabalho nº 4 -->
+	<div class="background-image-15">
+
+		<!-- Seta de retorno à homepage -->
+		<a title="Regressar à página principal" href="../index.html" ><i class="ion-arrow-return-left"></i></a>
+
+		<div class="tema-title">
+			<span class="border">
+						Ficha de trabalho nº 4 - jQuery
+				</span>
+		</div>
+	</div>
+
+	<!-- Secção "Ficha de trabalho nº 4" -->
+	<section class="section section-light section_ficha">
+		<h2 class="title">Resolução e análise à ficha de trabalho nº 4</h2>
+		<br>
+
+		<p>Documento pdf associado: <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/49367/mod_resource/content/1/Ficha%204.pdf">Ficha de trabalho nº 4</a></p>
+		<p>
+			A quarta ficha de trabalho realizada teve como principal aliciante o facto de introduzir
+			a extensão/biblioteca de JavaScript <a target="_blank" href="../temas_abordados/tema_jquery.html">jQuery</a>.
+			Tratou-se de uma ficha de trabalho idêntica à sua anterior, excepto no facto de
+			agora o conteúdo programado ser criado utilizado a filosofia jQuery "write less, do more". Foi uma
+			ficha de trabalho que sem sombra de dúvida me ajudou a ver a magia desta biblioteca em ação e demonstrou-me
+			particularmente o quão mais fácil é escrever código JavaScript utilizando-a.
+		</p>
+
+		<p><strong>Destaques a salientar:</strong></p>
+		<ul>
+			<li>No início do enunciado foi dado um exemplo de um documento/layout a partir
+			do qual seriam realizados os exercícios pedidos;</li>
+			<li>As alíneas culminavam numa tabela e nela deveriam ser escritos dados
+			em caixas respetivas, correspondendo estes a labels próprios;</li>
+			<li>Por fim, e tal como na <a target="_blank" href="ficha_trabalho_2.html">ficha de trabalho nº 2</a> e <a target="_blank" href="ficha_trabalho_3.html">ficha de trabalho nº 3</a>, procedi ao versionamento
+			através do GIT;</li>
+			<li>Poderia ser consultada a documentação jQuery presente online.</li>
+		</ul>
+
+		<hr>
+
+		<p><strong>Documento original sugerido no início da ficha de trabalho:</strong></p>
+		<img src="../img/geral/exemplo_doc_jquery.png" alt="Documento original sugerido no início da ficha de trabalho">
+		<br><br>
+
+		<hr>
+
+		<p><strong>Exercício 1:</strong> Inclua a biblioteca jQuery no documento.</p>
+		<p><strong>Resolução:</strong></p>
+		<img src="../img/geral/incluirjquery.png" alt="Inclusão de jQuery no documento">
+		<br><br>
+
+		<ul>
+			<li>Utilizar o CDN que a API da Google fornece, incluí a biblioteca jQuery no ficheiro
+			HTML, procedendo assim à resolução do exercício 1.</li>
+		</ul>
+
+		<hr>
+
+		<p><strong>Exercício 2:</strong> Escreva programaticamente, com suporte de jQuery,
+		um documento HTML que:</p>
+		<ul>
+			<li>a. Contenha três <strong>labels</strong> e respetivas caixas de texto para
+			inserção de <strong>nome</strong>, <strong>sobrenome</strong> e <strong>idade</strong>,
+			com um botão final com o texto "Guardar":</li>
+		</ul>
+
+		<p><strong>Resolução:</strong></p>
+
+		<p>Primeiramente, fui introduzido a uma boa prática que se deve ter sempre em conta aquando do carregamento
+		da biblioteca jQuery e das variadas formas em que é possível fazer este processo, falarei disso e da resolução
+		do exercício propriamente dita em seguida, tendo em conta que o objetivo, tal como no resto da ficha de trabalho,
+		é exatamente o mesmo da ficha anterior (facto já referido na introdução):</p>
+
+		<img src="../img/geral/ficha4-exercicio2.png" alt="Resolução do exercício 2 da ficha de trabalho nº4">
+		<br><br>
+
+		<ul>
+			<li>Como já referi, fui introduzido às boas práticas de carregamento de jQuery, sendo apresentado
+			à forma menos comum e abreviada de fazê-lo (a que não se encontra <em>commented out</em>) e também
+			à forma mais comum de praticar a boa prática. Essencialmente, é uma convenção começar a codificar utilizando
+			a biblioteca carregando a página antes que qualquer código jQuery seja utilizado:</li>
+			<br>
+			<ul>
+				<li>Ambas as formas/sintaxes de utilização da "boa prática" referida garantem que a página seja carregada
+				antes de qualquer interação com a mesma, de modo a impedir "conflitos" ou problemas que advêm da tentativa
+				de interação com elementos que já não se encontram presentes, por exemplo;</li>
+				<br>
+				<li>Como se pode notar pela forma mais popular de uso desta boa prática (a segunda que apresento no exercício),
+				nota-se pelas palavras-chave "document" e "ready" que é garantido que a página já se encontra carregada;</li>
+				<br>
+				<li>A partir daí nota-se a definição de uma função e dentro do <em>scope</em> dessa função todo o código jQuery
+				será posteriormente escrito.</li>
+			</ul>
+			<br>
+
+			<li>É, então, criada uma variável chamada body que irá corresponder ao uso do seletor jQuery ($)
+			sobre o elemento body;</li>
+
+			<br>
+			<li>É também criado um array, tal como na ficha de trabalho anterior, denominado de "labels", que irá conter
+			as <em>strings</em> "Nome", "Sobrenome" e "Idade";</li>
+			<br>
+
+			<li>É utilizada a versão "for... of..." do jQuery, que se denomina pela sintaxe "$.(each)", iterador
+			no qual é utilizado o array em questão (labels) e a função <em>callback</em> (esta recebendo
+			como parâmetros "index" e "label");</li>
+			<br>
+
+			<li>Em seguida são criadas as labels:</li>
+			<br>
+			<ul>
+				<li>Primeiramente é criada uma variável denominada de "labelElem" e a ela é atribuído um elemento
+				"label", criado com o auxílio do seletor jQuery e que recebe como atributo, identificado por "attr()":
+				<br><br>
+				<ul>
+					<li>O próprio atributo ('for');</li>
+					<br>
+					<li>O valor (label).</li>
+				</ul>
+				<br>
+				<li>Finalmente, é acrescentado o conteúdo do label à variável através do elemento ".text()";</li>
+				<br>
+				<li>Sendo posteriormente acrescentado ao body o "labelElem" através do método jQuery "append()".</li>
+			</li>
+		</ul>
+		<br>
+	</ul>
+
+		<ul>
+			<li>Após a criação das labels, são criados os inputs, seguindo praticamente o mesmo processo de criação das labels:</li>
+			<br>
+			<ul>
+				<li>É criada a variável "inputElem" que recebe como valor o "input" criado que por sua vez receberá como atributo "id"
+				cada label em questão (valor);</li>
+				<br>
+				<li>Em seguinda, ocorre a junção do "inputElem" ao body através do método "append()".</li>
+			</ul>
+		</ul>
+
+			<br>
+			</ul>
+			<br>
+			<li>Finalmente,é criado o "buttonElem" seguindo o mesmo paradigma de criação de elementos jQuery:
+			<br><br>
+			<ul>
+				<li>Ao elemento "buttonElem" é atribuído o botão criado com o seletor e também recebe como atributo
+				o "id" e como valor do atributo "btn_guardar". Por fim, como texto, o botão irá conter a <em>string</em>
+				"Guardar", que recebe através do método ".text()";</li>
+				<br>
+				<li>Ocorre por fim o método append(), que irá juntar o elemento do botão ao body do documento.</li>
+			</ul>
+
+		<hr>
+
+			<ul>
+				<li>b. Contenha uma tabela com o seguinte header:</li>
+				<ul>
+					<li>i. "nome", "sobrenome", "idade".</li>
+				</ul>
+			</ul>
+
+		<p><strong>Resolução:</strong></p>
+
+		<p>Novamente a facilidade de escrever código JavaScript com recurso ao jQuery veio ao de cima
+		na criação da tabela.</p>
+
+		<img src="../img/geral/jquery2b.png" alt="Criação de uma tabela (exercício 2b) da ficha de trabalho nº 4)">
+		<br><br>
+
+		<ul>
+			<li>Foi, inicialmente, criada a tabela e os seus respetivos elementos:
+				<br><br>
+				<ul>
+					<li>Guardando na variável "tableElem" o elemento "table" criando com o auxílio do seletor;</li>
+					<br>
+					<li>Atribuíndo à variável "trElem" o "tr" (table row) criado também com o auxílio do seletor jQuery.</li>
+				</ul>
+		</li>
+		<br>
+		<li>Foi, em seguida, criado o header com o array usado anteriormente:
+			<br>
+			<ul>
+				<br>
+				<li>Utilizando o iterador de arrays jQuery "$(each)" que afetava tanto o array "labels",
+				como também uma função que continha o "índice" e o elemento "label" como seus argumentos.</li>
+				<br>
+				<li>Dentro do iterador foi criado um elemento denominado de "thElem", criado com auxílio do seletor
+				e que possui como texto a <em>string</em> contida em cada <em>label</em>.</li>
+			</ul>
+			<br>
+		</li>
+
+		<li>No final da resolução da alínea foi utilizado o método jQuery "append()" tanto para proceder à
+		junção do "trElem" ao "tableElem" como para a junção do "tableElem" ao "body".</li>
+
+		<br>
+
+		<p><strong>Nota: </strong> Foi destacado que seria necessário compreender a lógica
+		das tabelas HTML para proceder à realização deste tipo de exercício, daí o pequeno
+		comentário que se encontra abaixo do exercício resolvido.</p>
+
+		<hr>
+
+			<ul>
+			<li>c. Crie um array "<strong>pessoas</strong>" composto por objetos pares
+			chave-valor do header da tabela:</li>
+			</ul>
+
+	 <p><strong>Resolução:</strong></p>
+
+	 <p>Destaque para o facto da resolução deste exercício ser idêntica à da ficha anterior,
+	 o que torna-se óbvio devido ao facto da definição de um objeto ser comum tanto em JavaScript
+ 	 como utilizando a biblioteca jQuery.</p>
+
+	 <img src="../img/geral/ficha4array.png" alt="Resolução da alínea c) do exercício 1 da ficha de trabalho nº 3">
+	<br><br>
+
+	 <ul>
+		 <li>Em primeiro lugar, foi criada uma variável denominada de "pessoas";</li>
+		 <br>
+		 <li>De seguida, utilizando os parêntesis retos e dentro dentro deles as "chavetas",
+		 foram criados os objetos pares chave-valor, sendo que criei três diferentes objectos,
+		 separados por vírgula.</li>
+		 <br>
+	 </ul>
+
+	 <hr>
+
+		<ul>
+			<li>d. Preencha a tabela com os valores do array "<strong>pessoas</strong>":</li>
+		</ul>
+	</ul>
+		<br>
+
+		<p><strong>Resolução:</strong></p>
+		<p>A ficha de trabalho chegou então à fase em que seria necessário preencher a tabela com os valores
+		que se encontravam dentro do array "pessoas", utilizando jQuery.</p>
+		<img src="../img/geral/2djquery.png" alt="Resolução do exercício 2d) da ficha de trabalho nº4">
+		<br>
+		<ul>
+			<li>Utilizando inicialmente o iterador de arrays (na sua versão jQuery), passando-o como argumentos
+			o array "pessoas" e uma função que recebia como parâmetros o "index" e o objeto "pessoa". Foi definido que:
+			<br>
+			<br>
+			<ul>
+				<li>Em cada iteração seria criado um elemento denominado de "trElem" e este receberia como valor um "tr" (table row), criado com
+				o seletor jQuery;</li>
+				<br>
+
+				<li>Esse elemento "trElem" seria "juntado" ao "body" através do método "append()";</li>
+				<br>
+				<li>Ainda dentro do <em>scope</em> do iterador jQuery seria utilizado outro iterador que receberia
+				desta feita o objeto "pessoa" e uma função que recebia como argumentos a "chave" e o "valor" associados ao objeto;</li>
+				<br>
+
+				<li>Dentro desse segundo iterador jQuery seria criado um "td" (table data) que iria ser colocado numa variável "tdElem"
+				e receberia como texto respetivo a string que correspondesse à variável "valor";</li>
+				<br>
+
+				<li>Por fim, o "tdElem" criado seria adicionado ao "trElem".</li>
+
+			</ul>
+
+		</li>
+
+	</ul>
+
+		<hr>
+
+		<p><strong>Exercício 3:</strong> Altere o documento HTML do exercício 1 para que
+		a inserção de dados na tabela ocorra aquando do clique no botão "Guardar":</p>
+
+		<p><strong>Resolução:</strong></p>
+
+		<p>Tal como na ficha de trabalho nº 3, foi criada uma função que guardaria posteriormente
+		os dados preenchidos na tabela aquando do clique, desta feita utilizando jQuery.</p>
+
+		<img src="../img/geral/guardarjquery.png" alt="Função guardar criada no exercício 3 da ficha de trabalho nº 4">
+
+		<br>
+
+		<ul>
+			<li>Primeiramente foi utilizada a sintaxe que permite definir uma função e escrever código
+			no corpo da mesma. Sendo esta criada com as palavras "function guardar() {}", sendo esta parte
+			do exercício igual à da ficha de trabalho da introdução ao <em>Vanilla</em> JavaScript.</li>
+			<br>
+			<li>Foi criado também um objeto "pessoa", encontrando-se este inicialmente vazio;</li>
+			<br>
+			<li>Seguidamente, foi criada uma variável denominada de "inputElem", à qual viria a ser
+			atribuído o valor conseguido através do seletor jQuery: um símbolo de cardinal ("#") mais o
+			valor presente em "label";</li>
+			<br>
+			<li>Foi também criado um elemento "td" (table data), o que viria a ser concretizado
+			através do método ".val()", utilizado na variável "inputElem";</li>
+			<br>
+
+			<li>Por fim, o elemento "tdElem" foi adicionado ao "trElem", utilizando o método jQuery
+			"append()";</li>
+			<br>
+
+			<li>Após a iterador em questão, é de notar que o "trElem" foi por sua vez adicionado
+			ao elemento da tabela;</li>
+			<br>
+			<li>De resto, e de modo a finalizar o exercício, a função "guardar()" foi chamada
+			aquando do clique no botão, utilizando um "addEventListener" na sua versão jQuery,
+			chamando a função após o evento de "click" no "buttonElem".</li>
+
+		<hr>
+
+		<p><strong>Exercício 4:</strong> Altere o programa para limpar as caixas de texto
+		após o clique no botão:</p>
+
+		<p><strong>Resolução:</strong></p>
+		<p>Novamente, tal como na ficha de trabalho anterior, foi pedido que a função
+		"guardar()" fosse extendida com um extra, pelo que as caixas de texto seriam
+		esvaziadas após um clique no botão.</p>
+		<img src="../img/geral/jquerylimpar.png" alt="Exercício 4 da ficha de trabalho nº 4">
+		<br><br>
+
+		<li>Utilizando o método "val()", tornou-se possível aceder ao valor contido
+		no "inputElem" e definir o mesmo como uma string.</li>
+
+		<hr>
+
+		<!-- Considerações finais -->
+		<p><strong>Considerações finais:</strong> Tratando-se esta ficha de trabalho
+		basicamente de uma repetição da sua anterior, pelo menos em termos dos exercícios propostos,
+		foi possível comparar a versão <em>Vanilla</em> da linguagem (presente na <a target="_blank" href="../fichas_trabalho/ficha_trabalho_3.html">anterior ficha</a>),
+		com a versão jQuery (presente nesta ficha). O facto é que foram confirmadas as expetativas
+		óbvias de que a utilização da biblioteca jQuery torna a programação em JavaScript totalmente
+		mais facilitada e produtiva, sem qualquer sombra de dúvida. Salvaguardando qualquer depedência
+		desta extensão, pois é simplesmente fulcral entender em primeiro lugar a forma primitiva
+		de escrever código na linguagem pois, sem o fazer, torna-se impossível entender realmente o JavaScript.
+		Voltando, de resto, ao mundo "mágico" da biblioteca jQuery, esta ficha de trabalho trouxe-me
+		inúmeros benefícios quanto à compreensão da jQuery e garantiu-me com toda a certeza
+		que irei utilizar a mesma possivelmente em todos os meus futuros projetos, até porque utilizo constantemente
+		a <em>framework</em> Bootstrap e esta traz jQuery no seu "pacote" de vantagens. Rápida, eficaz e flexível,
+		são os três adjetivos que possuo para caracterizar jQuery após a resolução dos exercícios descritos
+		acima. </p>
+
+	</section>
+
+</body>
+</html>
