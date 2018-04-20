@@ -6,7 +6,6 @@ body, html {height: 100%; font-size: 16px; font-family: 'Bitter', serif; margin:
 /* HOMEPAGE */
 
 /* Navbar */
-
 .ion-navicon-round {font-size: 45px; color: #F4F4F4;}
 
 .navbar {
@@ -246,6 +245,13 @@ body, html {height: 100%; font-size: 16px; font-family: 'Bitter', serif; margin:
 .ion-ios-world-outline {color: #54ff05;}
 .ion-document-text {color: #00447c;}
 .ion-document {color: #03043c;}
+
+/* Contactos */
+.contactos_container {display: flex; justify-content: flex-end;}
+
+
+.ion-social-facebook {display: flex; justify-content: flex-end; font-size: 25px; margin-right: 15px;}
+.ion-social-github-outline {display: flex; justify-content: flex-end; font-size: 25px; color: #192A56;}
 
 /* MEDIA QUERIES */
 
