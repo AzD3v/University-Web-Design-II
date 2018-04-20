@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 	<!-- Título da página -->
-	<title>Portfólio Web Design II | Ficha de trabalho nº 1 - Introdução ao JavaScript</title>
+	<title>Portfólio Web Design II | Ficha de trabalho nº 5 - AJAX</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 	<!-- Ficha de trabalho nº 5 -->
 
 	<!-- Background do tema ficha de trabalho nº 5 -->
-	<div class="background-image-13">
+	<div class="background-image-16">
 
 		<!-- Seta de retorno à homepage -->
 		<a title="Regressar à página principal" href="../index.html" ><i class="ion-arrow-return-left"></i></a>
@@ -47,86 +47,196 @@
 		<h2 class="title">Resolução e análise à ficha de trabalho nº 5</h2>
 		<br>
 
-		<p>Documento pdf associado: <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/47329/mod_resource/content/1/Ficha%205.pdf">Ficha de trabalho nº 5</a></p>
+		<p>Documento pdf associado: <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/50003/mod_resource/content/1/Ficha%205.pdf">Ficha de trabalho nº 5</a></p>
 
 		<p>A última ficha de trabalho possui uma importância termenda no aplicação
 		da ideia para o catálogo de música pedido no projeto de grupo. Esta ficha de trabalho
 		ensina a utilizar a técnica AJAX de modo a obter uma pesquisa personalizada e filtrada
-		utilizando para isso a API do website "musicbrainz". 
+		utilizando para isso a API do website "MusicBrainz".
 		</p>
 		<p><strong>Destaques a salientar:</strong></p>
 		<ul>
-			<li>Na resolução da ficha, foi patente que poderiam ser utilizados os vários
-			métodos disponíveis pelos objetos de cada tipo (tal como ".length", ".split(''), entre outros"),
-			o que visava facilitar a busca da solução relativa aos problemas apresentados;</li>
+			<li>A implementação da técnica AJAX na ficha de trabalho foi conseguida
+			com auxílio da biblioteca JavaScript <a href="../temas_abordados/tema_jquery.html">jQuery</a>;</li>
 			<br>
-			<li>Há que salientar ainda que o procedimento introdutório à linguagem teve
-				como princípio a escrita de código JavaScript na sua versão
-				<a target="_blank" href="../temas_abordados/tema_javascript.html" class="links_fichas">
-				<em>Vanilla</em></a>, isto é, na sua face mais pura, sem auxílio externo.
-				Só mais tarde nos foi apresentada a extensão/biblioteca mais popular da linguagem,
-				<a target="_blank" href="../temas_abordados/tema_jquery.html">jQuery</a>, sendo seguida uma cronologia de ensino lógica;</li>
-				<br>
-				<li>De resto, tal como nesta e nas seguintes fichas de trabalho, utilizei o git para criar
-				<em>branches</em> à medida que resolvia cada uma das alíneas, acabando no fim por
-				fazer <em>merge</em> de todas a branches no "ramo principal", o <em>master</em>.</li>
+			<li>A ficha de trabalho foi divida entre dois documentos distintos, mas associados. Um tratava-se
+			do documento HTML onde a funcionalidade "estática" de pesquisa viria a ser implementada. O outro
+			era um documento exterior JavaScript que continha todo o código jQuery utilizado para lograr a
+			técnica AJAX;</li>
+			<br>
+			<li>Tal como na <a target="_blank" href="ficha_trabalho_4.html">ficha de trabalho nº 4</a>, a documentação online
+			da biblioteca jQuery poderia ser consultada;</li>
+			<br>
+			<li>Por fim, tal como nas restantes fichas de trabalho, o Sistema de Controlo de Versões Git deveria
+			ser utilizado em cada alínea da ficha, sendo desenvolvidas diferentes branches em cada uma destas. No final
+			deveria ser feito <em>merge</em> de todo o projeto na <em>branch</em> <em>master</em>.</li>
 	  </ul>
 
 		<hr>
 
-		<p><strong>Exercício 1:</strong> Escreva um programa em JavaScript que:</p>
-
-		<ul>
-			<li>a. Compare dois números e que apresente o maior.</li>
-			<ul>
-				<li>Ex: 123, 321</li>
-				<li>Resultado: 321</li>
-			</ul>
-		</ul>
+		<p><strong>Exercício 1:</strong> Inicie um novo repositório e faça o versionamento inicial:</p>
 		<p><strong>Resolução:</strong></p>
-		<p>Utilizando as estruturas de controlo e os comparadores da linguagem JavaScript,
-		procedi à resolução do exercício 1 da seguinte forma:</p>
-		<img src="../img/geral/ficha2-1.png" alt="Resolução da alínea a) do exercício 2 da ficha de trabalho nº 2">
-		<br><br>
-		<li>Passando a explicar a resolução: Foram criadas duas variáveis (do tipo <em>number</em>)
-			com recurso à palavra reservada "<strong>let</strong>", uma que continha o número 123 e outra
-		o número 321;</li>
-		<li>Em seguida, foram comparadas as duas variáveis e presumido que se a variável
-		"a" fosse maior que a "b", seria essa a imprimida para o ecrã, caso contrário ("else"),
-		seria a "b" a maior;</li>
-		<li>Verificou-se, finalmente, a partir da consola do browser, que a variável que
-		possuía o número mais alto tratava-se da "b".</li>
+		<p>Procedi ao versionamento inicial da ficha de trabalho da forma que me foi ensinada ao longo
+		da cadeira e já utilizada por mim entretanto, utilizando os seguintes comandos, por ordem:</p>
+		<ul>
+			<li>$ git init</li>
+			<li>$ git config user.name "Paulo Cunha"</li>
+			<li>$ git config user.email "paulo_cunha1997@outlook.pt"</li>
+			<li>$ git add .</li>
+			<li>$ git commit -m "Commit inicial na ficha de trabalho nº 5"</li>
+		</ul>
+
+		<br>
+		<ul>
+		<li>Iniciei o versionamento utilizando o comando "git init", procedendo em seguida à configuração
+		local do meu nome de utilizador e email. Utilizando o comando "git add ." transformei o estado de todos os ficheiros do diretório
+		para <em>modified</em>. De seguida, realizei o <em>commit</em> inicial do exercício.</li>
+		</ul>
 
 		<hr>
 
+		<p><strong>Exercício 2:</strong> Escreva uma página que contenha um label, uma caixa de input de texto
+		e um botão. Estes elementos deverão ser usados para a funcionalidade de pesquisa do artista:</p>
+
+		<p><strong>Resolução:</strong></p>
+		<p>Seguindo atentamente o que havia acabado de ser perdido no enunciado, procedi à estrutura/layout
+		do documento HTML onde a funcionalidade de pesquisa viria a ser implementada, criando os elementos
+		dentro de uma "div" respetiva:</p>
+
+		<img src="../img/geral/ficha5-exercicio2.png" alt="Layout dos elementos HTML implementados para a funcionalidade de pesquisa">
+		<br><br>
+
 		<ul>
-			<li>b. Compare três número e apresente-os por ordem descrescente.</li>
+			<li>Foi criada em primeiro lugar uma label destinada ao campo do artista, apresentando "Artist"
+			como seu conteúdo;</li>
+			<br>
+			<li>Em segundo lugar foi concebida uma caixa input que iria ser o local onde o artista/banda viria
+			a ser pesquisa posteriormente. Este input era do tipo "text" e possuía como "id" o valor "artist";</li>
+			<br>
+			<li>Por fim, a estrutura HTML foi finalizada com um botão com o atributo id "search"
+			 e "Search!" como conteúdo "interior" do mesmo.</li>
+		</ul>
+
+		<hr>
+
+		<p><strong>Exercício 3:</strong> Com o auxílio de jQuery implemente AJAX para fazer o pedido ao serviço
+		MusicBrainz.</p>
+		<p><strong>Resolução:</strong></p>
+		<p>Procedi ao pedido à API do catálogo "MusicBrainz" da forma que se segue:</p>
+		<img src="../img/geral/ajax1.png" alt="Construção do url que iria conter o pedido ao serviço MusicBrainz">
+		<br><br>
+
+		<ul>
+			<li>Iniciando o processo com a boa prática que aprendi durante a introdução à biblioteca jQuery, procedi
+			ao carregamento do documento antes de qualquer codificação;</li>
+			<br>
+			<li>Em seguida, e dentro do <em>scope</em> da função utilizada para o carregamento já referido,
+			procedi à seleção do id "#search", pertencente ao botão implementado no documento HTML. Utilizei uma função
+			"anónima" associada ao id selecionado, onde:</li>
+			<br>
 			<ul>
-				<li>Ex: 20, -5, 15</li>
-				<li>Resultado: 20, 15, -5</li>
+				<li>Foi lido o valor da caixa de input, definindo uma variável denominada de "artist" e a ela
+				sendo atribuído o valor presente no id selecionado ("artist"). Isto foi conseguido através
+				do método "val()". Foi imprimido para o ecrã o artista pesquisado, de modo a confirmar se o pedido
+				estaria a ser efetuado de forma correta;</li>
+				<br>
+				<li>Foi construído o url que possuía o valor relativo à caixa de input, procedendo à criação
+				de uma variável url, que, concatenando o url original com a variável que continha o artista
+				desejado, criando um documento em formato JSON no final;</li>
+				<br>
+				<li>Foi utilizada a função "encodeURI()", que tem como objetivo transformar em código próprio
+				os vários caracteres especiais.</li>
+			</ul>
+			<br>
+		</ul>
+
+		<hr>
+
+		<p><strong>Exercício 4:</strong> Apresente os resultados numa tabela:</p>
+		<p>Prosseguindo a ficha de trabalho, foi pedido em seguida que se apresentasse
+		os resultados do pedido ao serviço MusicBrainz numa tabela própria.</p>
+		<img src="../img/geral/tabelaajax.png" alt="Criação de uma tabela com os resultados do pedido ao serviço MusicBrainz">
+		<br>
+		<img src="../img/geral/ajaxtbody.png" alt="Criação de uma tabela com os resultados do pedido ao serviço MusicBrainz">
+		<br><br>
+
+		<ul>
+			<li>Primeiramente, tal como na ficha de trabalho nº 4, foi criada uma tabela utilizando o seletor jQuery,
+			guardando esse valor na variável "tableElem", sendo de seguida adicionado ao body do documento. Um processo
+			similar foi repetido para o elemento "thead" e "tr", sendo estes adicionados por sua vez ao "tableElem"
+			e ao "thead", respetivamente;</li>
+			<br>
+			<li>Foi, em seguida, criado um array com os valores "Nome", "Score" e "Type", sendo que estes seriam o header
+			da tabela e foram distribuídos posteriormente pela mesma utilizando o método "$(each)":
+			<br><br>
+			<ul>
+				<li>O referido método recebeu como argumentos o array "labels" e uma função, sendo que a função
+				possuía como parâmetros o índice ("i") do elemento label e o próprio elemento "label";</li>
+				<br>
+				<li>Em seguida foi adicionado ao elemento "tr" o elemento "th";</li>
+				<br>
+				<li>Finalmente, foi criado o elemento tbodyElem e adicionado ao body.</li>
+			</ul>
+		</li>
+	</ul>
+
+		<img src="../img/geral/ajax2.png" alt="Criação de uma tabela com os resultados do pedido ao serviço MusicBrainz">
+		<br><br>
+		<ul>
+			<li>Foi utilizado então o iterador de arrays "for... of...",
+			que iterou sobre cada resposta ao pedido pelo "artist", retornando uma linha (tr), para cada
+			um destes;</li>
+			<br>
+			<li>Utilizando os métodos "append()" e "text()" foram adicionados os td's (table data) e
+			escrito dentro dos elementos o valores retornados a partir do array "artist" ("name", "score" e "type"),
+			respetivamente;</li>
+			<br>
+			<li>Por fim, e para finalizar o exercício 4, foi adicionado ao elemento "tbodyElem" a linha/tr,
+			criada anteriormente.</li>
+		</ul>
+
+		<hr>
+
+		<p><strong>Exercício 5:</strong> Implemente uma caixa de filtro de resultados.</p>
+		<p>Começando por modificar o HTML de modo a conseguir-se implementar a funcionalidade
+		que permitira filtrar os resultados da pesquisa, criei a seguinte <em>markup</em>, novamente
+		dentro de um elemento "div":</p>
+		<img src="../img/geral/ficha5-5.png" alt="Markup do filtro de resultados do exercício 5 da ficha de trabalho nº 5">
+		<br><br>
+		<ul>
+			<li>Criei uma label que se destinava a ligar-se com o id "filter" e possuia como conteúdo a palavra "Filtro";</li>
+			<br>
+			<li>Em seguida procedi à concepção de um input do tipo "text" com o id "filter" já referido, tratando-se
+			esta da caixa de texto que viria a ser utilizada como filtro da pesquisa implementada anteriormente.</li>
+		</ul>
+
+		<img src="../img/geral/filterajax.png" alt="Criação do filtro de pesquisa para o exercício 5 da ficha de trabalho nº 5">
+		<br><br>
+		<ul>
+			<li>Explicando o filtro implementado por fases:</li>
+			<br>
+			<ul>
+				<li>No início é selecionado o elemento do id "filter" e utilizado um método denominado de "on()", de modo
+				a permitir a escolha de uma tecla a ser pressionada ("keyup"), neste caso, o que permitira filtrar os resultados
+				utilizando o teclado;</li>
+				<br>
+				<li>Continuando no <em>scope</em> da função da tecla "keyup", é criada uma variável denominada de "value", que viria
+				a conter o valor do "this", isto é, o elemento ao qual se referia, conseguido através do método "val()" e que viria
+				a ser transformado para minúsculas, utilizando a função "toLowerCase()";</li>
+				<br>
+				<li>Em seguida o filtro foi implementado propriamente, selecionando vários elementos relativos à tabela ("tableElem, tbodyElem e tr").
+				aplicando o método "filter()" em seguida:</li>
+				<br>
+				<ul>
+					<li>Dentro do método "filter()" foi definida uma função que iria conter como elementos o índice "i" da linha ("row") e a própria
+					linha, sendo nessa precisa função aplicado um método "toogle()", que após ser selecionada a linha, permitia "esconder" ou "mostrar"
+					os filtros. Sendo que esta funcionalidade foi conseguida fazendo uso, novamente, do método "toLowerCase()" que, após ser
+					obtido o elemento textual, transformava para minúsculas os elementos presentes no filtro e seguia uma lógica associada
+					ao valor presente no índex, lógica que definia que o valor associado teria que ser maior que -1.</li>
+				</ul>
 			</ul>
 		</ul>
 
-		<p><strong>Resolução:</strong></p>
-		<p>Sabendo de antemão que o segundo exercício era mais exigente que o primeiro no que
-		às estruturas de controlo diz respeito, procedi à seguinte resolução, a qual divido por partes
-		na respetiva explicação:</p>
-		<img src="../img/geral/ficha2-b1.png" alt="Resolução da alínea b) do exercício 2 da ficha de trabalho nº 2">
-		<br><br>
-		<li>São criadas quatro variáveis: as três primeiras continham 3 números
-		que não se encontravam ordenados, a última variável iria conter o resultado final;</li>
-		<li>Numa primeira fase e, tal como no restante algoritmo, são utilizadas duas estruturas de controlo "if"
-		que irão definir a posição de cada uma das variáveis no final do mesmo. Estas fazem-no colocando como hipótese
-		a posição de cada uma das variáveis, o que torna o processo algo demoroso, mas muito bom para aprender
-		estes princípios básicos da programação;</li>
-
-		<img src="../img/geral/ficha2-b2.png" alt="Resolução da alínea b) do exercício 2 da ficha de trabalho nº 2">
-		<img src="../img/geral/ficha2-b3.png" alt="Resolução da alínea b) do exercício 2 da ficha de trabalho nº 2">
-		<br><br>
-		<li>Utilizando a palavra "else if" são colocadas as outras hipóteses de resolução do algoritmo e,
-		finalmente, o resultado é imprimido para a consola.</li>
-
-		<hr>
 
 	</section>
 
