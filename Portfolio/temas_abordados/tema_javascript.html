@@ -32,7 +32,7 @@
 
 		<!-- Seta de retorno à homepage -->
 		<a title="Regressar à página principal" href="../index.html" ><i class="ion-arrow-return-left"></i></a>
-		
+
 			<div class="tema-title">
 				<span class="border">
 						Linguagem de Programação JavaScript
@@ -42,26 +42,40 @@
 
 	<!-- Secção Linguagem de Programação JavaScript -->
 	<section class="section section-light">
+
+		<!-- Título principal da página -->
 		<h2 class="title">Introdução ao JavaScript</h2>
+
 		<br>
+
 		<p>
+			<!-- O que é a ECMAScript? -->
 			<strong>O que é a ECMAScript?</strong>
+
 			<br>
+
 			<ul>
 				<li>ECMAScript trata-se de uma norma que especifica as propriedades de uma linguagem de <em>scripting</em>,
 				isto é, uma linguagem interpretada;</li>
+
 				<li>O objetivo desta norma trata-se de fornecer detalhes e orientações para o desenvolvimento
 				de uma linguagem interpretada compatível com o norma já referida;</li>
-				<li>Esta norma possui várias versões(ES5, ES6, ES7, entre outras) e o suporte
-				de cada uma das versões varia consoante as implementações distintas dos próprios <em>browsers</em>;</li>
+
+				<li>Esta norma possui várias versões (ES5, ES6, ES7, entre outras) e o suporte
+				de cada uma das versões varia consoante as implementações distintas dos próprios browsers;</li>
+
 				<li>O JavaScript é uma linguagem interpretada baseada na especificação ECMAScript.</li>
 			</ul>
 		</p>
+
 		<br>
+
 		<p><strong>Interpretador de JavaScript (JavaScript <em>engine</em>):</strong>
+
 			<ul>
 				<li>Trata-se de um programa que compreende e executa código proveniente da linguagem JavaScript;</li>
-				<li>Estando tipicamente embutido em <em>web browsers</em>, também é possível executar JavaScript do lado
+
+				<li>Estando tipicamente embutido em web browsers, também é possível executar JavaScript do lado
 				do servidor, mesmo tendo em conta o facto do lado do cliente ser a principal área de ação da linguagem.
 				No caso do google chrome, é utilizado o interpretador V8, no Mozilla Firefox é utilizado o <em>SpiderMonkey</em>,
 				o <em>Chakra</em> no Microsoft Edge e o <em>JavaScriptCore</em> no Safari/Webkit.
@@ -70,26 +84,32 @@
 		</p>
 
 		<p>
+
 			<strong>JavaScript Runtime:</strong>
 			<ul>
 				<li>É essencialmente o ambiente em que o código JavaScript é interpretado
 				pelo interpretador de JavaScript em tempo de execução (como por exemplo, este providencia
-				o acesso ao objeto que permite a manipulação de HTML no <em>browser</em>, sendo que
-				também providencia o acesso ao objeto que permite a manipulação da própria janela do <em>browser</em>);</li>
+				o acesso ao objeto que permite a manipulação de HTML no browser, sendo que
+				também providencia o acesso ao objeto que permite a manipulação da própria janela do browser);</li>
 			</ul>
 		</p>
 
 		<p>A linguagem JavaScript é uma linguagem "multi-paradigma", o que significa que permite tanto
-		Programação Funcional como Programação Orientada a Objetos (OOP)
+		Programação Funcional como Programação Orientada a Objetos (OOP).
 		</p>
 
 		<br>
+
+		<!-- Sintaxe básica da linguagem JavaScript -->
 		<h2 class="title">Sintaxe básica da linguagem JavaScript</h2>
+
 		<br>
+
 		<p>Sendo de referir desde já que apresentarei obviamente diversos e variados exemplos da aplicação
-		da sintaxe e semântica desta linguagem de programação aquando dos meus resumos das fichas de trabalho
+		da sintaxe e semântica desta linguagem de programação aquando da minha análise às fichas de trabalho
 		efetuadas, mas irei aqui tentar descrever de forma sucinta os aspetos essenciais do JavaScript.</p>
-		<br>
+
+		<!-- Declarações JavaScript -->
 		<p><strong>Os programas em JavaScript são executados com declarações, como por exemplo:</strong>
 			<table class="table table-bordered table-hover">
 				<thead>
@@ -131,6 +151,7 @@
 		</p>
 		<br>
 
+		<!-- Todos os operadores da linguagem JavaScript -->
 		<p><strong>Operadores da linguagem JavaScript:</strong></p>
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -158,6 +179,8 @@
 		</table>
 
 		<br>
+
+		<!-- Operadores aritméticos da linguagem JavaScript -->
 		<p><strong>Todos os operadores aritméticos:</strong></p>
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -197,6 +220,7 @@
 		</table>
 		<br>
 
+		<!-- Operadores de atribuição da linguagem JavaScript -->
 		<p><strong>Todos os operadores de atribuição:</strong></p>
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -239,6 +263,7 @@
 		</table>
 		<br>
 
+		<!-- Operadores de comparação da linguagem JavaScript -->
 		<p><strong>Todos os operadores de comparação:</strong></p>
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -286,6 +311,7 @@
 		</table>
 		<br>
 
+		<!-- Operadores lógicos da linguagem JavaScript -->
 		<p><strong>Operadores lógicos:</strong></p>
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -309,6 +335,7 @@
 		</table>
 		<br>
 
+		<!-- Operadores binários da linguagem JavaScript -->
 		<p><strong>Operadores binários:</strong></p>
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -380,9 +407,10 @@
 		</table>
 		<br>
 
+		<!-- Tipos da linguagem JavaScript -->
 		<p><strong>Tipos da linguagem JavaScript:</strong></p>
 		<p>Os programas na linguagem JavaScript manipulam valores e esses valores
-		pertecem a um determinado tipo.</p>
+		pertecem a um determinado tipo, como se demonstra na tabela a seguir apresentada:</p>
 		<table class="table table-bordered table-hover">
 			<thead>
 				<th>Tipo</th>
@@ -421,10 +449,11 @@
 		</table>
 		<br>
 
+		<!-- JavaScript - Arrays -->
 		<p><strong>JavaScript - Arrays</strong></p>
 		<p>Arrays são essencialmente sequências de valores entre dois parêntesis retos "<strong>[]</strong>" e separados por
 		vírgulas. A contagem dos seus elementos começa no valor 0.</p>
-		<p><strong>Exemplo:</strong>var carros = ['Renault', 'Audi', 'BMW']</p>
+		<p><strong>Exemplo:</strong> var carros = ['Renault', 'Audi', 'BMW']</p>
 		<table class="table table-bordered table-hover">
 			<thead>
 				<th>Declaração associada ao array do exemplo</th>
@@ -447,6 +476,7 @@
 		</table>
 		<br>
 
+		<!-- Propriedades/funções associadas aos arrays na linguagem JavaScript -->
 		<p><strong>Algumas propriedades/funções associadas aos arrays (utilizando o exemplo anterior):</strong></p>
 		<table class="table table-bordered table-hover">
 			<thead>
@@ -474,6 +504,7 @@
 		</table>
 		<br>
 
+		<!-- Objetos da linguagem JavaScript -->
 		<p><strong>JavaScript - Objetos</strong></p>
 		<p>Objetos são estruturas "chave-valor" que se encontram entre parêntesis curvos "<strong>{}</strong>"
 		e, tal como nos arrays, são separadas por vírgula</p>
@@ -500,6 +531,7 @@
 		</table>
 		<br>
 
+		<!-- Estruturas de controlo da linguagem JavaScript -->
 		<h2 class="title">Estruturas de controlo da linguagem JavaScript</h2>
 		<br>
 		<p>Estruturas de controlo são utilizadas para controlar o <em>flow</em> do código,
@@ -553,6 +585,7 @@
 		<img src="../img/geral/for.png" alt="Exemplo do uso de um ciclo 'for'">
 
 		<br><br>
+
 		<ul>
 			<li>Dentro do "universo <em><strong>for</strong></em>" existem também os iteradores
 			de arrays e objetos <em><strong>for... of</strong></em> e <em><strong>for... in</strong></em>
@@ -566,6 +599,8 @@
 		<img src="../img/geral/forin.png" alt="Exemplo do uso de um ciclo 'for... in'">
 
 		<br><br>
+
+		<!-- JavaScript - Funções -->
 		<h2 class="title">JavaScript - Funções</h2>
 		<br>
 		<p>Em cada linguagem de programação, as funções possuem como objetivo obedecer
@@ -575,7 +610,7 @@
 		também ser passados argumentos que serão utilizadas no corpo de cada função
 		e há que ter a noção de que uma função poderá ou não retornar um valor.
 		Existe a possibilidade de passar um número de parâmetros/argumentos arbitrário
-		utilizando o operador <em><strong>... rest</strong></em> que traduzirá uma
+		utilizando o operador <em><strong>...rest</strong></em> que traduzirá uma
 		lista de argumentos presente num array. Funções poderão ser chamadas de diversas
 		formas, de forma comum, isto é, com o nome da função e parêntesis curvos:
 		"soma()" ou poderão ser chamadas dentro de um Event Listener (mais sobre este
@@ -595,6 +630,7 @@
 		<img src="../img/geral/arrow_function.png" alt="Exemplo de uma arrow function">
 		<br><br>
 
+		<!-- JavaScript - Depuração -->
 		<h2 class="title">JavaScript - Depuração</h2>
 		<br>
 		<p>Através da palavra reservada <em><strong>debugger</strong></em>, é possível
@@ -603,6 +639,7 @@
 		<img src="../img/geral/debugger.png" alt="Exemplo da palavra reservada debugger">
 		<br><br>
 
+		<!-- A integração do JavaScript em HTML -->
 		<h2 class="title">A integração do JavaScript em HTML</h2>
 		<br>
 		<p>Para integrar a linguagem JavaScript em HTML, é necessário utilizar
@@ -615,7 +652,11 @@
 		<img src="../img/geral/doc_externo.png" alt="Exemplo do uso do JavaScript a partir de um documento externo">
 		<br><br>
 
+		<!-- Formato JSON -->
 		<h2 class="title">De que se trata o formato JSON?</h2>
+
+		<br>
+
 		<p>Essencialmente, o formato JSON significa <strong>J</strong>ava<strong>S</strong>cript
 		<strong>O</strong>bject <strong>N</strong>otation. Acerca do formato JSON:</p>
 		<ul>
@@ -650,14 +691,34 @@
 			</tbody>
 		</table>
 
+		<br>
+
+		<!-- Considerações finais -->
+		<h2 class="title">Considerações finais</h2>
+
+		<br>
+
+		<ul>
+			<li>O mundo da linguagem JavaScript sempre me fascinou e, tendo em conta que anteriormente
+			a frequentar esta cadeira era conhecedor apenas da sintaxe da linguagem, sem dúvida que os conhecimentos
+			académicos dos quais tive a oportunidade de usufruir foram vantajosos;
+			</li>
+
+			<br>
+
+			<li>Tal como qualquer outra linguagem de programação, é necessário compreender exatamente o núcleo
+			da mesma para conseguir um dia programar decentemente utilizando-a. É esse o meu grande objetivo
+			para com o JavaScript e tudo o que a linguagem envolve;</li>
+
+			<br>
+
+			<li>Espero que, tanto neste projeto/portfólio como no projeto principal da cadeira de Web Design II,
+			consiga entender melhor tanto a sintaxe (já referida) como a semântica da linguagem e todos os
+			seus ângulos de aproximação.</li>
+		</ul>
+
+
 	</section>
 
 </body>
-
-<!-- jQuery CDN -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- Ficheiros JavaScript -->
-<script type="text/javascript" src="js/main.js"></script>
-
 </html>
