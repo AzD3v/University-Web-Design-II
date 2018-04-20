@@ -30,7 +30,7 @@
 	<!-- Ficha de trabalho nº 3 -->
 
 	<!-- Background do tema ficha de trabalho nº 3 -->
-	<div class="background-image-13">
+	<div class="background-image-14">
 
 		<!-- Seta de retorno à homepage -->
 		<a title="Regressar à página principal" href="../index.html" ><i class="ion-arrow-return-left"></i></a>
@@ -47,7 +47,7 @@
 		<h2 class="title">Resolução e análise à ficha de trabalho nº 3</h2>
 		<br>
 
-		<p>Documento pdf associado: <a target="_blank" href="C:\Users\Paulo Cunha.PAULO\Desktop\Web-Design-II">Ficha de trabalho nº 3</a></p>
+		<p>Documento pdf associado: <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/47995/mod_resource/content/1/Ficha%203.pdf">Ficha de trabalho nº 3</a></p>
 
 		<p>A terceira ficha de trabalho realizada teve por objetivo a criação de elementos HTML com
 		recurso à linguagem de programação introduzida na cadeira, JavaScript. Todos os exercícios que
@@ -69,7 +69,7 @@
 		<hr>
 
 		<p><strong>Documento original sugerido no início da ficha de trabalho:</strong></p>
-		<img src="../img/geral/doc_inicial.png" alt="Documento original sugerido no início da ficha de trabalho">
+		<img src="../img/geral/doc_inicial.PNG" alt="Documento original sugerido no início da ficha de trabalho">
 		<br><br>
 		<p><strong>Exercício 1:</strong> Escreva programaticamente, com suporte de JavaScript,
 		um documento HTML que:</p>
@@ -80,6 +80,59 @@
 		</ul>
 
 		<p><strong>Resolução:</strong></p>
+
+		<p>A imagem onde é possível notar-se a resolução fala por si própria, muito
+		graças aos comentários.</p>
+
+		<img src="../img/geral/ficha3-1a.png" alt="Resolução do exercício 1 da ficha de trabalho nº3">
+		<br><br>
+
+		<ul>
+			<li>Primeiramente foi criada uma variável denominada de "body", que iria conter
+			o elemento "body" como argumento através do método "getElementById", chamado fazendo
+			referência ao documento HTML através da palavra "document";</li>
+			<br>
+			<li>De seguida foi criada uma variável/array chamada "labels", que iria conter os
+			labels que irião compor o header da tabela final ("Nome", "Sobrenome" e "Idade");</li>
+			<br>
+			<li>Foi utilizado em seguida um ciclo "for... of..." que viria a percorrer cada label
+			presente no array declarado acima e criar uma variável denominada "labelElem" para
+			cada um destes;</li>
+			<br>
+			<li>Para cada uma das novas variáveis/labels é atribuído o valor "label" com "for" como nome
+			do atributo;</li>
+			<br>
+			<li>O elemento labelElem é adicionado ao body em seguida, através da função
+			"appendChild()";</li>
+			<br>
+			<li>Finalmente, o nome da label foi colocado na label concretamente, com o auxílio
+			da propriedade "innerHTML";</li>
+			<br>
+			<li>De modo a terminar a primeira fase do que foi pedido na alínea a), foram criadas
+			três caixas de texto, para cada uma das labels:</li>
+			<br>
+			<ul>
+				<li>Foi criado o elemento inputElem, utilizando para isso a função "createElement", recebendo
+				esta o elemento "input" como argumento e sendo associada ao documento HTML através da palavra "document",
+				tal como na criação dos elementos label;</li>
+				<br>
+
+				<li>Novamente, tal como com o processo de concepção do labelElem, mas desta vez diferenciado
+				pelo facto do objetivo delineado ser diferente, foi atribuído com o nome de atributo "id"
+				o elemento label ao inputElem;</li>
+				<br>
+
+				<li>Finalmente, o inputElem foi adicionado ao body do documento através da função "appendChild()".</li>
+			</ul>
+			<br>
+			<li>Prosseguindo e finalizando a alínea a), foi criado o botão de "Guardar", seguindo a mesma
+			lógica utilizada durante todo o exercício, primeiro criando o elemento "button" através do método
+			"createElement()" e guardando o mesmo numa variável denominada de buttonElem;</li>
+			<br>
+			<li>Dentro do botão foi escrito "Guardar" através da função innerHTML;</li>
+			<br>
+			<li>Por fim, foi adicionado ao body o elemento "button" através do método "appendChild()".</li>
+		</ul>
 
 		<hr>
 
@@ -92,8 +145,42 @@
 
 		<p><strong>Resolução:</strong></p>
 
-		<hr>
+		<p>Procedi de seguida à criação da tabela pedida e colocação dos headers tal como
+		escrito no enunciado. Sabendo de antemão que teria que repetir a lógica anterior, mas agora
+		para a criação de um elemento "table", segui em frente com o exercício.</p>
 
+		<img src="../img/geral/tableficha3.png" alt="Criação de uma tabela (exercício 3 da ficha de trabalho nº 3)">
+		<br><br>
+
+		<ul>
+			<li>Comecei por criar o elemento "tableElem", repetindo o mesmo processo da
+			alínea a), ou seja, através do acesso ao documento com o método "createElement()",
+			consegui lograr o objetivo de criar o elemento principal da tabela;
+		</li>
+		<br>
+		<li>De seguida, foi necessário criar um elemento "table row" (tr), seguindo o mesmo processo
+		do passo anterior, com o auxílio do método "createElement()", desta vez criando uma variável
+		definida como "trElem";</li>
+		<br>
+		<li>O header para a tabela foi criado usando um array com as <em>strings</em>
+		"Nome", "Sobrenome" e "Idade". Sendo esse array iterado através de um "for... of...",
+		utilizando a variável "h" para definir cada elemento do header;</li>
+		<br>
+		<li>Dentro do iterador de arrays "for... of..." foi criado um elemento "table header" (tr),
+		através do método mais utilizado durante o exercício, createElement();</li>
+		<br>
+		<li>Foi escrita dentro dos elementos "th" cada uma das <em>strings</em> presentes no array "header".
+		Feito logrado com o método "innerHTML";</li>
+		<br>
+		<li>Por fim, o passo final do bloco de instruções presente no "for... of...", foi adicionado ao elemento
+		trElem cada um dos elementos "th", usando para tal a função "appendChild()";</li>
+		<br>
+		<li>Fora da área de ação do iterador de arrays foram adicionados ao elemento tableElem e ao body os
+		elementos "trElem" e "tableElem", respetivamente. Novamente, foi utilizado o método "appendChild()"
+		para o processo.</li>
+		</ul>
+
+		<hr>
 
 			<ul>
 			<li>c. Crie um array "<strong>pessoas</strong>" composto por objetos pares
@@ -102,6 +189,22 @@
 
 	 <p><strong>Resolução:</strong></p>
 
+	 <p>Novamente uma novidade presente nesta ficha de trabalho, desta feita o conceito
+	 de um array composto por objetos pares chave-valor, que deveriam basear-se no header
+ 	 da tabela.</p>
+
+	 <img src="../img/geral/ficha3-1c.png" alt="Resolução da alínea c) do exercício 1 da ficha de trabalho nº 3">
+	<br><br>
+
+	 <ul>
+		 <li>Em primeiro lugar, foi criada uma variável denominada de "pessoas";</li>
+		 <br>
+		 <li>De seguida, utilizando os parêntesis retos e dentro dentro deles as "chavetas",
+		 foram criados os objetos pares chave-valor, sendo que criei três diferentes objectos,
+		 separados por vírgula.</li>
+		 <br>
+	 </ul>
+
 	 <hr>
 
 		<ul>
@@ -109,6 +212,33 @@
 		</ul>
 
 		<p><strong>Resolução:</strong></p>
+		<p>De seguida foi pedido para preencher a tabela entretanto criando com os valores que se
+		encontravam dentro do array "pessoas". Houve necessidade de regressar aos conceitos utilizados
+		anteriormente nesta ficha de trabalho, com vários métodos entretanto já utilizados.</p>
+		<img src="../img/geral/ficha3-1d.png" alt="Resolução do exercício 1d) da ficha de trabalho nº3">
+		<br><br>
+
+		<ul>
+			<li>Utilizando inicialmente o iterador de arrays, definiu-se que para cada "pessoa"
+			do array "pessoas" seria:</li>
+			<br>
+			<ul>
+				<li>Criado um elemento table row (tr) para cada uma das pessoas, utilizando o método createElement,
+				fazendo referência ao documento da página e atribuindo esse valor a uma variável denominada de "tr";</li>
+				<li>Atribuído ao elemento tableElem os valores atribuídos a cada uma das linhas (tr).</li>
+				<br>
+				<li>Utilizado um novo conceito, o de iterar sobre um objeto ("for... in..."), iterando sobre
+				cada elemento presente no objeto "pessoa" e dando-lhe o nome de "chave", criando de resto uma coluna
+				por cada "chave";</li>
+				<br>
+				<li>Criado um novo elemento denominado de td (table data), que viria a ser posteriormente
+				adicionado ao elemento da tabela através da função appendChild();</li>
+				<br>
+				<li>Por fim, e para finalizar o bloco de instruções do iterador "for... of..." presente mais acima,
+				foi escrito conteúdo no elemento "td", sendo este a chave presente no objeto pessoa, isto é,
+				cada um dos dados introduzidos.</li>
+			</ul>
+		</ul>
 
 		<hr>
 
@@ -117,13 +247,96 @@
 
 		<p><strong>Resolução:</strong></p>
 
+		<p>Para proceder ao objetivo de alterar o documento HTML de modo a ocorrer uma inserção de dados
+		na tabela criada anteriormente, foi necessário criar uma função denominada de "guardar" (mais um novo
+		conceito "treinado" aquando da resolução desta ficha de trabalho). Explicarei todos os detalhes
+		da dita função em seguida:</p>
+
+		<img src="../img/geral/funcaoguardar.png" alt="Função guardar criada no exercício 2 da ficha de trabalho nº 3">
+		<img src="../img/geral/clickguardar.png" alt="Função guardar criada no exercício 2 da ficha de trabalho nº 3">
+
+		<br><br>
+
+		<ul>
+			<li>Primeiramente foi utilizada a sintaxe que permite definir uma função e escrever código
+			no corpo da mesma. Sendo esta criada com as palavras "function guardar() {}", sendo que o que
+			se encontrava dentro das "chavetas" o corpo da função que viria a ser chamada aquando do clique no botão
+			"Guardar";</li>
+			<br>
+			<li>Foi criado um objeto "pessoa", encontrando-se este inicialmente vazio;</li>
+			<br>
+			<li>De seguida, através do método "getElementById()" foi dado uma propriedade
+			"nome", "sobrenome" e "idade" ao objeto pessoa, lendo no processo os valores presentes
+			nas caixas de input:</li>
+			<br>
+			<ul>
+				<li>Começando por adicionar as propriedades utilizando o "." (ponto) como ponte de ligação
+				do objeto à propriedade;</li>
+				<br>
+				<li>Em seguimento, foi utilizado o já referido método "getElementById()" para ler os valores
+				de "id" presentes nas caixas de texto ("Nome", "Sobrenome" e "Idade");</li>
+				<br>
+				<li>Finalmente, no final de cada uma das três linhas de código, foi lido o seu valor através
+				da <em>keyword</em> "value".</li>
+			</ul>
+			<br>
+			<li>Foi criada uma nova linha para a tabela utilizando o método "createElement()" com "tr" como argumento,
+			fazendo referência, como já várias vezes durante a resolução da ficha, ao documento e guardando o valor
+			numa variável, tr neste caso em particular;</li>
+			<br>
+			<li>Foi também utilizado um iterador "for... in..." de modo a obter cada chave do objeto "pessoa"
+			e sendo realizados vários processos no corpo do iterador (pouparei nos detalhes pois todas as linhas
+			de código que se seguem já foram utilizadas de uma maneira ou de outra):</li>
+			<ul>
+				<li>Em primeiro lugar, a criação de um elemento "td", que ficou guardado na variável "td";</li>
+				<br>
+				<li>Em segundo lugar, a junção do elemento "td" já referido ao elemento "tr";</li>
+				<br>
+				<li>Em terceiro lugar, a adição do elemento "tr" ao elemento "tableElem", provocando uma espécie de
+				"efeito em cadeia";</li>
+				<br>
+				<li>Em quarto e último lugar, a escrita em cada elemento "td" do valor obtido através de cada "chave"
+				presente no objeto "pessoa".</li>
+			</ul>
+			<br>
+			<li>Por fim, foi introduzido o conceito do método "addEventListener()", que recebe
+			como argumentos o nome do evento em questão e a função (que neste caso tratou-se de uma
+			<em>callback</em>);</li>
+			<br>
+			<li>O evento tratava-se do clique do botão e portanto denominava-se de "click", a função foi,
+			como já referido, chamada de "guardar";</li>
+			<br>
+			<li>Foi, de resto, adicionado ao elemento do botão ("buttonElem") este método não antes usado,
+			de modo a obter o efeito pretendido.</li>
+		</ul>
+
 		<hr>
 
 		<p><strong>Exercício 3:</strong> Altere o programa para limpar as caixas de texto
 		após o clique no botão:</p>
 
 		<p><strong>Resolução:</strong></p>
-
+		<p>Como espécie de "extra" na ficha de trabalho em questão, foi pedido que fosse
+		modificado o programa de modo a que, após o clique no botão "Guardar", as caixas
+		de texto fossem limpas caso contivessem algum conteúdo escrito.</p>
+		<img src="../img/geral/limparcaixas.png" alt="Exercício 3 da ficha de trabalho nº 3">
+		<br><br>
+		<ul>
+			<li>Sendo simples de explicar, as novas linhas de código definiam que:</li>
+			<br>
+			<ul>
+				<li>Utilizando um "for... of...", para cada uma das labels que faziam parte do array "labels":</li>
+				<br>
+				<ul>
+					<li>Haveria um acesso ao valor, através da junção do método getElementById() e ".value", fazendo referência ao documento;</li>
+					<br>
+					<li>As caixas de texto seriam limpas aquando do clique no botão guardar.</li>
+				</ul>
+		</ul>
+	</ul>
+		<br>
+		<p><strong>Nota de destaque:</strong> Estas novas linhas de código encontravam-se no <em>scope</em> da função
+		"guardar()".</p>
 
 	</section>
 
