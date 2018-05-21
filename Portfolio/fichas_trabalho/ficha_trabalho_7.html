@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <!-- MetaTags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Folhas de estilo -->
+    <link rel="stylesheet" href="../css/layout.css" type="text/css">
+    <link rel="stylesheet" href="../css/resumo_materia_e_fichas_trabalho.css" type="text/css">
+
+    <!-- Bitter font family -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Ionic icons CDN -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Título da página -->
+    <title>Portfólio Web Design II | Ficha de trabalho nº 7 - API - YouTube</title>
+</head>
+
+<body>
+
+    <!-- Ficha de trabalho nº 7 -->
+
+    <!-- Background do tema ficha de trabalho nº 7 -->
+    <div class="background-image-18">
+
+        <!-- Seta de retorno à homepage -->
+        <a title="Regressar à página principal" href="../index.html">
+            <i class="ion-arrow-return-left"></i>
+        </a>
+
+        <div class="tema-title">
+            <span class="border">
+                Ficha de trabalho nº 7 - API Google Maps
+            </span>
+        </div>
+    </div>
+
+    <!-- Secção "Ficha de trabalho nº 7" -->
+    <section class="section section-light section_ficha">
+
+        <!-- Título principal da página -->
+        <h2 class="title">Resolução e análise à ficha de trabalho nº 7</h2>
+        <br>
+
+        <!-- Documento pdf associado à ficha de trabalho -->
+        <p>Documento pdf associado:
+            <a target="_blank" href="http://moodle.uac.pt/pluginfile.php/52276/mod_resource/content/1/Ficha%207.pdf">Ficha de trabalho nº 7</a>
+        </p>
+
+        <!-- Introdução à ficha de trabalho -->
+        <p>A última ficha de trabalho trata-se essencialmente da aplicação de pedidos à API do Google Maps e respetivo tratamento da sua resposta. Sem dúvida que trata-se de mais uma ficha que associa os pedidos AJAX e a utilidade das API's da melhor forma. O Google Maps é uma das melhores aplicações tecnológicas da gigante empresa multinacional Google. 
+        </p>
+
+        <!-- Destaques da ficha de trabalho -->
+        <p>
+            <strong>Destaques a salientar:</strong>
+        </p>
+
+        <ul>
+
+            <li>A implementação da técnica AJAX na ficha de trabalho foi conseguida com auxílio da biblioteca JavaScript
+                <a href="../temas_abordados/tema_jquery.html">jQuery</a>;</li>
+            <br>
+
+            <li>A ficha de trabalho foi divida entre dois documentos distintos, mas associados. Um tratava-se do documento HTML
+                onde a funcionalidade "estática" de pesquisa viria a ser implementada. O outro era um documento exterior
+                JavaScript que continha todo o código jQuery utilizado para lograr a técnica AJAX;</li>
+            <br>
+
+            <li>Tal como nas
+                <a target="_blank" href="ficha_trabalho_4.html">ficha de trabalho nº 4</a>, <a target="_blank" href="ficha_trabalho_5.html">nº 5</a> e <a target="_blank" href="ficha_trabalho_6.html">nº 6</a>, a documentação online da biblioteca jQuery poderia ser consultada, sendo agora também sugerido o estudo da API do Google Maps:
+                <ul>
+                    <br>
+                    <li>Link de referência associado à API: https://developers.google.com/maps/documentation/javascript/reference/3/.</li>
+                </ul>
+            </li>
+            <br>
+
+            <li>Tal como nas restantes fichas de trabalho, o Sistema de Controlo de Versões Git deveria ser utilizado
+                em cada alínea da ficha, sendo desenvolvidas diferentes branches em cada uma destas. No final deveria ser
+                feito
+                <em>merge</em> de todo o projeto na
+                <em>branch</em>
+                <em>master</em>;</li>
+                <br>
+
+                <li>O objetivo delineado pela ficha de trabalho seria criar uma página que apresentasse a localização atual do visitante da mesma;</li>
+                <br>
+
+                <li>Foi, de resto, apresentado um extenso código-fonte que deveria ser seguido e modificado consoante a necessidade dos alunos:</li>
+                <br>
+
+                <p><strong>HTML presente no código fonte</strong></p>
+
+                <img src="../img/geral/ficha7-html.png" alt="Parte HTML do código-fonte fornecido">
+                <br><br>
+
+                <li>Como "parte HTML" do código fonte fornecido é de notar que:</li>
+                <br>
+
+                <ul>
+                    <li>O título dado página trata-se de "Map";</li>
+                    <br>
+
+                    <li>Existe uma inclusão/ligação de um ficheiro JavaScript exterior (que irei analisar posteriormente);</li>
+                    <br>
+
+                    <li>É designada a área da "tela" onde o mapa seria "desenhado", sendo criada uma <em>div</em> com o "id" denominado de "map-canvas" e sendo dando-lhe uma estilização que se baseava essencialmente numa largura de 600px e numa altura de 400px;</li>
+                    <br>
+
+                    <li>Foi também criado um botão que viria a ser o "trigger" desta "mini-aplicação", com o "id" atribuído sendo "getMyLocation".</li>
+
+                </ul>
+                <br>
+
+                <p>
+                    <strong>JavaScript presente no código fonte (parte 1)</strong>
+                </p>
+
+                <img src="../img/geral/ficha7-js1.PNG" alt="Parte 1 do código-fonte JavaScript presente na ficha de trabalho">
+                <br><br>
+
+                <li>
+                    Quanto ao que a primeira parte do código JavaScript fornecido diz respeito:
+                    <br><br>
+
+                    <ul>
+                        <li>É criada uma variável local denominada de "map";</li>
+                        <br>
+
+                        <li>A outra variável denominada de "gMapsLoaded" é atribuído o valor de "false", demonstrando que à partida o mapa não estaria carregado;</li>
+                        <br>
+
+                        <li>Foi criada uma função de "loading" do mapa que seria chamada caso a variável "gMapsLoaded" retornasse "True", sendo para isto utilizada a função "window.load" e a função <em>callback</em> respetiva ao "loading" do mapa;</li>
+                        <br>
+
+                        <li>Dentro da função que seria executada caso a estrutura de controlo retornasse "True" seria necessário incluir todo o <em>script</em> do Google Maps e a respetiva <em>source</em>, bem como a chave de acesso da API;</li>
+                        <br>
+
+                        <li>Abaixo da função referida encontrava-se o <em>trigger</em> do mapa que seria executado caso 
+                        a variável "gMapsLoaded" retornasse um valor <em>boolean</em> verdadeiro.</li>
+                    </ul>
+                </li>
+                <br>
+
+                <p>
+                    <strong>JavaScript presente no código fonte (parte 2)</strong>
+                </p>
+
+                <img src="../img/geral/ficha7-js2.PNG" alt="Parte 2 do código-fonte JavaScript presente na ficha de trabalho">
+                <br><br>
+
+                <li>Quanto ao que a segunda parte do código JavaScript diz respeito:</li>
+                <br>
+
+                <ul>
+                    <li>É de notar numa primeira instância a utilização da boa prática de carregamento da biblioteca jQuery, denotada pelo "loading" do documento estar completo antes de qualquer interação da biblioteca com o mesmo;</li>
+                    <br>
+
+                    <li>É apresentada uma função que servirá de <em>callback</em> aquando do momento em que o <em>browser</em> adquire a posição pretendida. A função denomina-se de "geoSuccess" e recebe comno parâmetro o posicionamento;</li>
+                    <br>
+
+                    <li>Também é demonstrada uma função a ser utilizanda aquando do <em>trigger</em>, isto é, do clique do botão. Esta função possui como nome "getMyLocation" e, não recebendo quaisquer parâmetros, possui no seu <em>scope</em> uma espécie de sequência de funções que dita a localização atual do <em>user</em>;</li>
+                    <br>
+
+                    <li>Ainda é apresentada mais uma função, que se chama "initialize", não recebe parâmetros e possui no seu <em>scope</em> um objeto denominado de "mapOptions" que apresentada o nível de <em>zoom</em> pretendido (8), a localização central em termos de latitude e longitude e ainda o tipo do mapa apresentado;</li>
+                    <br>
+
+                    <li>É criada uma nova instância do objeto "Map" proveniente do Google Maps, que recebe como parâmetros tanto o elemento HTML do mapa como as opções anteriormente definidas;</li>
+                    <br>
+
+                    <li>Após a função detalhada anteriormente, sucede um evento que chama a função "initialize" dentro da "window" da página, utilizando para isso o método "bind()", que também possui como outro parâmetro o "loaded-script" do mapa;</li>
+                    <br>
+
+                    <li>Por fim, o mapa é "loaded" na página/<em>utilizando</em> para isso a função "loadGoogleMaps".</li>
+                    
+                </ul>
+
+
+            </ul>
+
+        <hr>
+
+        <!-- Exercício 1 e respetiva resolução -->
+        <p>
+            <strong>Exercício 1:</strong> Inicie um novo repositório e faça o versionamento inicial:</p>
+
+        <p>
+            <strong>Resolução:</strong>
+        </p>
+
+        <p>Procedi ao versionamento inicial da ficha de trabalho da forma que me foi ensinada ao longo da cadeira e já utilizada
+            por mim entretanto, utilizando os seguintes comandos, por ordem:</p>
+
+        <ul>
+            <li>$ git init</li>
+            <li>$ git config user.name "Paulo Cunha"</li>
+            <li>$ git config user.email "paulo_cunha1997@outlook.pt"</li>
+            <li>$ git add .</li>
+            <li>$ git commit -m "Commit inicial na ficha de trabalho nº 7"</li>
+        </ul>
+
+        <br>
+
+        <ul>
+
+            <li>Iniciei o versionamento utilizando o comando "git init", procedendo em seguida à configuração local do meu nome
+                de utilizador e email. Utilizando o comando "git add ." transformei o estado de todos os ficheiros do diretório
+                para
+                <em>modified</em>. De seguida, realizei o
+                <em>commit</em> inicial do exercício.</li>
+        </ul>
+
+        <hr>
+
+        <!-- Exercício 2 e respetiva resolução -->
+        <p>
+            <strong>Exercício 2:</strong> Escreva o código que carrega a API do Google Maps de forma dinâmica.</p>
+
+        <p>
+            <strong>Resolução:</strong>
+        </p>
+
+        <p>Procedeu-se à escrita do código que possibilitou o carregamento da API do Google Maps de forma dinâmica. Código sob o qual me debruçarei em seguida, descrevendo os vários passos tomados.</p>
+
+        <img src="../img/geral/ficha7-2.PNG" alt="Exercício 2 da ficha de trabalho nº 7">
+        <br>
+        <br>
+
+        <ul>
+
+            <li>Foi criada uma variável local denominada de "script", que criaria dinamicamente o <em>script</em> a partir do qual o pedido à API do Google Maps viria a ser efetuado;</li>
+            <br>
+
+            <li>O elemento <em>script</em> criado foi adicionado à secção "head" do documento HTML através da função "append()";</li>
+            <br>
+
+            <li>Finalmente, foi transmitido numa função relativa à "window" que se o valor da variável "gMapsLoaded" retornasse "True", um <em>trigger</em> seria executado na dita "window", permitindo o "loading" do mapa pretendido.</li>
+
+        </ul>
+
+        <hr>
+
+        <!-- Exercício 3 e respetiva resolução -->
+        <p>
+            <strong>Exercício 3:</strong> Passe como argumento o elemento HTML do mapa na função initialize().
+        </p>
+
+        <p>
+            <strong>Resolução:</strong>
+        </p>
+
+        <p>Olhando de seguida para a função "initialize()", tal como pedido no enunciado, procedi ao ato de passar como argumento na mesma o elemento HTML do mapa.</p>
+
+        <img src="../img/geral/ficha7-3.PNG" alt="Exercício 3 da ficha de trabalho nº 7">
+        <br>
+        <br>
+
+        <ul>
+
+            <li>Como se pode notar neste pequeno "snippet" da resolução da ficha de trabalho acima apresentado, passei como argumento o elemento HTML do mapa na função "initialize"():
+
+                <ul>
+                    <br>
+                    <li>Este objetivo foi logrado através da criação do objeto "map", acedendo ao mesmo através do id da tela(<em>canvas</em>) denominado de "#map-canvas", passando também como argumento as opções do mapa definidas atempadamente.</li>
+                </ul>
+
+            </li>
+            
+        </ul>
+
+        <hr>
+
+        <!-- Exercício 4 e respetiva resolução -->
+        <p>
+            <strong>Exercício 4:</strong> Junte a função correta ao evento 'click' do botão.</p>
+
+        <p>Seria necessário agora utilizar a função necessária de modo a obter o efeito pretendido ao evento de clique associado ao botão.</p>
+
+        <img src="../img/geral/ficha7-4.PNG" alt="Exercício 4 da ficha de trabalho nº 7">
+        <br><br>
+
+        <ul>
+
+            <li>Apontando ao id associado ao <em>trigger</em>/botão ao qual o exercício fazia menção, de modo a conseguir o resultado pretendido e obter a localização exata do <em>user</em> foi efetuado o acesso ao objeto "navigator":
+                <br><br>
+                <ul>
+                    <li>Utilizaram-se "geolocation" e "getCurrentPosition", passando como argumento para esta interação com o objeto pretendido a função (ou resultado da mesma) geoSuccess (detalhada seguidamente).</li>
+                </ul>
+            </li>
+            <br>
+
+        <hr>
+
+        <!-- Exercício 5 e respetiva resolução -->
+        <p>
+            <strong>Exercício 5:</strong> Na callback geoSuccess é recebida a posição do utilizador. Atribua o centro do mapa a essas coordenadas.</p>
+
+        <p></p>
+
+        <img src="../img/geral/ficha7-5.png" alt="Exercício 5 da ficha de trabalho nº 7">
+        <br><br>
+
+            <li>Alterando a função <em>callback</em> denominada por "geoSuccess", referida no exercício exatamente anterior, procedi a uma alteração que me permitiu alterar a visualização das coordenadas que a mesma devolve para o centro do mapa:</li>
+            <br>
+
+            <ul>
+                <li>Tendo em conta que o objetivo da função já seria devolver a localização exata do utilizador através de latitude e longitude, foi necessário utilizar a função "setCenter()" de modo a atribuir estas duas distâncias ao centro do mapa.</li>
+            </ul>
+        
+        </ul>
+    
+        <hr>
+
+        <!-- Resultado final da ficha de trabalho (2) -->
+        <p>
+            <strong>Resultado final da ficha de trabalho em questão:</strong>
+        </p>
+        <img src="../img/resultados/Ficha7.gif" alt="Resultado da ficha de trabalho nº 7">
+
+        <hr>
+
+        <!-- Considerações finais -->
+        <p>
+            <strong>Considerações finais:</strong> Tanto o "mundo Google" como os seus vários domínios sempre me fascinaram e, portanto, foi um prazer proceder à realização desta ficha de trabalho. Nunca havia eu trabalhado com a localização geográfica do Google Maps desta forma mas sempre senti curiosidade em fazê-lo. A dinamização dos resultados e a flexibilidade com que os mesmos são atingidos é algo que me trouxe grande motivação aquando da concretização da ficha de trabalho final desta cadeira. Há ainda que referir que estes exercícios ajudaram-me também no projeto referente às cadeiras de Programação Web II e Bases de Dados.</p>
+
+    </section>
+
+</body>
+
+</html>
