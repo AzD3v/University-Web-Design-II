@@ -4,7 +4,7 @@ $(function() {
 			$('#clock').text(new Date());
 	}, 1000)
 
-  // Exercício 3 e 4
+  // Exercícios 3 e 4
   const youtubeAPIKey = "AIzaSyAvt_YeiVfbMrGKdNFaMuMo760ViQemm0k";
 
   $("#button").click(function() {
