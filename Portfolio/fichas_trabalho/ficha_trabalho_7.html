@@ -77,11 +77,11 @@
                 JavaScript que continha todo o código jQuery utilizado para lograr a técnica AJAX;</li>
             <br>
 
-            <li>Tal como na
-                <a target="_blank" href="ficha_trabalho_4.html">ficha de trabalho nº 4</a>, a documentação online da biblioteca jQuery poderia ser consultada;</li>
+            <li>Tal como nas
+                <a target="_blank" href="ficha_trabalho_4.html">ficha de trabalho nº 4</a>, <a target="_blank" href="ficha_trabalho_5.html">nº 5</a> e <a target="_blank" href="ficha_trabalho_6.html">nº 6</a>, a documentação online da biblioteca jQuery poderia ser consultada, sendo agora também sugerido o estudo da API do Google Maps;</li>
             <br>
 
-            <li>Por fim, tal como nas restantes fichas de trabalho, o Sistema de Controlo de Versões Git deveria ser utilizado
+            <li>Tal como nas restantes fichas de trabalho, o Sistema de Controlo de Versões Git deveria ser utilizado
                 em cada alínea da ficha, sendo desenvolvidas diferentes branches em cada uma destas. No final deveria ser
                 feito
                 <em>merge</em> de todo o projeto na
@@ -89,13 +89,20 @@
                 <em>master</em>;</li>
                 <br>
 
-                <li>O objetivo delineado pela ficha de trabalho seria criar uma página que apresentasse a localização atual do visitante da mesma.</li>
+                <li>O objetivo delineado pela ficha de trabalho seria criar uma página que apresentasse a localização atual do visitante da mesma;</li>
                 <br>
 
                 <li>Foi, de resto, apresentado um extenso código-fonte que deveria ser seguido e modificado consoante a necessidade dos alunos:</li>
                 <br>
+
+                <p><strong>HTML presente no código fonte</strong></p>
+
                 <img src="../img/geral/ficha7-html.png" alt="Parte HTML do código-fonte fornecido">
+                <br><br>
+
                 <li>Como "parte HTML" do código fonte fornecido é de notar que:</li>
+                <br>
+
                 <ul>
                     <li>O título dado página trata-se de "Map";</li>
                     <br>
@@ -107,8 +114,74 @@
                     <br>
 
                     <li>Foi também criado um botão que viria a ser o "trigger" desta "mini-aplicação", com o "id" atribuído sendo "getMyLocation".</li>
+
+                </ul>
+                <br>
+
+                <p>
+                    <strong>JavaScript presente no código fonte (parte 1)</strong>
+                </p>
+
+                <img src="../img/geral/ficha7-js1.PNG" alt="Parte 1 do código-fonte JavaScript presente na ficha de trabalho">
+                <br><br>
+
+                <li>
+                    Quanto ao que a primeira parte do código JavaScript fornecido diz respeito:
+                    <br><br>
+
+                    <ul>
+                        <li>É criada uma variável local denominada de "map";</li>
+                        <br>
+
+                        <li>A outra variável denominada de "gMapsLoaded" é atribuído o valor de "false", demonstrando que à partida o mapa não estaria carregado;</li>
+                        <br>
+
+                        <li>Foi criada uma função de "loading" do mapa que seria chamada caso a variável "gMapsLoaded" retornasse "True", sendo para isto utilizada a função "window.load" e a função <em>callback</em> respetiva ao "loading" do mapa;</li>
+                        <br>
+
+                        <li>Dentro da função que seria executada caso a estrutura de controlo retornasse "True" seria necessário incluir todo o <em>script</em> do Google Maps e a respetiva <em>source</em>, bem como a chave de acesso da API;</li>
+                        <br>
+
+                        <li>Abaixo da função referida encontrava-se o <em>trigger</em> do mapa que seria executado caso 
+                        a variável "gMapsLoaded" retornasse um valor <em>boolean</em> verdadeiro.</li>
+                    </ul>
+                </li>
+                <br>
+
+                <p>
+                    <strong>JavaScript presente no código fonte (parte 2)</strong>
+                </p>
+
+                <img src="../img/geral/ficha7-js2.PNG" alt="Parte 2 do código-fonte JavaScript presente na ficha de trabalho">
+                <br><br>
+
+                <li>Quanto ao que a segunda parte do código JavaScript diz respeito:</li>
+                <br>
+
+                <ul>
+                    <li>É de notar numa primeira instância a utilização da boa prática de carregamento da biblioteca jQuery, denotada pelo "loading" do documento estar completo antes de qualquer interação da biblioteca com o mesmo;</li>
+                    <br>
+
+                    <li>É apresentada uma função que servirá de <em>callback</em> aquando do momento em que o <em>browser</em> adquire a posição pretendida. A função denomina-se de "geoSuccess" e recebe comno parâmetro o posicionamento;</li>
+                    <br>
+
+                    <li>Também é demonstrada uma função a ser utilizanda aquando do <em>trigger</em>, isto é, do clique do botão. Esta função possui como nome "getMyLocation" e, não recebendo quaisquer parâmetros, possui no seu <em>scope</em> uma espécie de sequência de funções que dita a localização atual do <em>user</em>;</li>
+                    <br>
+
+                    <li>Ainda é apresentada mais uma função, que se chama "initialize", não recebe parâmetros e possui no seu <em>scope</em> um objeto denominado de "mapOptions" que apresentada o nível de <em>zoom</em> pretendido (8), a localização central em termos de latitude e longitude e ainda o tipo do mapa apresentado;</li>
+                    <br>
+
+                    <li>É criada uma nova instância do objeto "Map" proveniente do Google Maps, que recebe como parâmetros tanto o elemento HTML do mapa como as opções anteriormente definidas;</li>
+                    <br>
+
+                    <li>Após a função detalhada anteriormente, sucede um evento que chama a função "initialize" dentro da "window" da página, utilizando para isso o método "bind()", que também possui como outro parâmetro o "loaded-script" do mapa;</li>
+                    <br>
+
+                    <li>Por fim, o mapa é "loaded" na página/<em>utilizando</em> para isso a função "loadGoogleMaps".</li>
                     
                 </ul>
+
+
             </ul>
 
         <hr>
@@ -129,7 +202,7 @@
             <li>$ git config user.name "Paulo Cunha"</li>
             <li>$ git config user.email "paulo_cunha1997@outlook.pt"</li>
             <li>$ git add .</li>
-            <li>$ git commit -m "Commit inicial na ficha de trabalho nº 5"</li>
+            <li>$ git commit -m "Commit inicial na ficha de trabalho nº 7"</li>
         </ul>
 
         <br>
