@@ -80,7 +80,13 @@
 
             <li>Tal como na
                 <a target="_blank" href="ficha_trabalho_4.html">ficha de trabalho nº 4</a> e
-                <a target="_blank" href="ficha_trabalho_5.html">ficha de trabalho nº 5</a> , a documentação online da biblioteca jQuery poderia ser consultada;</li>
+                <a target="_blank" href="ficha_trabalho_5.html">ficha de trabalho nº 5</a> , a documentação online da biblioteca jQuery poderia ser consultada, acrescentando a esta consulta o estudo da API do YouTube respetivos pedidos:</li>
+                <br>
+                <ul>
+                    <li>Primeiro link de refência associado à API do Youtube: https://developers.google.com/youtube/v3/docs/search/list;</li>
+                    <br>
+                    <li>Segundo link de refência associado à API do Youtube: https://developers.google.com/youtube/iframe_api_reference.</li>
+                </ul>
             <br>
 
             <li>O Sistema de Controlo de Versões Git deveria ser utilizado
@@ -223,10 +229,14 @@
             </li>
             <br>
 
+        </ul>
+
             <p><strong>Prossegui com a resolução dos exercícios 3 e 4:</strong></p>
 
             <img src="../img/geral/ficha6-342.PNG" alt="Continuação da resolução dos exercícios 3 e 4 da ficha de trabalho nº 6">
             <br><br>
+
+        <ul>
 
             <li>
                 Procedi, em seguida, à criação de uma tabela, onde viriam a ser apresentados os resultados do pedido à API, dando-lhe o id denominado de "resultados", através do método 
@@ -237,11 +247,12 @@
             <li>
                 Utilizando a função jQuery "$.get()", procedi ao pedido concreto à API do YouTube, utilizando como argumentos o url criado no início da resolução dos exercícios em questão e uma função que viria a receber como argumento o id "response" (atributo pertencente à <em>div</em> criada na estrutura HTML):
                 <br>
+                <br>
                 <ul>
                     <li>No interior da função "$.get()" utilizei um ciclo "<em>for... of...</em>" de modo a iterar sobre cada "item" que o pedido à API retornaria. Utilizei logo abaixo uma estrutura de controlo que tinha como objetivo definir que se o id do item em questão não fosse o mesmo que o id do vídeo, este seria "ignorado" e passar-se-ia à iteração seguinte;</li>
                     <li>Também foram criados elementos "<em>table row</em>" (tr), sendo este adicionado ao elemento <em>table</em> e também elementos "<em>table data</em>" (td), este adicionado precisamente ao elemento "td" criado anteriormente. Ambas estas adições foram logradas através do método "append()".</li>
-                </ul>
-            </li>
+                </li>
+            </ul>
             <br>
             
             <p><strong>Finalizei os exercícios 3 e 4:</strong></p>
@@ -249,13 +260,14 @@
             <img src="../img/geral/ficha6-343.PNG" alt="Finalização da resolução dos exercícios 3 e 4 da ficha de trabalho nº 6">
             <br>
             <br>
-
+            
+            
             <li>
-                Encerrando os exercícios 3 e 4 da ficha de trabalho em questão, apresentei os resultados na forma pedida até então pelo enunciado: 
+                Encerrando os exercícios 3 e 4 da ficha de trabalho em questão, apresentei os resultados na forma pedida até então pelo enunciado: </li>
                 <br>
-
+                
                 <ul>
-                    <br>
+
                     <li>Foi criado um elemento "img" com o auxílio do seletor jQuery ("$");</li>
                     <br>
                     <li>A esse elemento criado foi atribuída a <em>source</em> através da função "attr()", sendo que essa <em>source</em> seria precisamente a <em>thumbnail</em> de cada item anteriormente criado;</li>
@@ -268,6 +280,8 @@
                     <li>
                         O texto de cada elemento "td" foi definido como sendo a descrição do "snippet" associado ao vídeo em questão;
                     </li>
+                    <br>
+
                     <li>
                         Foi dado um exemplo de como se poderia manipular o CSS do elemento "td" criado, através da função jQuery ".css()".
                     </li>
@@ -282,24 +296,42 @@
         <hr>
 
         <!-- Exercício 5 e respetiva resolução -->
+        <p><strong>Exercício 5:</strong> Altere o código para apresentar um iframe em vez de uma imagem.</p>
+        
         <p>
-            <strong>Exercício 5:</strong> Apresente os resultados numa tabela:</p>
+            <strong>Resolução:</strong>
+        </p>
 
-        <p>Prosseguindo a ficha de trabalho, foi pedido em seguida que se apresentasse os resultados do pedido ao serviço MusicBrainz
-            numa tabela própria.</p>
+        <p>Como conclusão da ficha de trabalho nº 6 foi-me pedido que procedesse a alterações no código escrito até então de modo a ser apresentado um iframe (elemento HTML que permite que uma página seja carregada dentro de outra) no lugar de uma imagem (como pedido nos exercícios anteriores).</p>
 
-       
+        <img src="../img/geral/ficha6-5.PNG" alt="Exercícios 5 da ficha de trabalho nº 6">
+        <br><br>
+      
+            <li>Sendo necessário criar um elemento "<em>iframe</em>" e dar-lhe respetiva forma, foram logrados os seguintes passos:
+                <br><br>
+                <ul>
+                    <li>Criação de uma variável denominada de "<em>iframe</em>" que iria conter um elemento obviamente do tipo "iframe" criado com o auxílio da biblioteca jQuery;</li>
+                    <br>
 
+                    <li>A este "<em>iframe</em>" foram dadas largura e altura com o auxílio da função "attr()" - de resto muito utilizada neste exercício em particular;</li>
+                    <br>
+
+                    <li>Ao elemento foi dada uma "<em>frameborder</em>" com o valor 0 e foi designado que seria possível visualizar o vídeo em "<em>fullscreen</em>", bem como ditar que o vídeo começaria a "tocar" sem ser necessária intervenção do <em>user</em> ("<em>autoplay</em>");</li>
+                    <br>
+
+                    <li>Foi dada a <em>source</em> ao elemento <em>iframe</em>, através novamente do método "attr()" utilizando por parâmetro primordial o link do vídeo no que diz respeito ao YouTube em junção/concatenação com o respetivo id;</li>
+                    <br>
+
+                    <li>Por fim, e para finalizar a mudança da apresentação de uma imagem para dar lugar a um <em>iframe</em>, foi utilizada a função "append()" para "anexar" o elemento criado ao elemento "td".</li>
+                </ul>
+            </li>
+    
         <hr>
 
         <!-- Considerações finais -->
         <p>
-            <strong>Considerações finais:</strong> Como já esperava aquando do começo da resolução desta ficha de trabalho, confirmei
-            as minhas expetativas quanto à utilidade e conhecimentos passíveis de serem adquiridos durante e após a resolução
-            da mesma. A implementação da técnica AJAX foi sem dúvida um conceito muito interessante e sobre o qual sempre
-            tive curiosidade de me "debruçar". Usarei sem dúvida os conhecimentos adquiridos com esta ficha de trabalho tanto
-            para os meus futuros projectos deste curso como a nível pessoal, implementando tanto os vários métodos de pesquisa
-            e respetivos filtros, como de modo a fazer pedidos cliente-servidor sempre que esta prática for necessária.</p>
+            <strong>Considerações finais:</strong> Sempre considerei a integração da plataforma YouTube e todas as suas vantagens num respetivo projeto algo de valor e deveras interessante. Com esta ficha de trabalho fiquei a conhecer muito melhor como funciona este processo em particular e obtive vários índicios em termos de conhecimento que apliquei mais tarde na elaboração do projeto de grupo (catálogo musical). Tanto a apresentação dos resultados em forma de <em>thumbnail</em> como a resposta aos pedidos feitos à API na forma de <em>iframe</em> foram as partes culimantes desta ficha de trabalho e foram sem dúvida enriquecedoras das mais variadas formas.
+        </p>
 
     </section>
 
