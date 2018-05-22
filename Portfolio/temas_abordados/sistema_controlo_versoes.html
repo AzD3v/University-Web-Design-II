@@ -25,7 +25,9 @@
 
 	<!-- Título da página -->
 	<title>Portfólio Web Design II | Sistema de Controlo de Versões</title>
+
 </head>
+
 <body>
 
 	<!-- TEMA SISTEMA DE CONTROLO DE VERSÕES -->
@@ -46,11 +48,11 @@
 
 	<section class="section section-light">
 
-		<!-- Título principal da página -->
+		<!-- TÍTULO PRINCIPAL DA PÁGINA -->
 		<h2 class="title">O que é um Sistema de Controlo de Versões?</h2>
 		<br>
 
-			<!-- Descrição do tema -->
+			<!-- ANÁLISE DO TEMA EM QUESTÃO -->
 			<p>Abreviado para SCV, um Sistema de Controlo de Versões tem como objetivo primordial
 			manter um histórico de alterações e permitir a navegação e operações sobre o conteúdo
 			desse referido histórico. Como exemplos de sistemas deste género são de referir:
@@ -64,7 +66,6 @@
 			</ul>
 		</p>
 
-		<!-- Tipos de arquitetura de um SCV -->
 		<p><strong>Os tipos de arquitetura de um SCV são:</strong>
 			<ul>
 				<li><strong>Centralizada:</strong> A sincronização é efetuada através de um único ponto;</li>
@@ -80,189 +81,192 @@
 
 		<br>
 
-		<!-- O Git e o seu funcionamento/workflow -->
 		<h2 class="title">O Git e o seu funcionamento/<em>workflow</em></h2>
 
 		<br>
 
 		<p>Sendo o Sistema de Controlo de Versões mais popular atualmente, o GIT é o SCV utilizado,
-		tanto na cadeira de Web Design II, como por mim no que toca a
+		tanto na cadeira de Web Design II, como por mim em outras cadeiras do curso e no que toca a
 		projetos pessoais. Um facto curioso é que trata-se de um projeto <em>open-source</em>
 		criado pela mesma pessoa que deu vida ao sistema operativo Linux: Linus Torvalds.
-		Irei explicar o seu funcionamento com detalhe em seguida.
+		Irei explicar o funcionamento desta extraordinariamente útil tecnologia com detalhe em seguida.
 		<br><br>
+
 		<strong>Funcionamento local do GIT:</strong> O GIT poderá ser utilizado de forma local, sendo possível
-		iniciar um repositório local e proceder à sua respetiva configuração na própria máquina
-		do utilizador. Existem diversos comandos que permitem o versionamento local do GIT:
+		iniciar um repositório localmente e proceder à sua respetiva configuração apenas no que toca à máquina utilizada pelo programador. Existem diversos comandos que permitem o versionamento local do GI.
+
 		<ul>
-		<li>Configuração do repositório ao nível local, ou ao nível global, com o comando inicial
-		<em>git config</em> e como as imagens em seguida demonstram-no (sendo de destacar a inclusão
-		da opção "--global" para uma configuração global do git):</li>
-		<img src="../img/geral/gitconfignamelocal.png" alt="Configuração local do username GIT">
-		<img src="../img/geral/gitconfigemail.png" alt="Configuração local do email GIT">
-		<img src="../img/geral/gitconfigglobalusername.png" alt="Configuração global do email GIT">
-		<img src="../img/geral/gitconfigglobalemail.png" alt="Configuração global do username GIT">
+			
+				<li>Configuração do repositório ao nível local, ou ao nível global, com o comando inicial
+				<strong>git config</strong> e como as imagens em seguida demonstram-no (sendo de destacar a inclusão
+				da opção "--global" para uma configuração global do Git a nível do computador utilizado):</li>
+				
+				<img src="../img/geral/gitconfignamelocal.png" alt="Configuração local do username GIT">
+				
+				<img src="../img/geral/gitconfigemail.png" alt="Configuração local do email GIT">
+				
+				<img src="../img/geral/gitconfigglobalusername.png" alt="Configuração global do email GIT">
+				
+				<img src="../img/geral/gitconfigglobalemail.png" alt="Configuração global do username GIT">
 
 
-		<br><br>
-		<li>Também é possível iniciar um novo repositório local através do comando <em>git init</em>,
-		demonstrado a seguir, sendo que este comando cria um ficheiro .git dentro do diretório do
-		projeto em questão, apresentando este ficheiro a estrutura necessária à gestão:</li>
-		<img src="../img/geral/gitinit.png" alt="Utilização do comando git init">
+				<br><br>
+				<li>Também é possível iniciar um novo repositório local através do comando <strong>git init</strong>,
+				demonstrado em seguida, sendo que este comando cria um ficheiro ".git" dentro do diretório do
+				projeto em questão, apresentando este ficheiro a estrutura necessária à gestão do SCV sob o desenvolvimento do mesmo. No caso a seguir apresentado foi criado um novo repositório "vazio" dentro do <em>scope</em> do ficheiro ".git", que apenas se encontra presente nesta demonstração por razões ilustrativas:</li>
+				<img src="../img/geral/gitinit.png" alt="Utilização do comando git init">
 
-		<br><br>
-		<li>Através do comando <em>git status</em> é possível saber o estado atual dos ficheiros
-		inerentes ao versionamento, como demonstrado pelos exemplos, sendo dadas indicações
-		do que o utilizador deverá fazer (adicionar ficheiros para o estado de <em>staged</em> ou
-		proceder ao acrescento de mais destes):</li>
-		<img src="../img/geral/gitstatus.png" alt="Utilização do comando git status">
+				<br><br>
+				<li>Através do comando <strong>git status</strong> é possível saber o estado atual dos ficheiros
+				inerentes ao versionamento, como demonstrado pelos exemplos, sendo dadas indicações
+				do que o utilizador deverá fazer (adicionar ficheiros para o estado de <em>staged</em> ou
+				proceder ao acrescento de mais destes):</li>
+				<img src="../img/geral/gitstatus.png" alt="Utilização do comando git status">
 
-		<br><br>
+				<br><br>
 
-		<li>Um ficheiro poderá encontrar-se em dois tipos diferentes de estado: <em>tracked</em> e <em>untracked</em>.
-		<em>Untracked</em> significa que um dado ficheiro não se encontra a ser controlado pelo SCV,
-		enquanto que o estado <em>tracked</em> indica que o ficheiro encontra-se sob o controlo do GIT e
-		poderá dividir-se em três diferentes categorias: <em>modified</em>, <em>unmodified</em> e <em>staged</em>,
-		apresentados em seguida:</li>
+				<li>Um ficheiro poderá encontrar-se em dois tipos diferentes de estado: <em>tracked</em> e <em>untracked</em>.
+				<em>Untracked</em> significa que o dado ficheiro não se encontra a ser controlado pelo SCV,
+				enquanto que o estado <em>tracked</em> indica que o ficheiro encontra-se sob o controlo do GIT e
+				poderá dividir-se em três diferentes categorias: <em>modified</em>, <em>unmodified</em> e <em>staged</em>,
+				apresentadas em seguida:</li>
 
-		<br>
+				<br>
 
-		<img src="../img/geral/estados_ficheiro_git.PNG" alt="Os diferentes estados de um ficheiro aos 'olhos' do GIT">
+				<img src="../img/geral/estados_ficheiro_git.PNG" alt="Os diferentes estados de um ficheiro aos 'olhos' do GIT">
 
-		<br><br>
+				<br><br>
 
-		<li>A partir do momento em que um ficheiro é adicionado através do comando <em>git add</em>,
-		esse ficheiro passa para o estado de <em>staged</em>, apresentado pelo diagrama que se encontra abaixo:</li>
+				<li>A partir do momento em que um ficheiro é adicionado através do comando <strong>git add</strong>,
+				esse ficheiro passa para o estado de <em>staged</em>, movimento visível no diagrama que se encontra abaixo:</li>
 
-		<br>
+				<br>
 
-		<img src="../img/geral/git_add.PNG" alt="Exemplo de utilização do comando 'git add'">
+				<img src="../img/geral/git_add.PNG" alt="Exemplo de utilização do comando 'git add'">
 
-		<br><br>
-		<li>O processo seguinte ao adicionar de um ficheiro denomina-se de <em>git commit</em> e é essencialmente
-		o momento em uma espécie de <em>"screenshot"</em> é tirado ao ficheiro, isto é, ao exato momento em que
-		o ficheiro se encontra na altura do <em>commit</em>, sendo o processo descrito pela
-		entrada deste no estado <em>unmodified</em> e, em seguida <em>modified</em>, após edição. Finalmente,
-		o ficheiro regressará ao estado <em>staged</em>, mas há que ter em conta que já se encontra
-		no modo <em>tracked</em> há muito tempo. Este procedimento trata-se do <em>"workflow"</em> do versionamento de ficheiros,
-		geralmente falando. As seguintes imagens ilustram os acontecimentos referidos:</li>
+				<br><br>
+				<li>O processo seguinte ao adicionar de um ficheiro denomina-se de <strong>git commit</strong> e é essencialmente
+				o momento em que uma espécie de <em>"screenshot"</em> é tirado ao ficheiro, isto é, ao exato momento em que
+				o ficheiro se encontra na altura do <em>commit</em>, sendo o processo descrito pela
+				entrada deste no estado <em>unmodified</em> e, em seguida <em>modified</em>, após edição posterior realizada pelo <em>user</em>. Finalmente,
+				o ficheiro regressará ao estado <em>staged</em>, após nova utilização do comando <strong>git add</strong> mas há que ter em conta que já se encontra
+				no modo <em>tracked</em> há muito tempo. Este processo descrito trata-se do <em>"workflow"</em> do versionamento de ficheiros,
+				geralmente falando. As seguintes imagens ilustram os acontecimentos referidos:</li>
 
-		<br>
+				<br>
 
-		<img src="../img/geral/git_commit.PNG" alt="Processo de 'git commit'">
+				<img src="../img/geral/git_commit.PNG" alt="Processo de 'git commit'">
 
-		<br><br>
+				<br><br>
 
-		<img src="../img/geral/git_workflow.PNG" alt="'Workflow' do versionamento do GIT">
+				<img src="../img/geral/git_workflow.PNG" alt="'Workflow' do versionamento do GIT">
 
-		<br><br>
+				<br><br>
 
-		<img src="../img/geral/git_staged.PNG" alt="Regresso do ficheiro ao modo 'staged'">
+				<img src="../img/geral/git_staged.PNG" alt="Regresso do ficheiro ao modo 'staged'">
 
-		<br><br>
+				<br><br>
 
-		<li>O ficheiro também poderá, de resto, ser removido. Deixando este de se encontrar no estado
-		<em>tracked</em>, passando para o estado <em>untracked</em>.</li>
+				<li>O ficheiro também poderá, de resto, ser removido. Este deixará de se encontrar no estado
+				<em>tracked</em>, passando novamente para o estado inicial <em>untracked</em>.</li>
 
-		<br>
+				<br>
 
-		<img src="../img/geral/git_rmv.PNG" alt="Regresso do ficheiro ao modo 'untracked'">
+				<img src="../img/geral/git_rmv.PNG" alt="Regresso do ficheiro ao modo 'untracked'">
 
-		<br><br>
+				<br><br>
 
-		<li>Todo este processo de versionamento de um ficheiro (ou conjunto de ficheiros e diretórios)
-		poderá ser conseguido através dos comandos <em>git add</em> e <em>git commit-m "mensagem"</em>,
-		exemplificados abaixo:</li>
+				<li>Como já referido, mas com a sua aplicação não exemplificada num caso real, todo este processo de versionamento de um ficheiro (ou conjunto de ficheiros e diretórios)
+				poderá ser inicializado conseguido através dos comandos cruciais <strong>git add</strong> e <strong>git commit-m "mensagem"</strong>,
+				exemplificados abaixo:</li>
 
-		<br>
+				<img src="../img/geral/gitadd.png" alt="Exemplo de utilização do comando 'git add'">
 
-		<img src="../img/geral/gitadd.png" alt="Exemplo de utilização do comando 'git add'">
+				<br>
 
-		<br>
+				<img src="../img/geral/commit.png" alt="Exemplo de utilização do comando 'git commit">
+				<br><br>
 
-		<img src="../img/geral/commit.png" alt="Exemplo de utilização do comando 'git commit">
-
-		</ul>
-	</p>
-
-		<p><strong>Funcionamento remoto do Git:</strong> Quanto à parte <em>"remota"</em> do Git, é de referir
-		a possibilidade de copiar um repositório, bem como criar ou alterar o conteúdo do mesmo.
-		Também existem as opções de versionar e submeter o código. Os comandos principais que envolvem
-		a fase <em>"online"</em> (e ao mesmo tempo essencial para coloboração de <em>developers</em>
-		à distância) do GIT tratam-se do <em>git clone "url.git"</em> e <em>git push</em>,
-		apresentados em seguida:
-
-		<br><br>
-
-		<img src="../img/geral/gitclone.png" alt="Exemplo de utilização do comando 'git clone">
-
-		<img src="../img/geral/gitpush.png" alt="Exemplo de utilização do comando 'git push">
-
-		<br><br>
-
+			</ul>
 		</p>
 
-		<!-- A possibilidade de criar "branches" no GIT <--></-->
-		<h2 class="title">A possibilidade de criar "<em>branches</em>" no Git</h2>
+			<p><strong>Funcionamento remoto do Git:</strong> Quanto à parte <em>"remota"</em> do Git, é de referir
+			a possibilidade de copiar um repositório, bem como criar ou alterar o conteúdo do mesmo.
+			Também existem as opções de versionar e submeter o código. Os comandos principais que envolvem
+			a fase <em>"online"</em> (e ao mesmo tempo essencial para coloboração de <em>developers</em>
+			à distância) do Git tratam-se do <strong>git clone "url.git"</strong> e <strong>git push "alias/url.git"</strong>, sendo que neste último poderá ser especificada uma <em>branch</em> específica que não o <em>master</em> (como o exemplo assim o demonstra). De resto, falarei de <em>branches</em> no seguimento desta análise ao Git.
+			<br>
 
-		<br>
+			<img src="../img/geral/gitclone.png" alt="Exemplo de utilização do comando 'git clone">
 
-		<p>O Git permite a possibilidade de criar <em>"branches"</em> aquando do versionamento
-		de projetos. De que se trata esta funcionalidade?</p>
+			<img src="../img/geral/gitpush.png" alt="Exemplo de utilização do comando 'git push">
 
-		<ul>
-			<li>Essencialmente, <em>"branching"</em> é a criação de "ramos" num projeto que permitirão
-			efetuar alterações que não irão interferir com o "tronco" do projeto. "Ramos" nos quais é facilitado
-			a experimentação de novas alterações sem comprometer a integridade total do trabalho em questão (sendo este
-			preservado na condição de <em>master</em>);</li>
+			<br><br>
 
-		<br>
+			</p>
 
-			<li>Os comandos mais utilizados para o <em>"management"</em> das <em>branches</em> são: <em>git branch "nome do branch"
-			(permite criar um novo <em>branch</em> no projeto)</em>, <em>git checkout "branch"</em> (mudança entre branches ou para o
-			<em>master</em>, existindo a opção "-b", que essencialmente
-			cria uma branch que à partida não existe e logo de seguida faz o <em>checkout</em> para a mesma), <em>git branch</em> (permite listar todos os <em>branches</em>) e <em>git merge</em> (o acto de juntar
-			um <em>branch</em> a outro ou ao <em>master</em>, sendo que este último possui a opção "--no-ff" que impede
-			o acto de <em>fast forward</em>). Todos estes processos são demonstrados em seguida:</li>
-		</ul>
-
-		<img src="../img/geral/gitbranchteste.png" alt="Exemplo da criação de um branch">
-
-		<br>
-
-		<img src="../img/geral/gitcheckout.png" alt="Exemplo da utilização do git checkout">
-
-		<br>
-
-		<img src="../img/geral/gitbranch.png" alt="Exemplo da listagem dos branches">
-
-		<br><br>
-
-		<!-- Considerações finais -->
-		<h2 class="title">Considerações finais</h2>
-
-		<br>
-
-		<ul>
-			<li>Devo admitir que, estudando e desenvolvendo código há relativamente pouco
-			tempo, não reconhecia tanta utilidade na utilização de um SCV (neste caso do Git).
-			Este foi o caso até ao início desta cadeira e, tanto pelo facto do sistema ser utilizado tanto nas
-			fichas de trabalho como falado na parte teórica da cadeira;</li>
+			<h2 class="title">A possibilidade de criar "branches" no Git</h2>
 
 			<br>
 
-			<li>Tendo também investigado mais acerca do Git por conta própria apercebi-me
-			do quão útil e valiosa esta ferramenta é nos dias que correm.
-			Deixei de ter preocupações quanto ao perigo da perda de código e produtividade e comecei
-			a fazer da utilização do Git (e Github) uma espécie de "ritual" diário,
-			aprendendo mais a cada dia acerca das melhores formas de utilizar o software em questão,
-			criando tanto <em>branches</em> de desenvolvimento como realizando <em>commits</em>
-			em alturas estratégicas;</li>
+			<p>O Git permite a possibilidade de criar  "<strong>branches</strong>" aquando do versionamento
+			de projetos. De que se trata esta funcionalidade?</p>
+
+			<ul>
+				<li>Essencialmente, <em>"branching"</em> é a criação de "ramos" num projeto que permitirão
+				efetuar alterações que não irão interferir com o "tronco" principal (<em>master</em>) do projeto. "Ramos" nos quais é facilitada
+				a experimentação de novas alterações sem comprometer a integridade total do trabalho em questão (sendo este
+				preservado na condição de <em>master</em>);</li>
 
 			<br>
 
-			<li>Não tenho quaisquer dúvidas que irei utilizar sempre esta ferramenta
-			e tentar continuar a apreender conhecimentos acerca da mesma durante o meu futuro.</li>
+				<li>Os comandos mais utilizados para o <em>"management"</em> das <em>branches</em> são: <strong>git branch "nome do branch"</strong>
+				(permite criar uma nova <em>branch</em> no projeto)</em>, <strong>git checkout "branch"</strong> (mudança entre branches ou para o
+				<em>master</em>, existindo a opção "-b", que essencialmente
+				cria uma branch que à partida não existe e logo de seguida faz o <em>checkout</em> para a mesma), <strong>git branch</strong> (permite listar todos os <em>branches</em>) e <strong>git merge</strong> (o ato de juntar
+				uma <em>branch</em> a outra ou ao <em>master</em>, sendo que este último possui a opção "--no-ff" que impede
+				o ato de <em>fast forward</em>). Todos estes processos são demonstrados em seguida:</li>
+			</ul>
+
+			<img src="../img/geral/gitbranchteste.png" alt="Exemplo da criação de um branch">
+
+			<br>
+
+			<img src="../img/geral/gitcheckout.png" alt="Exemplo da utilização do git checkout">
+
+			<br>
+
+			<img src="../img/geral/gitbranch.png" alt="Exemplo da listagem dos branches">
+			<!-- FINAL DA ANÁLISE DO TEMA EM QUESTÃO -->
+
+			<br><br>
+
+			<!-- CONSIDERAÇÕES FINAIS -->
+			<h2 class="title">Considerações finais</h2>
+
+			<br>
+
+			<ul>
+				<li>Devo admitir que, estudando e desenvolvendo código há relativamente pouco
+				tempo, não reconhecia tanta utilidade na utilização de um SCV (neste caso do Git).
+				Este foi o caso até ao início desta cadeira e, tanto pelo facto do sistema ser utilizado tanto nas
+				fichas de trabalho como falado na parte teórica da cadeira;</li>
+
+				<br>
+
+				<li>Tendo também investigado mais acerca do Git por conta própria apercebi-me
+				do quão útil e valiosa esta ferramenta é para um <em>developer</em> ou aspirante a sê-lo nos dias que correm.
+				Deixei de ter preocupações quanto ao perigo da perda de código e a minha produtividade tanto no trabalho a solo como em grupo subiu em flecha. Comecei
+				a fazer da utilização do Git (e GitHub) uma espécie de "ritual" diário,
+				aprendendo mais a cada dia acerca das melhores formas de utilizar o <em>software</em> em questão,
+				criando tanto <em>branches</em> de desenvolvimento como realizando <em>commits</em>
+				em alturas estratégicas;</li>
+
+				<br>
+
+				<li>Não tenho quaisquer dúvidas que irei utilizar sempre esta ferramenta
+				e tentar continuar a apreender conhecimentos acerca da mesma durante o meu futuro
+				nesta área em específico.</li>
 		</ul>
 
 	</section>
