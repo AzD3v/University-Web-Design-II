@@ -25,7 +25,9 @@
 
 	<!-- Título da página -->
 	<title>Portfólio Web Design II | Linguagem de Programação JavaScript</title>
+
 </head>
+
 <body>
 
 	<!-- TEMA LINGUAGEM DE PROGRAMAÇÃO JAVASCRIPT -->
@@ -43,16 +45,15 @@
 			</div>
   </div>
 
-	<!-- Secção Linguagem de Programação JavaScript -->
 	<section class="section section-light">
 
-		<!-- Título principal da página -->
+		<!-- TÍTULO PRINCIPAL DA PÁGINA -->
 		<h2 class="title">Introdução ao JavaScript</h2>
 
 		<br>
 
 		<p>
-			<!-- O que é a ECMAScript? -->
+			
 			<strong>O que é a ECMAScript?</strong>
 
 			<br>
@@ -64,7 +65,7 @@
 				<li>O objetivo desta norma trata-se de fornecer detalhes e orientações para o desenvolvimento
 				de uma linguagem interpretada compatível com o norma já referida;</li>
 
-				<li>Esta norma possui várias versões (ES5, ES6, ES7, entre outras) e o suporte
+				<li>Este regulamento possui várias versões (ES5, ES6, ES7, entre outras) e o suporte
 				de cada uma das versões varia consoante as implementações distintas dos próprios browsers;</li>
 
 				<li>O JavaScript é uma linguagem interpretada baseada na especificação ECMAScript.</li>
@@ -76,7 +77,7 @@
 		<p><strong>Interpretador de JavaScript (JavaScript <em>engine</em>):</strong>
 
 			<ul>
-				<li>Trata-se de um programa que compreende e executa código proveniente da linguagem JavaScript;</li>
+				<li>O JavaScript <em>engine</em> trata-se de um programa que compreende e executa código proveniente da linguagem JavaScript;</li>
 
 				<li>Estando tipicamente embutido em web browsers, também é possível executar JavaScript do lado
 				do servidor, mesmo tendo em conta o facto do lado do cliente ser a principal área de ação da linguagem.
@@ -90,10 +91,10 @@
 
 			<strong>JavaScript Runtime:</strong>
 			<ul>
-				<li>É essencialmente o ambiente em que o código JavaScript é interpretado
-				pelo interpretador de JavaScript em tempo de execução (como por exemplo, este providencia
+				<li>É essencialmente o ambiente em que o código JavaScript é "traduzido"
+				pelo interpretador de JavaScript em tempo de execução. Como por exemplo, este fornece
 				o acesso ao objeto que permite a manipulação de HTML no browser, sendo que
-				também providencia o acesso ao objeto que permite a manipulação da própria janela do browser);</li>
+				também providencia o ingresso ao objeto que permite a manipulação da própria janela do browser.</li>
 			</ul>
 		</p>
 
@@ -110,237 +111,306 @@
 
 		<p>Sendo de referir desde já que apresentarei obviamente diversos e variados exemplos da aplicação
 		da sintaxe e semântica desta linguagem de programação aquando da minha análise às fichas de trabalho
-		efetuadas, mas irei aqui tentar descrever de forma sucinta os aspetos essenciais do JavaScript.</p>
+		efetuadas, irei aqui tentar descrever de forma sucinta os aspetos essenciais da escrita de código em JavaScript.</p>
 
-		<!-- Declarações JavaScript -->
 		<p><strong>Os programas em JavaScript são executados com declarações, como por exemplo:</strong>
+
 			<table class="table table-bordered table-hover">
+
 				<thead>
 					<th>Declaração</th>
 					<th>Significado da declaração</th>
 				</thead>
+
 				<tbody>
+
 					<tr>
 						<td>var A, B, C;</td>
 						<td>As variáveis A, B e C são declaradas</td>
 					</tr>
+
 					<tr>
 						<td>A = 10;</td>
 						<td>O valor de 10 é atribuído à variável A</td>
 					</tr>
+
 					<tr>
 						<td>B = 5;</td>
 						<td>O valor de 5 é atribuído à variável B</td>
 					</tr>
+
 					<tr>
 						<td>C = A + B;</td>
 						<td>A soma das variáveis A e B é atribuída à variável C</td>
 					</tr>
+
 				</tbody>
+
 			</table>
 
 			<p><strong>Notas de destaque:</strong>
+
 				<ul>
-					<li>O carácter <strong>;</strong> termina uma declaração;</li>
-					<li>A palavra <strong>var</strong> é reservada para a declaração de variáveis,
-					assim como <strong>let</strong> e <strong>const</strong>. A palavra <strong>let</strong>
-					permite a declaração de variáveis ao nível do bloco em que se encontra, ao passo que <strong>const</strong>
+
+					<li>O carácter "<strong>;</strong>" termina uma declaração;</li>
+
+					<li>A palavra "<strong>var</strong>" é reservada para a declaração de variáveis,
+					assim como "<strong>let</strong>" e "<strong>const</strong>". A palavra "<strong>let</strong>"
+					permite a declaração de variáveis ao nível do bloco em que se encontra, ao passo que "<strong>const</strong>"
 					permite a declaração de variáveis cujos valores não deverão ser alterados;</li>
-					<li><strong>//</strong> indica um comentário de uma só linha, enquanto que
-					<strong>/*</strong> e <strong>*/</strong> indicam um comentário de múltiplas
+
+					<li>"<strong>//</strong>" indica um comentário de uma só linha, enquanto que
+					"<strong>/*</strong>" e "<strong>*/</strong>" indicam um comentário de múltiplas
 					linhas.</li>
+
 				</ul>
+
 			</p>
+
 		</p>
+
 		<br>
 
-		<!-- Todos os operadores da linguagem JavaScript -->
 		<p><strong>Operadores da linguagem JavaScript:</strong></p>
+
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Operadores</th>
 				<th>Exemplos</th>
 			</thead>
+
 			<tbody>
+
 				<tr>
 					<td>Operadores aritméticos (cálculos)</td>
 					<td>(5 + 6) * 10</td>
 				</tr>
+
 				<tr>
 					<td>Operadores de atribuição</td>
 					<td>x = 1000</td>
 				</tr>
+
 				<tr>
 					<td>Operadores de concatenação (de <em>strings</em>)</td>
 					<td>"Olá" + " " + "mundo!"</td>
 				</tr>
+
 				<tr>
 					<td>Operadores lógicos (and, or e not)</td>
 					<td>((x > 10) && (x < 20))</td>
 				</tr>
+
 			</tbody>
+
 		</table>
 
 		<br>
 
-		<!-- Operadores aritméticos da linguagem JavaScript -->
 		<p><strong>Todos os operadores aritméticos:</strong></p>
+
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Operador</th>
 				<th>Significado do operador</th>
 			</thead>
+
 			<tbody>
 				<tr>
+
 					<td>+</td>
 					<td>Adição</td>
 				</tr>
+
 				<tr>
 					<td>-</td>
 					<td>Subtração</td>
 				</tr>
+
 				<tr>
 					<td>*</td>
 					<td>Multiplicação</td>
 				</tr>
+
 				<tr>
 					<td>/</td>
 					<td>Divisão</td>
 				</tr>
+
 				<tr>
 					<td>%</td>
 					<td>Módulo (resto)</td>
 				</tr>
+
 				<tr>
 					<td>++</td>
 					<td>Incremento</td>
 				</tr>
+
 				<tr>
 					<td>--</td>
 					<td>Decremento</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+
 		<br>
 
-		<!-- Operadores de atribuição da linguagem JavaScript -->
 		<p><strong>Todos os operadores de atribuição:</strong></p>
+
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Operador</th>
 				<th>Exemplo da variação abreviada (se possível)</th>
 				<th>Exemplo da versão longa</th>
 			</thead>
+
 			<tbody>
+				
 				<tr>
 					<td>=</td>
 					<td>x = y</td>
 					<td>x = y</td>
 				</tr>
+
 				<tr>
 					<td>+=</td>
 					<td>x += y</td>
 					<td>x = x + y</td>
 				</tr>
+
 				<tr>
 					<td>-=</td>
 					<td>x -= y</td>
 					<td>x = x - y</td>
 				</tr>
+
 				<tr>
 					<td>*=</td>
 					<td>x *= y</td>
 					<td>x = x * y</td>
 				</tr>
+
 				<tr>
 					<td>/=</td>
 					<td>x /= y</td>
 					<td>x = x / y</td>
 				</tr>
+
 				<tr>
 					<td>%=</td>
 					<td>x %= y</td>
 					<td>x = x % y</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+
 		<br>
 
-		<!-- Operadores de comparação da linguagem JavaScript -->
 		<p><strong>Todos os operadores de comparação:</strong></p>
+		
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Operador</th>
 				<th>Significado do operador</th>
 			</thead>
+
 			<tbody>
+
 				<tr>
 					<td>==</td>
 					<td>Igual valor (não precisa ser do mesmo tipo)</td>
 				</tr>
+
 				<tr>
-					<td>==</td>
+					<td>===</td>
 					<td>Valor idêntico (ou igual tipo)</td>
 				</tr>
+
 				<tr>
 					<td>!=</td>
 					<td>Diferente valor (não precisa ser do mesmo tipo)</td>
 				</tr>
+
 				<tr>
 					<td>!==</td>
 					<td>Diferente valor (ou diferente tipo)</td>
 				</tr>
+
 				<tr>
 					<td>></td>
 					<td>Maior</td>
 				</tr>
+
 				<tr>
 					<td><</td>
 					<td>Menor</td>
 				</tr>
+
 				<tr>
 					<td>>=</td>
 					<td>Maior ou igual</td>
 				</tr>
+
 				<tr>
 					<td><=</td>
 					<td>Menor ou igual</td>
 				</tr>
+
 				<tr>
 					<td>? : </td>
 					<td>Operador ternário (condição trata-se do <strong>?</strong>, valor booleano trata-se do <strong>:</strong>)</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+
 		<br>
 
-		<!-- Operadores lógicos da linguagem JavaScript -->
 		<p><strong>Operadores lógicos:</strong></p>
+
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Operador</th>
 				<th>Significado do operador</th>
 			</thead>
+
 			<tbody>
 				<tr>
 					<td>&&</td>
 					<td>(e) valor lógico</td>
 				</tr>
+
 				<tr>
 					<td>||</td>
 					<td>(ou) valor lógico</td>
 				</tr>
+
 				<tr>
 					<td>!</td>
 					<td>(não) negação lógica</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+
 		<br>
 
-		<!-- Operadores binários da linguagem JavaScript -->
 		<p><strong>Operadores binários:</strong></p>
+		
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Operador</th>
 				<th>Descrição</th>
@@ -349,7 +419,9 @@
 				<th>Resultado</th>
 				<th>Decimal</th>
 			</thead>
+
 			<tbody>
+
 				<tr>
 					<td>&</td>
 					<td>AND</td>
@@ -358,6 +430,7 @@
 					<td>0001</td>
 					<td>1</td>
 				</tr>
+
 				<tr>
 					<td>|</td>
 					<td>OR</td>
@@ -366,6 +439,7 @@
 					<td>0101</td>
 					<td>5</td>
 				</tr>
+
 				<tr>
 					<td>~</td>
 					<td>NOT</td>
@@ -374,6 +448,7 @@
 					<td>1010</td>
 					<td>10</td>
 				</tr>
+
 				<tr>
 					<td>^</td>
 					<td>XOR</td>
@@ -382,6 +457,7 @@
 					<td>0100</td>
 					<td>4</td>
 				</tr>
+
 				<tr>
 					<td><<</td>
 					<td>Zero fill left shift</td>
@@ -390,6 +466,7 @@
 					<td>1010</td>
 					<td>10</td>
 				</tr>
+
 				<tr>
 					<td>>></td>
 					<td>Signed right shift</td>
@@ -398,6 +475,7 @@
 					<td>0010</td>
 					<td>2</td>
 				</tr>
+
 				<tr>
 					<td>>>></td>
 					<td>Zero fill right shift</td>
@@ -406,297 +484,397 @@
 					<td>0010</td>
 					<td>2</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+
 		<br>
 
-		<!-- Tipos da linguagem JavaScript -->
 		<p><strong>Tipos da linguagem JavaScript:</strong></p>
+
 		<p>Os programas na linguagem JavaScript manipulam valores e esses valores
-		pertecem a um determinado tipo, como se demonstra na tabela a seguir apresentada:</p>
+		pertecem a um determinado tipo, como é demonstrado na tabela a seguir apresentada:</p>
+
 		<table class="table table-bordered table-hover">
+
 			<thead>
 				<th>Tipo</th>
 				<th>Exemplo</th>
 			</thead>
+
 			<tbody>
+
 				<tr>
 					<td>String</td>
 					<td>var nome = "Paulo";</td>
 				</tr>
+
 				<tr>
 					<td>Number</td>
 					<td>var number = 21;</td>
 				</tr>
+
 				<tr>
 					<td>Boolean</td>
 					<td>var y = false;</td>
 				</tr>
+
 				<tr>
 					<td>Object</td>
 					<td>Math.PI; (exemplo matemático)</td>
 				</tr>
+
 				<tr>
 					<td>Function</td>
 					<td>functionExample() {}</td>
 				</tr>
+
 				<tr>
 					<td>Null</td>
 					<td>Representa o "nada".</td>
 				</tr>
+
 				<tr>
 					<td>Undefined</td>
-					<td>var y; (não se encontra nenhuma valor atribuído à variável)</td>
+					<td>var y; (não se encontra nenhum valor atribuído à variável)</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+
 		<br>
 
-		<!-- JavaScript - Arrays -->
 		<p><strong>JavaScript - Arrays</strong></p>
-		<p>Arrays são essencialmente sequências de valores entre dois parêntesis retos "<strong>[]</strong>" e separados por
+
+		<p>Arrays são essencialmente sequências de valores entre dois parêntesis retos,  "<strong>[]</strong>", e separados por
 		vírgulas. A contagem dos seus elementos começa no valor 0.</p>
+
 		<p><strong>Exemplo:</strong> var carros = ['Renault', 'Audi', 'BMW']</p>
+
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Declaração associada ao array do exemplo</th>
 				<th>O que retorna a declaração</th>
 			</thead>
+
 			<tbody>
+
 				<tr>
 					<td>carros[0]</td>
 					<td>'Renault'</td>
 				</tr>
+				
 				<tr>
 					<td>carros[1]</td>
 					<td>'Audi'</td>
 				</tr>
+
 				<tr>
 					<td>carros[2]</td>
 					<td>'BMW'</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+
 		<br>
 
-		<!-- Propriedades/funções associadas aos arrays na linguagem JavaScript -->
 		<p><strong>Algumas propriedades/funções associadas aos arrays (utilizando o exemplo anterior):</strong></p>
+
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Propriedade associada ao array</th>
 				<th>O que sucede</th>
 			</thead>
+
 			<tbody>
+
 				<tr>
 					<td>carros.length</td>
 					<td>Retorna o número que representa o último índice do array (ou seja, a sua extensão)</td>
 				</tr>
+
 				<tr>
 					<td>carros.push('Opel')</td>
 					<td>Adiciona 'Opel' ao array</td>
 				</tr>
+
 				<tr>
 					<td>carros.pop()</td>
 					<td>Remove o último elemento do array e retorna esse valor ('BMW' neste exemplo)</td>
 				</tr>
+
 				<tr>
 					<td>carros.reverse()</td>
 					<td>Inverte a ordem do array</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+		
 		<br>
 
-		<!-- Objetos da linguagem JavaScript -->
 		<p><strong>JavaScript - Objetos</strong></p>
-		<p>Objetos são estruturas "chave-valor" que se encontram entre parêntesis curvos "<strong>{}</strong>"
+
+		<p>Objetos são estruturas "chave-valor" que se encontram entre parêntesis curvos,  "<strong>{}</strong>",
 		e, tal como nos arrays, são separadas por vírgula</p>
 		<p><strong>Exemplo:</strong> var computador = {marca: "ASUS", memória: "8gb", idade_em_anos="3"}</p>
+
 		<table class="table table-bordered table-hover">
+
 			<thead>
 				<th>Declaração associada ao objeto do exemplo</th>
 				<th>O que retorna a declaração</th>
 			</thead>
+
 			<tbody>
+
 				<tr>
 					<td>computador.marca</td>
 					<td>'ASUS'</td>
 				</tr>
+
 				<tr>
 					<td>computador.memória</td>
 					<td>'8gb'</td>
 				</tr>
+
 				<tr>
 					<td>computador.idade_em_anos</td>
 					<td>'3'</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+
 		<br>
 
-		<!-- Estruturas de controlo da linguagem JavaScript -->
 		<h2 class="title">Estruturas de controlo da linguagem JavaScript</h2>
+
 		<br>
+
 		<p>Estruturas de controlo são utilizadas para controlar o <em>flow</em> do código,
-		sendo as primeiras a que farei referência o <strong>if</strong> e o <strong>else</strong>.</p>
+		sendo as primeiras a que farei referência o "<strong>if</strong>" e o "<strong>else</strong>".</p>
+
 		<ul>
-			<li>Se a execução presente no <strong>if</strong> for verdade, esta será executada, caso
-			contrário o <strong>else</strong> será executado, podendo entretanto existir outra
-			condição no meio das duas, sendo esta indicada pelas palavras <strong>else if</strong>.</li>
+
+			<li>Se a execução presente no "<strong>if</strong>" for verdadeira, esta será executada, caso
+			contrário o "<strong>else</strong>" será executado, podendo entretanto existir outra
+			condição no <em>scope</em> das duas referidas (precisamente pelo meio), sendo esta indicada pelas palavras "<strong>else if</strong>".</li>
+
 		</ul>
+
 		<img src="../img/geral/ifelse.png" alt="Exemplo de uma estrutura de controlo 'if', 'else if', 'else'">
 		<br><br>
 		<ul>
-			<li>A estrutura de controlo <em><strong>switch</strong></em> é muito útil para testar uma
+			<li>A estrutura de controlo "<em><strong>switch</strong></em>" é muito útil para testar uma
 			condição contra várias hipóteses, quando já se sabe à partida quantas estas serão.
-			Um <em><strong>switch</strong></em> escolhe um de vários blocos de código a ser executado e termina quando o
-			<em><strong>break</strong></em> (palavra reservada muito importante e que impede que caso uma das condições
-			seja verdadeira, as que estão abaixo da mesma sejam executadas). o <em><strong>default</strong></em> é outra
+			Um "<em><strong>switch</strong></em>" escolhe um de vários blocos de código a ser executado e termina quando o
+			 "<em><strong>break</strong></em>" (palavra reservada muito importante e que impede que caso uma das condições
+			seja verdadeira, as que estão abaixo da mesma sejam executadas em sequência). o "<em><strong>default</strong></em>" é outra
 			palavra reservada que, sendo não obrigatória, indica o que acontecerá caso nenhuma das hipóteses presentes anteriormente
-			seja verdadeira.</li>
+			for verdadeira.</li>
+
 		</ul>
+
 		<img src="../img/geral/switch.png" alt="Exemplo da estrutura de controlo 'switch'">
+		
 		<br><br>
+		
 		<ul>
-			<li>A estrutura <em><strong>while</strong></em> é executada enquanto uma determinada condição
-			for verdade, enquanto que uma estrutura <em><strong>do while</strong></em> garante
-			que o <em>loop</em> irá ser executado pelo menos por uma vez. As palavra reservada <em><strong>break</strong></em>
-			aborta a execução do while, enquanto que a palavra <em><strong>continue</strong></em> avança para a iteração
-			seguinte do <em><strong>while</strong></em>.</li>
+
+			<li>A estrutura "<em><strong>while</strong></em>" é executada enquanto uma determinada condição
+			for verdadeira, enquanto que uma estrutura "<em><strong>do... while</strong>"</em> garante
+			que o <em>loop</em> irá ser executado pelo menos por uma vez. As palavra reservada "<em><strong>break</strong></em>"
+			aborta a execução do while, enquanto que a palavra "<em><strong>continue</strong></em>" avança para a iteração
+			seguinte do "<em><strong>while</strong></em>".</li>
+		
 		</ul>
 
-		<p>Exemplo de uma estrutura <em><strong>while</strong></em>:</p>
+		<p>Exemplo de uma estrutura "<em><strong>while</strong></em>":</p>
+		
 		<img src="../img/geral/while.png" alt="Exemplo da estrutura de controlo 'while'">
+		
 		<br><br>
 
-		<p>Exemplo de uma estrutura <em><strong>do while</strong></em>:</p>
+		<p>Exemplo de uma estrutura "<em><strong>do... while</strong></em>":</p>
+		
 		<img src="../img/geral/dowhile.png" alt="Exemplo da estrutura de controlo 'do while'">
 		<br><br>
 
-		<p>Exemplo do uso das palavras reservadas <em><strong>break</strong></em> e <em><strong>continue</strong></em>:</p>
+		<p>Exemplo do uso das palavras reservadas "<em><strong>break</strong></em>"" e "<em><strong>continue</strong></em>":</p>
+		
 		<img src="../img/geral/breakcontinue.png" alt="Exemplo do uso das palavras 'break' e 'continue'">
+		
 		<br><br>
 
 		<ul>
-			<li>A estrutura de controlo <em><strong>for</strong></em> é uma forma abreviada de executar
-			um <em><strong>while</strong></em>, sendo o processo inverso obviamente também possível.
+
+			<li>A estrutura de controlo "<em><strong>for</strong></em>" é uma forma abreviada de executar
+			um "<em><strong>while</strong></em>", sendo o processo inverso obviamente também possível.
 			A variável, a condição e a iteração sob a variável podem ser declaradas
-			numa só linha de código</li>
+			numa só linha de código.</li>
 		</ul>
 
-		<p>Exemplo de uso de um ciclo <em><strong>for</strong></em>:</p>
+		<p>Exemplo de uso de um ciclo "<em><strong>for</strong></em>":</p>
 		<img src="../img/geral/for.png" alt="Exemplo do uso de um ciclo 'for'">
 
 		<br><br>
 
 		<ul>
+			
 			<li>Dentro do "universo <em><strong>for</strong></em>" existem também os iteradores
-			de arrays e objetos <em><strong>for... of</strong></em> e <em><strong>for... in</strong></em>
+			de arrays e objetos: "<em><strong>for... of</strong></em>" e "<em><strong>for... in</strong></em>",
 			respetivamente. São utilizados para obter os valores tanto de um array como de um objeto.</li>
+	
 		</ul>
 
-		<p>Exemplo do uso de um ciclo <em><strong>for... of</strong></em>:</p>
+		<p>Exemplo do uso de um ciclo "<em><strong>for... of</strong></em>":</p>
 		<img src="../img/geral/forof.png" alt="Exemplo do uso de um ciclo 'for... of'">
 		<br><br>
-		<p>Exemplo do uso de um ciclo <em><strong>for... in</strong></em>:</p>
+		<p>Exemplo do uso de um ciclo "<em><strong>for... in</strong></em>":</p>
 		<img src="../img/geral/forin.png" alt="Exemplo do uso de um ciclo 'for... in'">
 
 		<br><br>
 
-		<!-- JavaScript - Funções -->
 		<h2 class="title">JavaScript - Funções</h2>
+
 		<br>
+		
 		<p>Em cada linguagem de programação, as funções possuem como objetivo obedecer
-		ao princípio denominado de <em>DRY</em> (<em>Don't Repeat Yourself</em>).
+		ao princípio denominado de "<em>DRY</em>" ("<em>Don't Repeat Yourself</em>").
 		Funções são utilizadas para reutilizar código sem ter que escrever o mesmo
-		novamente a podem tornar o código muito mais legível e "limpo". Poderão
-		também ser passados argumentos que serão utilizadas no corpo de cada função
+		novamente e podem tornar o código muito mais legível e "limpo". Poderão
+		também ser passados argumentos que serão utilizados no corpo de cada função
 		e há que ter a noção de que uma função poderá ou não retornar um valor.
-		Existe a possibilidade de passar um número de parâmetros/argumentos arbitrário
-		utilizando o operador <em><strong>...rest</strong></em> que traduzirá uma
+		Existe a possibilidade de passar um número de parâmetros arbitrário
+		utilizando o operador "<em><strong>...rest</strong></em>" que se traduzirá numa
 		lista de argumentos presente num array. Funções poderão ser chamadas de diversas
-		formas, de forma comum, isto é, com o nome da função e parêntesis curvos:
+		formas, da forma comum, isto é, com o nome da função e parêntesis curvos:
 		"soma()" ou poderão ser chamadas dentro de um Event Listener (mais sobre este
-		 na secção que falará de interação do JavaScript com o HTML DOM), sendo que neste
-	 	caso a função poderá ser chamada de <em>callback</em> ou de anónima.</p>
+		 na <a href="tema_html_dom.html">secção que falará de interação do JavaScript com o HTML DOM</a>), sendo que neste
+	 	caso a função poderá ser chamada de "<em>callback</em>" ou de "anónima".</p>
 
 		<p>Exemplo de uma função que possui parâmetros:</p>
+		
 		<img src="../img/geral/funcao_parametros.png" alt="Exemplo de uma função com parâmetros">
+
 		<br><br>
+
 		<p>Exemplo de uma função que não possui parâmetros:</p>
+
 		<img src="../img/geral/funcao_sem_parametros.png" alt="Exemplo de uma função sem parâmetros">
+
 		<br><br>
 
 		<p>As funções também poderão ter uma sintaxe mais moderna e diferente da anteriormente apresentada,
-		sendo estas chamadas de <em><strong>arrow functions</strong></em>. Um exemplo deste tipo de função encontra-se
+		sendo estas chamadas de "<em><strong>arrow functions</strong></em>". Um exemplo deste tipo de função encontra-se
 		abaixo:</p>
+
 		<img src="../img/geral/arrow_function.png" alt="Exemplo de uma arrow function">
+		
 		<br><br>
 
-		<!-- JavaScript - Depuração -->
 		<h2 class="title">JavaScript - Depuração</h2>
+		
 		<br>
-		<p>Através da palavra reservada <em><strong>debugger</strong></em>, é possível
+		
+		<p>Através da palavra reservada "<em><strong>debugger</strong></em>", é possível
 		parar a execução de um programa e fazer a depuração (procurar por <em>bugs</em>)
 		a partir da linha de código escolhida.</p>
+
 		<img src="../img/geral/debugger.png" alt="Exemplo da palavra reservada debugger">
+		
 		<br><br>
 
-		<!-- A integração do JavaScript em HTML -->
 		<h2 class="title">A integração do JavaScript em HTML</h2>
+		
 		<br>
+		
 		<p>Para integrar a linguagem JavaScript em HTML, é necessário utilizar
 		as <em>tags</em> seguintes:</p>
+
 		<img src="../img/geral/script.png" alt="Exemplo do uso das tags <script></script>">
+		
 		<br><br>
-		<p>Porém, com objetivo delineado de conseguir uma melhor organização e legibilidade
+		
+		<p>Porém, com o objetivo delineado de conseguir uma melhor organização e legibilidade
 		do código, é aconselhado incluir o código JavaScript utilizando documentos externos.
 		É possível fazê-lo da seguinte forma:</p>
+		
 		<img src="../img/geral/doc_externo.png" alt="Exemplo do uso do JavaScript a partir de um documento externo">
+		
 		<br><br>
 
-		<!-- Formato JSON -->
 		<h2 class="title">De que se trata o formato JSON?</h2>
 
 		<br>
 
 		<p>Essencialmente, o formato JSON significa <strong>J</strong>ava<strong>S</strong>cript
 		<strong>O</strong>bject <strong>N</strong>otation. Acerca do formato JSON:</p>
+		
 		<ul>
+
 			<li>Trata-se de um formato leve de troca de informação;</li>
+
 			<li>Poderá ser utilizado por qualquer linguagem de programação;</li>
+
 			<li>É auto-descritivo e de fácil compreensão.</li>
+
 		</ul>
+
 		<p><strong>Nota importante:</strong></p>
+
 		<ul>
+
 			<li>O formato JSON é sintaticamente idêntico à notação de objetos em JavaScript.
 			Devido a este motivo, é possível converter objetos JSON em objetos JavaScript
 			e vice-versa.</li>
+		
 		</ul>
+
 		<p>Exemplo da sintaxe de um objeto JSON:</p>
+		
 		<img src="../img/geral/json.png" alt="Exemplo da sintaxe de um objeto JSON">
+		
 		<br><br>
+		
 		<p>A conversão entre objetos JSON e JavaScript é conseguida através dos métodos:</p>
+		
 		<table class="table table-bordered table-hover">
+			
 			<thead>
 				<th>Método utilizado</th>
 				<th>Resultado do método</th>
 			</thead>
+			
 			<tbody>
+
 				<tr>
 					<td>let obj = JSON.parse('{"nmrDeAluno":20170017}')</td>
 					<td>console.log(obj.nmrDeAluno) // Imprime "20170017"</td>
 				</tr>
+
 				<tr>
 					<td>let jsonString = JSON.stringify(obj)</td>
 					<td>console.log(jsonString) // Imprime "{"nmrDeAluno":20170017}"</td>
 				</tr>
+
 			</tbody>
+
 		</table>
+		<!-- FINAL DA ANÁLISE DO TEMA EM QUESTÃO -->
 
 		<br>
 
-		<!-- Considerações finais -->
+		<!-- CONSIDERAÇÕES FINAIS -->
 		<h2 class="title">Considerações finais</h2>
 
 		<br>
@@ -715,9 +893,10 @@
 
 			<br>
 
-			<li>Espero que, tanto neste projeto/portfólio como no projeto principal da cadeira de Web Design II,
+			<li>Espero que, tanto neste projeto/portfólio como no projeto principal da cadeira de Web Design II e, futuramente, nos meus projetos pessoais,
 			consiga entender melhor tanto a sintaxe (já referida) como a semântica da linguagem e todos os
 			seus ângulos de aproximação.</li>
+
 		</ul>
 
 	</section>
