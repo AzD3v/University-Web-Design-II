@@ -4,39 +4,56 @@ let gMapsLoaded = false;
 window.loadGoogleMaps = function(){
 if(gMapsLoaded) return window.gMapsCallback();
 
+// Exercício 2
+let script = $("<script></script>").attr("src", "http://maps.google.com/maps/api/js?"
+ + "key=AIzaSyCxeGbO1IDl9mhaMo6vEy1IUDgDE3ABd2E"
+ + "&callback=gMapsCallback").attr("type", 'text/javascript');
 
-let script=$("<script></script>").attr("src", "http://maps.google.com/maps/api/js?key=AIzaSyCxeGbO1IDl9mhaMo6vEy1IUDgDE3ABd2E&callback=gMapsCallback").attr("type", 'text/javascript');
-
-$("head").append(script);
+    $("head").append(script);
 
 }
+
 window.gMapsCallback = function(){
-gMapsLoaded = true;
+
+    gMapsLoaded = true;
+
  $(window).trigger('gmaps-script-loaded');
+
 }
+
+
+
 
 $(function(){
-  /*  Esta função serve de callback para quando o browser adquire a posição*/
+
+  // Exercício 5
+  // Esta função serve de callback para quando o browser adquire a posição
   function geoSuccess(pos) {
-    map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
+      map.setCenter(new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude));
   }
 
-  /*Função que deve ser aplicada ao evento‘click’do botão*/
-
+  // Exercício 4
+  // Função aplicada ao evento 'click' do botão
   $("#getMyLocation").click(function(){
     navigator.geolocation.getCurrentPosition(geoSuccess);
   });
-  //
 
-  function initialize(){
+// Exercício 3
+function initialize(){
+
   var mapOptions = {
-  zoom: 8,
-  center: new google.maps.LatLng(38.7437396, 9.2302438),
-  mapTypeId: google.maps.MapTypeId.ROADMAP
+      zoom: 8,
+      center: new google.maps.LatLng(38.7437396, 9.2302438),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
   };
-  map  = new google.maps.Map($("#map-canvas").get(0) ,mapOptions);}
-  /*Evento  que  chama  a  função  initialize()  e  que é desencadeado  dentro  da  função chamada pelo script após o seu carregamento*/
+
+  map = new google.maps.Map($("#map-canvas").get(0), mapOptions);}
+
+  /* Evento  que tem por objetivo chamar a função initialize(),
+  sendo desencadeado dentro  da função chamada pelo script após carregamento do mesmo */
   $(window).bind('gmaps-script-loaded', initialize);
-  /*Chamada à função para carregar o script do google maps.*/
+
+  // A função que carrega o script do Google Maps é então chamada
   window.loadGoogleMaps();
+
 });
