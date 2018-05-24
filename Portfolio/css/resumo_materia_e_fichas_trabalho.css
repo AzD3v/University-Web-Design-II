@@ -1,7 +1,8 @@
 /* RESUMO DA MATÉRIA DADA E ANÁLISE ÀS FICHAS DE TRABALHO */
 
-/* Seta de retorno à homepage */
+/* Setas de retorno à homepage */
 .ion-arrow-return-left {font-size: 45px; color: #F4F4F4; padding: 15px 16px;}
+.ion-arrow-return-left.arrow-bottom {font-size: 45px; color: #192A56; padding: 30px 16px;}
 
 /* Links */
 section.section-blue a:link {color: #fff;transition: 1s ease;}
